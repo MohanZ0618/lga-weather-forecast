@@ -1,0 +1,41 @@
+[
+  {
+    "hour": 9,
+    "scope": "Four stations",
+    "model": "Logistic Regression",
+    "stations": [
+      "LGA",
+      "JFK",
+      "EWR",
+      "TEB"
+    ],
+    "validation_log_loss": 0.48963075321259103,
+    "artifact": "model_09.joblib"
+  },
+  {
+    "hour": 12,
+    "scope": "Four stations",
+    "model": "Random Forest",
+    "stations": [
+      "LGA",
+      "JFK",
+      "EWR",
+      "TEB"
+    ],
+    "validation_log_loss": 0.3485538282943305,
+    "artifact": "model_12.joblib"
+  },
+  {
+    "hour": 15,
+    "scope": "Four stations",
+    "model": "XGBoost",
+    "stations": [
+      "LGA",
+      "JFK",
+      "EWR",
+      "TEB"
+    ],
+    "validation_log_loss": 0.17906063539340827,
+    "artifact": "model_15.joblib"
+  }
+]

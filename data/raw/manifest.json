@@ -1,0 +1,98 @@
+[
+  {
+    "station": "LGA",
+    "year": 2023,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2023/72503014732.csv",
+    "file": "2023/72503014732.csv",
+    "size_bytes": 8079148,
+    "sha256": "66d941445a2e39007345f196e5484dd1e4dc638fbba109c5bf1a98ff9d9b1961"
+  },
+  {
+    "station": "LGA",
+    "year": 2024,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/72503014732.csv",
+    "file": "2024/72503014732.csv",
+    "size_bytes": 7965128,
+    "sha256": "ea2d3858502e476ddea25f9165dfd378b64f3d0bc4f5090be872cd9730b54150"
+  },
+  {
+    "station": "LGA",
+    "year": 2025,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2025/72503014732.csv",
+    "file": "2025/72503014732.csv",
+    "size_bytes": 5226469,
+    "sha256": "e85bb1334dae65826142f6a944ef9803fe8369e3f087cb4f6f739e64c44805b0"
+  },
+  {
+    "station": "JFK",
+    "year": 2023,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2023/74486094789.csv",
+    "file": "2023/74486094789.csv",
+    "size_bytes": 8001276,
+    "sha256": "a1081700076005cd97b2c7223358bd4b721edd8807d84ec04d08879afbeeac4e"
+  },
+  {
+    "station": "JFK",
+    "year": 2024,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/74486094789.csv",
+    "file": "2024/74486094789.csv",
+    "size_bytes": 7740547,
+    "sha256": "a81deadebf7dcb568346eb554516a0d85be387c91946fde84305489ede2e5dc7"
+  },
+  {
+    "station": "JFK",
+    "year": 2025,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2025/74486094789.csv",
+    "file": "2025/74486094789.csv",
+    "size_bytes": 5234331,
+    "sha256": "551701affb29317fe29c9bb8c025e156e4348946f87635c94664346a405913bf"
+  },
+  {
+    "station": "EWR",
+    "year": 2023,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2023/72502014734.csv",
+    "file": "2023/72502014734.csv",
+    "size_bytes": 7617650,
+    "sha256": "3c3977a24904b911af7a7f0bc9f9a66d5bf8229088c10f94cab82eac8d03321d"
+  },
+  {
+    "station": "EWR",
+    "year": 2024,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/72502014734.csv",
+    "file": "2024/72502014734.csv",
+    "size_bytes": 8016587,
+    "sha256": "989102e9f3dc0ae4264343985b2e834361662d9cc8082605045af187dd80ff08"
+  },
+  {
+    "station": "EWR",
+    "year": 2025,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2025/72502014734.csv",
+    "file": "2025/72502014734.csv",
+    "size_bytes": 5256415,
+    "sha256": "41d89aeb1d48c96124235e1cbafdb86978a361342a2e8b93e6c907767b341c98"
+  },
+  {
+    "station": "TEB",
+    "year": 2023,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2023/72502594741.csv",
+    "file": "2023/72502594741.csv",
+    "size_bytes": 6023163,
+    "sha256": "caa1d8dce79c830d5a426ba94d074bc0ca3d61580c6517000b36f4f6f4f3f042"
+  },
+  {
+    "station": "TEB",
+    "year": 2024,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2024/72502594741.csv",
+    "file": "2024/72502594741.csv",
+    "size_bytes": 5923515,
+    "sha256": "f4f7a418a5b946f5ef3a254e2ac865a3730e1596a4fc0a42d629d28fd0b0e89d"
+  },
+  {
+    "station": "TEB",
+    "year": 2025,
+    "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2025/72502594741.csv",
+    "file": "2025/72502594741.csv",
+    "size_bytes": 3802915,
+    "sha256": "370a97cedf399e6a6c8415bb48a46f6f553e38ecdca2b510268eeff4973c76ee"
+  }
+]
