@@ -1,0 +1,282 @@
+[
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":3,\"n_estimators\":300}]",
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4066185235567012
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":3,\"n_estimators\":300}]"
+    ],
+    "loss": 0.40883484240121576
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":3,\"n_estimators\":150}]"
+    ],
+    "loss": 0.4093342440349237
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.04,\"max_depth\":3,\"n_estimators\":200}]"
+    ],
+    "loss": 0.41103862646566963
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4177035524839747
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4191333753830448
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.41931287801765366
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.42041965844259327
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.04,\"max_depth\":5,\"n_estimators\":200}]"
+    ],
+    "loss": 0.42167584105451167
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":2,\"n_estimators\":150}]"
+    ],
+    "loss": 0.4228719504231317
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"threshold\",{\"C\":0.1}]"
+    ],
+    "loss": 0.42320226030445074
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4234966323730976
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"threshold\",{\"C\":1}]"
+    ],
+    "loss": 0.4252440395795878
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4256272534636711
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"threshold\",{\"C\":10}]"
+    ],
+    "loss": 0.42590460509371414
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":5,\"n_estimators\":150}]"
+    ],
+    "loss": 0.4270367955092302
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":10,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4271170448381289
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":10,\"n_estimators\":300}]"
+    ],
+    "loss": 0.42818108655813986
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.04,\"max_depth\":2,\"n_estimators\":200}]"
+    ],
+    "loss": 0.4289794867740511
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"logistic\",{\"C\":1}]"
+    ],
+    "loss": 0.43318764588772013
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"logistic\",{\"C\":0.1}]"
+    ],
+    "loss": 0.4397085224872648
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"logistic\",{\"C\":10}]"
+    ],
+    "loss": 0.45193279451563034
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":5,\"min_samples_leaf\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4587862538011532
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":5,\"min_samples_leaf\":10,\"n_estimators\":300}]"
+    ],
+    "loss": 0.4592768913478856
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"forest\",{\"max_depth\":5,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.46052279419360725
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"knn\",{\"n_neighbors\":15}]"
+    ],
+    "loss": 0.5075654751104387
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"knn\",{\"n_neighbors\":40}]"
+    ],
+    "loss": 0.529526962078841
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"knn\",{\"n_neighbors\":80}]"
+    ],
+    "loss": 0.5670496719673657
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"gaussian\",{\"var_smoothing\":0.1}]"
+    ],
+    "loss": 1.064101482758704
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"gaussian\",{\"var_smoothing\":0.01}]"
+    ],
+    "loss": 1.1320624070057914
+  },
+  {
+    "group": "thermo",
+    "tier": "station",
+    "year": 2018,
+    "configs": [
+      "[\"gaussian\",{\"var_smoothing\":1e-09}]"
+    ],
+    "loss": 1.1389070540034172
+  }
+]

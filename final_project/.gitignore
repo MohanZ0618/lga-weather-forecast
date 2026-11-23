@@ -1,0 +1,9 @@
+.deps/
+__pycache__/
+data/raw/
+data/rolling/days/
+data/rolling/metadata/
+data/rolling/raw_tail/
+data/rolling/source_checks.sqlite*
+preview/
+build/

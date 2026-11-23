@@ -1,0 +1,9 @@
+{
+  "group": "thermo",
+  "tier": "fixed",
+  "year": 2021,
+  "configs": [
+    "[\"threshold\",{\"C\":1}]"
+  ],
+  "loss": 0.2697980928920731
+}

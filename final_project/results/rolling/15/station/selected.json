@@ -1,0 +1,10 @@
+{
+  "group": "base",
+  "tier": "station",
+  "year": 2018,
+  "configs": [
+    "[\"threshold\",{\"C\":1}]",
+    "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":3,\"n_estimators\":150}]"
+  ],
+  "loss": 0.1016314579339629
+}

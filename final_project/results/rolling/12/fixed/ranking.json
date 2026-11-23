@@ -1,0 +1,282 @@
+[
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"threshold\",{\"C\":1}]"
+    ],
+    "loss": 0.21652927299631883
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"threshold\",{\"C\":1}]",
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2209441364435588
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"threshold\",{\"C\":10}]"
+    ],
+    "loss": 0.22587640817510668
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"threshold\",{\"C\":0.1}]"
+    ],
+    "loss": 0.24036766949531843
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.24981826248164407
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.25026841684854945
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2545082075529183
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.25464847804279395
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":2,\"n_estimators\":150}]"
+    ],
+    "loss": 0.261078907100253
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.04,\"max_depth\":2,\"n_estimators\":200}]"
+    ],
+    "loss": 0.2612230615735088
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2614720247841867
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":3,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2626588403151668
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":3,\"n_estimators\":150}]"
+    ],
+    "loss": 0.2639061061573322
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.04,\"max_depth\":3,\"n_estimators\":200}]"
+    ],
+    "loss": 0.26429107604706675
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":10,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2655093687841355
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":10,\"n_estimators\":300}]"
+    ],
+    "loss": 0.26564604103313433
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.04,\"max_depth\":5,\"n_estimators\":200}]"
+    ],
+    "loss": 0.2664787754171379
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.06,\"max_depth\":5,\"n_estimators\":150}]"
+    ],
+    "loss": 0.2690101342522459
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.26914514722631006
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":5,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+    ],
+    "loss": 0.27134015044705156
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":5,\"min_samples_leaf\":5,\"n_estimators\":300}]"
+    ],
+    "loss": 0.27261216452197445
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"forest\",{\"max_depth\":5,\"min_samples_leaf\":10,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2772045368534758
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"logistic\",{\"C\":1}]"
+    ],
+    "loss": 0.288691500249313
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"logistic\",{\"C\":0.1}]"
+    ],
+    "loss": 0.3313127394951516
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"logistic\",{\"C\":10}]"
+    ],
+    "loss": 0.36426353872621925
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"knn\",{\"n_neighbors\":15}]"
+    ],
+    "loss": 0.3948694299812809
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"knn\",{\"n_neighbors\":40}]"
+    ],
+    "loss": 0.44381983210951836
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"knn\",{\"n_neighbors\":80}]"
+    ],
+    "loss": 0.5058185828282135
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"gaussian\",{\"var_smoothing\":1e-09}]"
+    ],
+    "loss": 0.5575303077604749
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"gaussian\",{\"var_smoothing\":0.01}]"
+    ],
+    "loss": 0.557596406222226
+  },
+  {
+    "group": "both",
+    "tier": "fixed",
+    "year": 2021,
+    "configs": [
+      "[\"gaussian\",{\"var_smoothing\":0.1}]"
+    ],
+    "loss": 0.5712504591531261
+  }
+]

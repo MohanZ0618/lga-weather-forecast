@@ -1,0 +1,1 @@
+{"schema": 1, "version": "e07fbb9c44d4", "routing": {"nwp": "latest", "satellite": "upwind_cloud"}, "selected": {"station": "analogue:0.25+logistic", "fixed": "forest", "latest": "warming calibrated", "local_cloud": "threshold calibrated", "upwind_cloud": "threshold calibrated"}, "selection_end": "2025-08-31", "training_end": "2024-12-31", "timezone": "America/New_York"}

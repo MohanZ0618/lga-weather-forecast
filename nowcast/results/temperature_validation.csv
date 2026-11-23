@@ -1,0 +1,10 @@
+tier,method,validation_mae,train_rows,validation_rows,calibration_rows
+day_station,baseline,7.4655,2550,240,357
+day_station,ridge,5.738371562086788,2550,240,357
+day_station,gradient_boosting,5.928836739710127,2550,240,357
+day_hrrr,baseline,2.135221655273433,551,100,148
+day_hrrr,ridge,2.064208075524138,551,100,148
+day_hrrr,gradient_boosting,2.2878983481780772,551,100,148
+rolling,baseline,1.0624430236816464,561,80,119
+rolling,ridge,0.8817376415090405,561,80,119
+rolling,gradient_boosting,1.0616526772424901,561,80,119

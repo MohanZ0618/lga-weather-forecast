@@ -2,6 +2,14 @@
 
 CS4260 project by Mohan Zhang, Mingyeung Wu, and Maxwell Liss.
 
+The default **Polymarket 历史回放** page replays the archived same-day probabilities at 09:00, 12:00 and 15:00 New York time. Choose a date and cutoff, inspect the probability of each listed bracket, and reveal the official settlement. The **Forecast comparison** page in the sidebar plots the previous-noon forecast, same-day updates, measured temperatures, and forecast errors for a common target date. It offers both 5°F ranges and the original five categories. The [forecast guide](nowcast/README.md) explains the two horizons and their held-out scores.
+
+The **Latest observations** page uses a quarter-hour model from 06:00 through
+20:00 New York time with airport METAR, HRRR cycles, and GOES-East cloud masks.
+**Fusion backtest** replays its evaluated forecasts. The original three-cutoff
+study is available under **Historical replay**. See the [nowcast guide](nowcast/README.md)
+for launch, data coverage, and reproduction commands.
+
 The repository includes processed observations, fitted models, experiment results, and reports. After installing the dependencies, run `streamlit run app.py` to open the demo. The raw NOAA CSVs are downloaded and cached by `python weather.py`. Their source URLs and SHA-256 hashes are recorded in `data/raw/manifest.json`.
 
 The original proposal forecast the next day's high. This implementation predicts **today's final hourly-observation maximum at LGA** at 09:00, 12:00, and 15:00 New York time. It returns probabilities for five Fahrenheit bands (below 40, 40 to below 55, 55 to below 70, 70 to below 85, and 85 or above). The target is an hourly-observation maximum and can differ from the official daily maximum or a settlement value.
@@ -50,4 +58,4 @@ The first training run downloads 12 official NOAA files. Later runs reuse the or
 
 ## Demo
 
-Historical replay uses the selected artifact for the chosen date and cutoff and shows the observed high alongside the distribution. Latest observations makes a manual 48-hour METAR request and evaluates the latest scheduled cutoff reached today in New York. It requires a recent LGA observation and displays the timestamps of the readings used. Historical availability is based on observation time. Publication delays and differences between the archive and live feed can affect the inputs. [Aviation Weather Center Data API](https://aviationweather.gov/data/api/)
+Historical replay shows the observed high alongside the original three-cutoff model's distribution. Latest observations refreshes automatically while open, using the latest scheduled New York cutoff, four airports' METAR reports, HRRR and GOES-East. The page shows observation and publication times and the input set used. Fusion backtest displays the frozen system's saved out-of-sample probabilities. The [nowcast guide](nowcast/README.md) includes the independent local training command and measured results. [Aviation Weather Center Data API](https://aviationweather.gov/data/api/)

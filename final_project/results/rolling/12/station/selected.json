@@ -1,0 +1,10 @@
+{
+  "group": "both",
+  "tier": "station",
+  "year": 2021,
+  "configs": [
+    "[\"threshold\",{\"C\":1}]",
+    "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+  ],
+  "loss": 0.24910497320155303
+}

@@ -1,0 +1,22 @@
+{
+  "verified_events": 660,
+  "scored_dates": 430,
+  "mapped_forecasts": 1288,
+  "mapped_bin_probabilities": 12116,
+  "overlap_days": 67,
+  "overlap_integer_agreement": 67,
+  "settlement_crosscheck": {
+    "noaa_timeseries": {
+      "count": 61,
+      "sum": 61
+    },
+    "routine_metar": {
+      "count": 30,
+      "sum": 30
+    },
+    "wunderground": {
+      "count": 566,
+      "sum": 566
+    }
+  }
+}

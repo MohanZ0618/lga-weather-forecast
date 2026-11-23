@@ -1,0 +1,13 @@
+cohort,hour,baseline,candidate,n,delta_log_loss
+Observations,9,LGA,Four stations,361,-0.017027690302549532
+Observations,12,LGA,Four stations,361,-0.011190021401024762
+Observations,15,LGA,Four stations,361,-0.0035999596062254564
+Observations,9,Four stations,Four stations + trends,361,0.005048641550564089
+Observations,12,Four stations,Four stations + trends,361,0.0007801316041868759
+Observations,15,Four stations,Four stations + trends,361,-0.0007435625632055249
+Observations,9,Remaining warming,Four stations + trends,361,-0.08445411461953956
+Observations,12,Remaining warming,Four stations + trends,361,-0.044503494650288154
+Observations,15,Remaining warming,Four stations + trends,361,-0.009986861216820393
+Matched HRRR,9,Four stations + trends,Four stations + trends + HRRR,359,-0.14909694669635049
+Matched HRRR,12,Four stations + trends,Four stations + trends + HRRR,359,-0.03358020307254789
+Matched HRRR,15,Four stations + trends,Four stations + trends + HRRR,359,-0.0002076304961045712

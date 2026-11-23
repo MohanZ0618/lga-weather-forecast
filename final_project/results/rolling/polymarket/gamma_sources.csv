@@ -1,0 +1,15 @@
+url,sha256,events
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=0&end_date_max=2026-11-22T00%3A00%3A00Z,a98e67acdf493d321a2dc78a04cfd959535d756325a69d28ed839b98e2469ff0,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=50&end_date_max=2026-11-22T00%3A00%3A00Z,dd1481f61a06fa5b571c2ee24cd8363a721760a4c418f32537f7672f2517fee4,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=100&end_date_max=2026-11-22T00%3A00%3A00Z,c175137420bea1305a5ddeb4a090983492487a781b8250dec4e82bb3e6d1e9a7,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=150&end_date_max=2026-11-22T00%3A00%3A00Z,b0b8b37cffe73430923313f2461ca0d722e4b5b8ae111ed6cfd653bf698eb8cd,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=200&end_date_max=2026-11-22T00%3A00%3A00Z,ef034a1ff270d130e7f40c5469d62b39b30c79be4906583610b3c39f2f2f7e32,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=250&end_date_max=2026-11-22T00%3A00%3A00Z,8c1a4ade6b94c5307830c43b3d7d0d567254daff49ff6e75749f600e19152e35,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=300&end_date_max=2026-11-22T00%3A00%3A00Z,3801120b4d64a2d32c375037a4a137157883948372e836364e4bd7e2b25d26db,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=350&end_date_max=2026-11-22T00%3A00%3A00Z,7bc0198b4e646a48f6654f7716f46fe2fd201b8d466e553c962c7a13f46caf73,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=400&end_date_max=2026-11-22T00%3A00%3A00Z,2e311450c4a7264f68b6f22659d0858e73b155d03caf43c86022e259bf6a2321,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=450&end_date_max=2026-11-22T00%3A00%3A00Z,49b445740b1567b63c208e8ec756b8e1f6ec4a2f2a9e04705e48818384f6ae2b,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=500&end_date_max=2026-11-22T00%3A00%3A00Z,38e98b249d67e33a9a82534045aca57fc46617e25d9bc2957a9b49955ec992ec,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=550&end_date_max=2026-11-22T00%3A00%3A00Z,e369d17ae24bc3802f67d3c52f5da6450d7c0434ab138eace8fffc0937ab45b2,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=600&end_date_max=2026-11-22T00%3A00%3A00Z,b30380dae388ff2d2862f43903e8cb15c8e20d1d344747fb98324b43b2a1f09d,50
+https://gamma-api.polymarket.com/events?series_id=10005&closed=true&order=endDate&ascending=true&limit=50&offset=650&end_date_max=2026-11-22T00%3A00%3A00Z,6dcf300eb04da7749358dfbc9c7888bbfdb856e90a3c0ff57d17f46eec48fb40,14

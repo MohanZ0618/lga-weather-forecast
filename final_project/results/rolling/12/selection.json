@@ -1,0 +1,45 @@
+{
+  "selected": {
+    "group": "both",
+    "tier": "latest",
+    "year": 2021,
+    "configs": [
+      "[\"threshold\",{\"C\":1}]",
+      "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":3,\"n_estimators\":300}]"
+    ],
+    "loss": 0.2038234797168018
+  },
+  "finalists": [
+    {
+      "group": "both",
+      "tier": "station",
+      "year": 2021,
+      "configs": [
+        "[\"threshold\",{\"C\":1}]",
+        "[\"forest\",{\"max_depth\":10,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+      ],
+      "loss": 0.24910497320155303
+    },
+    {
+      "group": "both",
+      "tier": "fixed",
+      "year": 2021,
+      "configs": [
+        "[\"threshold\",{\"C\":1}]"
+      ],
+      "loss": 0.21652927299631883
+    },
+    {
+      "group": "both",
+      "tier": "latest",
+      "year": 2021,
+      "configs": [
+        "[\"threshold\",{\"C\":1}]",
+        "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":3,\"n_estimators\":300}]"
+      ],
+      "loss": 0.2038234797168018
+    }
+  ],
+  "tie": 0.001,
+  "frozen": "2026-11-23T04:42:13.547245+00:00"
+}

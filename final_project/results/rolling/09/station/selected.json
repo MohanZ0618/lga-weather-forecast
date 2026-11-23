@@ -1,0 +1,10 @@
+{
+  "group": "thermo",
+  "tier": "station",
+  "year": 2018,
+  "configs": [
+    "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":3,\"n_estimators\":300}]",
+    "[\"forest\",{\"max_depth\":null,\"min_samples_leaf\":2,\"n_estimators\":300}]"
+  ],
+  "loss": 0.4066185235567012
+}

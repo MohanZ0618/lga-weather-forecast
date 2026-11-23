@@ -1,0 +1,7 @@
+hour,position,group,tier,year,configs,loss,loss_2023,loss_2024,loss_2025
+9,selected,thermo,latest,2021,"['[""threshold"",{""C"":1}]']",0.26562062529753944,0.2807545767985975,0.3016180549777707,0.21448924411625
+9,best alternative,thermo,latest,2021,"['[""threshold"",{""C"":10}]']",0.26835738169086215,0.2921257838290912,0.3026556892028816,0.2102906720406135
+12,selected,both,latest,2021,"['[""threshold"",{""C"":1}]', '[""boost"",{""learning_rate"":0.03,""max_depth"":3,""n_estimators"":300}]']",0.2038234797168018,0.2087636648905803,0.2402484241124281,0.1624583501473969
+12,best alternative,both,latest,2021,"['[""threshold"",{""C"":1}]']",0.2121469353598353,0.2206297980470858,0.2414393293054889,0.174371678726931
+15,selected,base,latest,2021,"['[""threshold"",{""C"":1}]', '[""boost"",{""learning_rate"":0.03,""max_depth"":2,""n_estimators"":300}]']",0.09892671231741812,0.0905135551830683,0.1216906592013528,0.0845759225678331
+15,best alternative,base,station,2018,"['[""threshold"",{""C"":1}]', '[""boost"",{""learning_rate"":0.06,""max_depth"":3,""n_estimators"":150}]']",0.1016314579339629,0.0870112452671828,0.1259411722471088,0.091941956287597

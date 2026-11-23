@@ -1,0 +1,10 @@
+{
+  "group": "base",
+  "tier": "latest",
+  "year": 2021,
+  "configs": [
+    "[\"threshold\",{\"C\":1}]",
+    "[\"boost\",{\"learning_rate\":0.03,\"max_depth\":2,\"n_estimators\":300}]"
+  ],
+  "loss": 0.09892671231741812
+}

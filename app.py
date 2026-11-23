@@ -2,44 +2,19 @@
 
 import joblib
 import pandas as pd
-import requests
+import json
+import sys
+from pathlib import Path
 import streamlit as st
 
-from weather import (
-    CATEGORY_LABELS, HOURS, OUTPUTS, PROCESSED, STATIONS, TZ,
-    five_probabilities, local_cutoff, make_features, observation_table, previous_day_maxima,
-)
+from weather import CATEGORY_LABELS, HOURS, OUTPUTS, PROCESSED, five_probabilities
+from market_replay import market_replay
 
-METAR_URL = "https://aviationweather.gov/api/data/metar"
-METAR_FIELDS = ["icaoId", "obsTime", "temp", "dewp", "wspd"]
-
-
-def fetch_metar():
-    response = requests.get(
-        METAR_URL,
-        params={"ids": ",".join(f"K{station}" for station in STATIONS), "format": "json", "hours": 48},
-        timeout=(10, 30),
-    )
-    response.raise_for_status()
-    if response.status_code == 204:
-        raise ValueError("Aviation Weather Center returned no METAR observations.")
-    records = response.json()
-    if not isinstance(records, list) or not records:
-        raise ValueError("Expected a nonempty list of METAR observations.")
-    frame = pd.DataFrame(records)
-    if not {"icaoId", "obsTime"}.issubset(frame.columns):
-        raise ValueError("The METAR response is missing station IDs or observation times.")
-    frame = frame.reindex(columns=METAR_FIELDS)
-    observations = {}
-    for station in STATIONS:
-        rows = frame.loc[frame["icaoId"] == f"K{station}"]
-        observations[station] = observation_table(
-            pd.to_datetime(pd.to_numeric(rows["obsTime"], errors="coerce"), unit="s", errors="coerce", utc=True),
-            pd.to_numeric(rows["temp"], errors="coerce"),
-            pd.to_numeric(rows["dewp"], errors="coerce"),
-            pd.to_numeric(rows["wspd"], errors="coerce") * 0.514444,
-        )
-    return observations
+# The training and standalone replay entry points use these same module names.
+sys.path.insert(0, str(Path(__file__).resolve().parent / "nowcast"))
+from runtime import ARTIFACT, CACHE, latest_slot, run
+from comparison_view import forecast_comparison, saved_temperature
+from temperature import FINE_LABELS, MODEL
 
 
 def get_artifact(hour):
@@ -75,52 +50,102 @@ def historical_replay():
     st.caption(f"Model stations: {', '.join(artifact['stations'])}")
 
 
+def fusion_backtest():
+    path = ARTIFACT.parent.parent / "results" / "predictions.parquet"
+    if not path.exists():
+        st.info("Run python nowcast/study.py to generate the evaluated forecasts.")
+        return
+    rows = pd.read_parquet(path, filters=[("level","==","deployed"),("delay","==",0)])
+    day = st.selectbox("Evaluated New York date", sorted(rows.day.unique(), reverse=True))
+    selected = rows.loc[rows.day.eq(day)].sort_values("cutoff")
+    stamp = st.selectbox("Forecast time", list(selected.cutoff),
+                         format_func=lambda s: pd.Timestamp(s).strftime("%H:%M %Z"))
+    row = selected.loc[selected.cutoff.eq(stamp)].iloc[0]
+    probs = pd.Series([row[f"p{i}"] for i in range(5)],index=CATEGORY_LABELS,name="Probability")
+    st.bar_chart(probs,horizontal=True)
+    st.write(f"Predicted band: {probs.idxmax()}. Observed hourly maximum: {row['actual']:.2f}°F.")
+    st.caption(f"Selected model input set: {row['route']}.")
+
+
+@st.fragment(run_every="60s")
 def latest_observations():
-    now = pd.Timestamp.now(tz=TZ)
-    day = now.date()
-    reached = [hour for hour in HOURS if local_cutoff(day, hour) <= now]
-    if not reached:
-        st.info("Today's first prediction is available at 09:00 New York time.")
+    at = latest_slot()
+    st.caption("Every 15 minutes from 06:00 through 20:00 New York time while this page is open.")
+    if not ARTIFACT.exists():
+        st.error("Train the quarter-hour models with python nowcast/study.py.")
         return
-
-    hour = reached[-1]
-    st.write(f"Today's latest scheduled cutoff is **{format_hour(hour)}** New York time.")
-    if not st.button("Fetch and predict", type="primary"):
-        return
-
-    try:
-        with st.spinner("Fetching recent METAR observations…"):
-            observations = fetch_metar()
-    except (requests.RequestException, ValueError) as error:
-        st.error(f"METAR request failed: {error}")
-        return
-
-    artifact = get_artifact(hour)
-    stations = artifact["stations"]
-    maxima = {station: previous_day_maxima(observations[station]) for station in stations}
-    features, timestamps = make_features(observations, maxima, stations, day, hour)
-    if timestamps["LGA"] is None:
-        st.warning("LGA has missing or stale data. The cutoff requires an observation within the preceding hour.")
-        return
-
-    show_probabilities(artifact, pd.DataFrame([features]))
-    st.dataframe(pd.DataFrame([
-        {"Station": station, "Latest input observation (New York time)": (
-            timestamp.strftime("%Y-%m-%d %H:%M:%S %Z") if timestamp is not None else "Missing or stale"
-        )}
-        for station, timestamp in timestamps.items()
-    ]), hide_index=True)
-    st.caption("Live inputs come from Aviation Weather Center METAR. The models were trained on NOAA Global Hourly.")
+    with st.spinner("Reading the latest published weather data…"):
+        result = run(at)
+    if result["status"] != "ok":
+        st.warning(f"Forecast unavailable for {at:%H:%M %Z}. " + result.get("reason", "The LGA observation is missing or stale."))
+        result = result.get("last_success")
+        if not result:
+            return
+    stamp = pd.Timestamp(result["cutoff"])
+    labels = {"station":"Airport observations", "latest":"Airports + HRRR",
+              "local_cloud":"Airports + HRRR + local cloud", "upwind_cloud":"Airports + HRRR + upwind cloud"}
+    st.subheader(stamp.strftime("%b %d, %Y · %H:%M %Z"))
+    folder = CACHE/"live"/result["version"]
+    input_path = folder / stamp.strftime("%Y%m%d-%H%M.inputs.json")
+    fine = False
+    if MODEL.exists() and input_path.exists():
+        fine = st.radio("Range width",["5°F bands","Original five bands"],horizontal=True) == "5°F bands"
+    bands = FINE_LABELS if fine else CATEGORY_LABELS
+    values = saved_temperature(input_path,result)[1] if fine else result["probabilities"]
+    probs = pd.Series(values, index=bands, name="Probability")
+    st.metric("Most likely daily high", probs.idxmax(), help="Maximum of retained hourly observations at LaGuardia.")
+    st.caption(f"{labels[result['tier']]} · model {result['version']}")
+    st.bar_chart(probs, horizontal=True)
+    st.dataframe(probs.to_frame(), column_config={"Probability":st.column_config.NumberColumn(format="percent")})
+    history = []
+    for file in sorted(folder.glob(stamp.strftime("%Y%m%d")+"-????.json")):
+        saved = json.loads(file.read_text())
+        if fine:
+            inputs = file.with_suffix(".inputs.json")
+            if not inputs.exists():
+                continue
+            _, values = saved_temperature(inputs,saved)
+        else:
+            values = saved["probabilities"]
+        if values is not None:
+            history.append({"Time":pd.Timestamp(saved["cutoff"]).strftime("%H:%M"), **dict(zip(bands,values))})
+    if history:
+        trends = pd.DataFrame(history).set_index("Time")
+        if fine:
+            trends = trends[trends.mean().nlargest(3).index.tolist()]
+        st.line_chart(trends, x_label="Forecast time (New York)", y_label="Probability")
+    with st.expander("Compare available input sets · original five bands"):
+        comparisons = pd.DataFrame(result["available_predictions"],index=CATEGORY_LABELS).rename(columns=labels)
+        st.dataframe(comparisons.style.format("{:.1%}"))
+    with st.expander("Data timestamps and source status"):
+        st.write("New York station observation and receipt times")
+        st.dataframe(pd.DataFrame({"Observed":result["station_times"],"Received":result["station_receipts"]}))
+        st.write({"HRRR run":result["hrrr_run"],"HRRR available":result["hrrr_available"],
+                  "GOES scan end":result["satellite_scan"],"GOES available":result["satellite_available"]})
+        inputs = result["inputs"]
+        if inputs["sat10"] is not None:
+            st.write(f"Cloud cover within 10 km: {inputs['sat10']:.0%}.")
+        if inputs["nwp_high"] is not None:
+            st.write(f"HRRR remaining hourly maximum: {inputs['nwp_high']:.1f}°F.")
+        if result["source_errors"]:
+            st.write(result["source_errors"])
 
 
 def main():
-    st.set_page_config(page_title="LGA daily high forecast", layout="centered")
+    st.set_page_config(page_title="LGA · 最高温预测", layout="wide")
+    mode = st.sidebar.radio("项目视图", ("Polymarket 历史回放", "Forecast comparison", "Latest observations",
+                                    "Fusion backtest", "Historical replay"))
+    if mode == "Polymarket 历史回放":
+        market_replay()
+        return
     st.title("LGA daily high forecast")
-    st.write("Estimate the five-category probability distribution for today's final hourly-observation maximum.")
-    mode = st.radio("Mode", ("Historical replay", "Latest observations"), horizontal=True)
     try:
-        if mode == "Historical replay":
+        if mode == "Forecast comparison":
+            forecast_comparison(CATEGORY_LABELS)
+        elif mode == "Historical replay":
             historical_replay()
+        elif mode == "Fusion backtest":
+            fusion_backtest()
         else:
             latest_observations()
     except FileNotFoundError:

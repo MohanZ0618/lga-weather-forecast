@@ -1,0 +1,9 @@
+{
+  "group": "both",
+  "tier": "fixed",
+  "year": 2021,
+  "configs": [
+    "[\"threshold\",{\"C\":1}]"
+  ],
+  "loss": 0.21652927299631883
+}
