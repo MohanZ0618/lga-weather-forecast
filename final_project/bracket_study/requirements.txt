@@ -1,0 +1,4 @@
+-r ../../requirements.txt
+catboost==1.2.10
+threadpoolctl==3.8.0
+scipy==1.18.1

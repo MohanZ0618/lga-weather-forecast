@@ -1,0 +1,14 @@
+{
+  "family": "blend",
+  "tier": "nbm",
+  "params": {
+    "C": 1.0,
+    "depth": 4,
+    "l2": 3.0,
+    "rate": 0.05,
+    "trees": 400
+  },
+  "validation_log_loss": 1.1537736767047542,
+  "days": 86,
+  "end": "2025-05-01"
+}

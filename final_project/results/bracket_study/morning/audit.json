@@ -1,0 +1,9 @@
+{
+  "forecast_days": 434,
+  "issued_at": "09:00 America/New_York",
+  "station_cutoff": "08:55",
+  "last_static_label": "2025-08-24",
+  "first_monthly_label_end": "2025-08-24",
+  "last_monthly_label_end": "2026-10-24",
+  "all_time_checks_passed": true
+}

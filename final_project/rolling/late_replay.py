@@ -19,7 +19,7 @@ URL = "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py"
 FIELDS = ["tmpf","dwpf","relh","drct","sknt","vsby","skyc1","skyc2","skyc3","skyc4"]
 
 
-def station_archive():
+def station_archive(*, cached_only=False):
     path = STORE/"raw_tail"/"iem_metar.csv"
     params = dict(station=list(STATION_IDS),data=FIELDS,year1=2026,month1=8,day1=31,
                   year2=2026,month2=11,day2=23,tz="Etc/UTC",format="onlycomma",
@@ -27,6 +27,8 @@ def station_archive():
     url = requests.Request("GET",URL,params=params).prepare().url
     if path.exists():
         content = path.read_bytes()
+    elif cached_only:
+        raise FileNotFoundError(path)
     else:
         response = requests.get(url,timeout=90)
         response.raise_for_status()
@@ -37,8 +39,9 @@ def station_archive():
     if not path.exists():
         path.parent.mkdir(parents=True,exist_ok=True)
         path.write_bytes(content)
-    (OUT/"iem_source.json").write_text(json.dumps(dict(url=url,sha256=hashlib.sha256(content).hexdigest(),
-                                                   reports=len(df),first=df.valid.min(),last=df.valid.max()),indent=2))
+    if not cached_only:
+        (OUT/"iem_source.json").write_text(json.dumps(dict(url=url,sha256=hashlib.sha256(content).hexdigest(),
+                                                       reports=len(df),first=df.valid.min(),last=df.valid.max()),indent=2))
     tables = {}
     for station,g in df.groupby("station"):
         g = g.set_index(pd.to_datetime(g.valid,utc=True).dt.tz_convert(TZ)).sort_index(kind="stable")

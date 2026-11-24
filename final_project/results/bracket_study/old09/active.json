@@ -1,0 +1,12 @@
+{
+  "model": "../09/frozen.joblib",
+  "sha256": "47e5abd1bca97819bf227c185ff81827387a6da9e93cb9a34228ce0e195a1814",
+  "hour": 9,
+  "family": "threshold + hurdle",
+  "setting": {
+    "threshold_weight": 0.5,
+    "bias_f": 0.0,
+    "digit_power": 0.0,
+    "early_floor": false
+  }
+}

@@ -132,10 +132,10 @@ def latest_observations():
 
 
 def main():
-    st.set_page_config(page_title="LGA · 最高温预测", layout="wide")
-    mode = st.sidebar.radio("项目视图", ("Polymarket 历史回放", "Forecast comparison", "Latest observations",
+    st.set_page_config(page_title="LaGuardia High Temperature Forecast", layout="wide")
+    mode = st.sidebar.radio("Project view", ("Polymarket replay", "Forecast comparison", "Latest observations",
                                     "Fusion backtest", "Historical replay"))
-    if mode == "Polymarket 历史回放":
+    if mode == "Polymarket replay":
         market_replay()
         return
     st.title("LGA daily high forecast")

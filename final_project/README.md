@@ -4,6 +4,8 @@ CS4260 Final Project · Mohan Zhang, Mingyeung Wu, Maxwell Liss
 
 At 09:00, 12:00 and 15:00 New York time the model estimates the probability that LaGuardia's same-day hourly-observation maximum is below 40°F, 40 to below 55°F, 55 to below 70°F, 70 to below 85°F, or 85°F and above.
 
+The [market-bracket experiment](bracket_study/README.md) evaluates the actual daily NYC temperature contracts at the same three issue times. The Streamlit replay opens on the selected models. They picked the winning bracket in 746 of 1,239 forecasts (60.2%) across 413 days with all three forecasts. At 09:00 alone they were correct on 202 of those days (48.9%). The [issue-time and morning-model comparison](results/bracket_study/old09/REPORT.md) reports shared versus separate training and early-morning calibration. The [original results report (Chinese)](results/bracket_study/REPORT.zh-CN.md) includes seasonal and listing-only baselines and the course five-band comparison.
+
 ## Reproduce the paper
 
 Run the following from the extracted archive root using Python 3.13.

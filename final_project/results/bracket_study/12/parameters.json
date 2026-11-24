@@ -1,0 +1,14 @@
+{
+  "family": "monotone_xgb",
+  "tier": "nbm",
+  "params": {
+    "C": 1.0,
+    "depth": 6,
+    "l2": 3.5926258799105617,
+    "rate": 0.017309666976583246,
+    "trees": 426
+  },
+  "validation_log_loss": 1.0899744186563092,
+  "days": 118,
+  "end": "2025-09-01"
+}

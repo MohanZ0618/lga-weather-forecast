@@ -7,9 +7,10 @@ import streamlit as st
 
 PROJECT = Path(__file__).resolve().parent / "final_project"
 MARKET = PROJECT / "results" / "rolling" / "polymarket"
+BRACKET = PROJECT / "results" / "bracket_study"
 ZONE = "America/New_York"
 RULES = {"wunderground": "Weather Underground · KLGA", "noaa_timeseries": "NOAA · KLGA",
-         "routine_metar": "Aviation Weather Center · KLGA 常规 METAR"}
+         "routine_metar": "Aviation Weather Center · KLGA routine METAR"}
 
 STYLE = """
 <style>
@@ -50,6 +51,35 @@ def csv(name):
     return read_csv(path, path.stat().st_mtime_ns)
 
 
+@st.cache_data(show_spinner=False)
+def selected_bins(main_path, tail_path, metadata_path, stamps):
+    main = pd.read_csv(main_path).query("delay == 0")[["date","hour","market_id","p"]]
+    tail = pd.read_csv(tail_path).assign(hour=9)
+    probs = pd.concat([main,tail],ignore_index=True)
+    meta = pd.read_parquet(metadata_path,columns=["date","market_id","slug","bracket","regime","low","high","winner"])
+    meta["date"] = pd.to_datetime(meta.date).dt.strftime("%Y-%m-%d")
+    meta["market_id"] = meta.market_id.astype(str)
+    probs["market_id"] = probs.market_id.astype(str)
+    bins = probs.merge(meta.rename(columns={"slug":"event"}),on=["date","market_id"],how="left",validate="many_to_one")
+    if bins.bracket.isna().any() or bins.duplicated(["date","hour","market_id"]).any():
+        raise ValueError("Inconsistent archived forecast and market IDs")
+    return bins
+
+
+def overview(bins):
+    picks = bins.loc[bins.groupby(["date","hour"]).p.idxmax()]
+    common = picks.pivot(index="date",columns="hour",values="winner").reindex(columns=[9,12,15]).dropna()
+    if common.empty:
+        return
+    hits = int(common.to_numpy(bool).sum())
+    st.subheader("How often did the top bracket win?")
+    st.write(f"Across {len(common)} days with forecasts at all three times, the top pick matched the official settlement in "
+             f"**{hits:,}/{common.size:,} ({hits/common.size:.1%})** forecasts.")
+    for col,hour in zip(st.columns(3),common.columns):
+        col.metric(f"{hour:02}:00 forecast",f"{common[hour].mean():.1%}")
+    st.caption("All three forecasts predict the same daily high. For a morning-only decision, use the 09:00 score.")
+
+
 def local_stamp(value):
     return pd.Timestamp(value).tz_convert(ZONE).strftime("%m/%d %H:%M %Z")
 
@@ -79,84 +109,118 @@ def bars(frame, top):
 
 def market_replay():
     st.html(STYLE)
-    st.title("LaGuardia 最高温回放")
-    st.write("用纽约当天 09:00、12:00 或 15:00 之前的气象资料，回看模型怎样预测当天最高温。")
-    st.caption("历史回测 · 训练数据截至 2025 年 8 月 31 日 · 结算结果默认隐藏")
-    if not (MARKET / "contract_probabilities.csv.gz").exists():
-        st.info("本地缺少市场回放结果。生成步骤见 final_project/rolling/README.md。")
+    st.title("LaGuardia daily high replay")
+    st.write("Choose a New York date and forecast time to see which listed temperature bracket was most likely to win.")
+    st.caption("Historical backtest · Training data through August 31, 2025 · Settlement hidden until revealed")
+    selected_files = (BRACKET / "bracket_probabilities.csv.gz",BRACKET / "morning" / "reference_tail.csv.gz",
+                      MARKET / "contracts.parquet")
+    versions = []
+    if all(p.exists() for p in selected_files):
+        versions.append("Selected models by forecast time")
+    if (MARKET / "contract_probabilities.csv.gz").exists():
+        versions.append("Earlier model archive")
+    if not versions:
+        st.info("Market replay data is missing. See final_project/bracket_study/README.md for reproduction steps.")
         return
-    all_bins = csv("contract_probabilities.csv.gz")
+    version = st.radio("Model version",versions,horizontal=True)
+    selected = version=="Selected models by forecast time"
+    all_bins = (selected_bins(*selected_files,tuple(p.stat().st_mtime_ns for p in selected_files))
+                if selected else csv("contract_probabilities.csv.gz"))
+    overview(all_bins)
     dates = sorted(all_bins.date.unique(), reverse=True)
     date_col, hour_col = st.columns([1, 1.5])
-    day = date_col.selectbox("历史交易日", dates)
+    full_dates = all_bins.groupby("date").hour.nunique()
+    complete = full_dates.index[full_dates.eq(3)]
+    index = dates.index(complete.max()) if selected and len(complete) else 0
+    day = date_col.selectbox("Market date", dates,index=index,key=f"date_{version}")
     today = all_bins.loc[all_bins.date.eq(day)]
     hours = sorted(today.hour.unique().tolist())
-    hour = hour_col.radio("预测时点 · 纽约时间", hours, format_func=lambda h:f"{h:02}:00",
+    hour = hour_col.radio("Forecast time (New York)", hours, format_func=lambda h:f"{h:02}:00",
                           horizontal=True)
     view = today.loc[today.hour.eq(hour)].sort_values("low", na_position="first")
     pick = view.loc[view.p.idxmax()]
-    st.html(f'<div class="replay-lead"><div><small>{day} · {hour:02}:00 预测的首选温区</small>'
-            f'<strong>{escape(pick.bracket)}</strong></div><div class="chance"><small>模型概率</small>'
+    st.html(f'<div class="replay-lead"><div><small>{day} · {hour:02}:00 top bracket</small>'
+            f'<strong>{escape(pick.bracket)}</strong></div><div class="chance"><small>Model probability</small>'
             f'<strong>{pick.p:.1%}</strong></div></div>')
-    reveal = st.toggle("揭示当日官方结算", key=f"settlement_{day}", value=False)
+    reveal = st.toggle("Reveal official settlement", key=f"settlement_{day}", value=False)
     if reveal:
         winner = view.loc[view.winner].iloc[0]
         settled = csv("settlement_check.csv")
         closed = settled.loc[settled.date.eq(day), "closed"].iloc[0]
-        verdict = "命中" if pick.bracket == winner.bracket else "未命中"
-        st.info(f"官方结算 **{winner.bracket}**　·　{hour:02}:00 首选{verdict}　·　"
-                f"该时点给结算档 **{winner.p:.1%}**。赢家合约关闭于 {local_stamp(closed)}。")
-        st.markdown(f"[查看当天合约和结算规则](https://polymarket.com/event/{pick.event})")
+        verdict = "correct" if pick.bracket == winner.bracket else "incorrect"
+        st.info(f"The winning bracket was **{winner.bracket}**. The {hour:02}:00 top pick was {verdict}. "
+                f"The model gave the winner **{winner.p:.1%}**. The winning contract closed at {local_stamp(closed)}.")
+        st.markdown(f"[View the contract and settlement rules](https://polymarket.com/event/{pick.event})")
 
     left, right = st.columns([1.2, 1], gap="large")
     with left:
-        st.subheader("各温区概率")
+        st.subheader("Probability by bracket")
         bars(view, pick.bracket)
-        st.caption(f"使用当日挂牌的 {len(view)} 个温区。结算来源为 {RULES.get(pick.regime, pick.regime)}。")
-        with st.expander("一个温区的概率怎么算？"):
-            names = view.bracket.tolist()
-            name = st.selectbox("拆开查看 1°F 概率", names, index=names.index(pick.bracket),
-                                key=f"bin_{day}_{hour}")
-            bracket = view.loc[view.bracket.eq(name)].iloc[0]
-            path = MARKET / f"one_degree_{hour:02}.parquet"
-            terms = degree_terms(read_degrees(path, path.stat().st_mtime_ns).loc[pd.Timestamp(day)], bracket)
-            if len(terms) <= 4:
-                st.write(" + ".join(f"{d}°F（{v:.2%}）" for d,v in terms.items()) + f" = **{terms.sum():.2%}**")
-            else:
-                st.write(f"将 {name} 内每个整数温度的概率相加，总计 **{terms.sum():.2%}**。")
-                st.dataframe(pd.DataFrame({"整数 °F":terms.index,"概率":[f"{v:.4%}" for v in terms]}),
-                             hide_index=True, width="stretch")
+        st.caption(f"The market listed {len(view)} brackets and settled using {RULES.get(pick.regime, pick.regime)}.")
+        if selected:
+            st.caption("The model estimates the probability of exceeding each temperature threshold. The difference between adjacent thresholds gives the probability of their bracket.")
+        else:
+            degree_details(day,hour,view,pick)
 
     with right:
-        st.subheader("当时有哪些信息？")
-        path = PROJECT / "data" / "rolling" / "external.parquet"
-        if path.exists():
-            weather = read_weather(path, path.stat().st_mtime_ns)
-            snapshot = weather.loc[weather.date.eq(day) & weather.hour.eq(hour)]
-            if len(snapshot):
-                row = snapshot.iloc[0]
-                if pd.notna(row.latest_high):
-                    st.metric("HRRR 预报的当天剩余最高温", f"{row.latest_high:.1f} °F")
-                    st.caption(f"模式起报 {local_stamp(row.cycle_run)} · 档案可用 {local_stamp(row.cycle_available)}")
-                else:
-                    st.caption("该时点无可用的最新 HRRR 周期。模型可使用固定周期或机场观测。")
-                if pd.notna(row.sat10):
-                    st.caption(f"机场周围 10 公里卫星云量 {row.sat10:.0%} · 档案可用 {local_stamp(row.goes_available)}")
-        st.markdown("**截至这个时点的预测**")
-        history = today.loc[today.hour.le(hour)]
-        best = history.loc[history.groupby("hour").p.idxmax()].sort_values("hour")
-        st.dataframe(pd.DataFrame({"纽约时间":best.hour.map(lambda h:f"{h:02}:00"),"首选温区":best.bracket,
-                                   "概率":best.p.map(percent)}),hide_index=True,width="stretch")
+        weather_and_history(day,hour,today)
 
-    with st.expander("这是提前预测吗？模型如何得到这些数字？"):
-        st.write("这是同日历史回测。模型使用截至 2025 年 8 月 31 日的数据训练，再按每个交易日的时点重建预测。"
-                 "没有当日实时发布凭证。机场历史记录用观测时间近似接收时间；HRRR 和卫星使用归档可用时间。")
-        st.write("模型先看已观测最高温与最新可用天气预报，再用机场温度、湿度、风、升温趋势和云量估计偏差。"
-                 "09:00 使用梯度提升树，12:00 和 15:00 使用 Ridge 回归。"
-                 "根据历史预测误差为每个整数 °F 分配概率，再按当天挂牌区间相加。最终赢家用于事后评分。")
-    with st.expander("各时点在历史市场上表现如何？"):
+    with st.expander("How were the forecasts reconstructed?"):
+        st.write("Training used data through August 31, 2025. The replay reconstructs each forecast from data available by its issue time. "
+                 "The airport archive uses observation times as a proxy for receipt times. Weather model inputs use archived publication times.")
+        if selected:
+            st.write("The 09:00 forecast averages threshold logistic regression and a two-stage warming model. Noon and 15:00 each use a separately trained monotonic XGBoost model. "
+                     "They use four airports, HRRR and NBM forecasts. When a weather product is missing, logistic regression uses the available inputs. "
+                     "The November 7–21, 2026 extension covers 09:00 only.")
+        else:
+            st.write("The earlier archive uses gradient-boosted trees at 09:00 and ridge regression at noon and 15:00. "
+                     "Historical errors give a probability for each whole degree Fahrenheit, which is summed within each listed bracket.")
+    if not selected:
+        legacy_metrics()
+
+
+def degree_details(day,hour,view,pick):
+    with st.expander("How is a bracket probability calculated?"):
+        names = view.bracket.tolist()
+        name = st.selectbox("Show probabilities by whole degree", names, index=names.index(pick.bracket),
+                            key=f"bin_{day}_{hour}")
+        bracket = view.loc[view.bracket.eq(name)].iloc[0]
+        path = MARKET / f"one_degree_{hour:02}.parquet"
+        terms = degree_terms(read_degrees(path, path.stat().st_mtime_ns).loc[pd.Timestamp(day)], bracket)
+        if len(terms) <= 4:
+            st.write(" + ".join(f"{d}°F ({v:.2%})" for d,v in terms.items()) + f" = **{terms.sum():.2%}**")
+        else:
+            st.write(f"The probabilities of all whole degrees in {name} add up to **{terms.sum():.2%}**.")
+            st.dataframe(pd.DataFrame({"Whole degree (°F)":terms.index,"Probability":[f"{v:.4%}" for v in terms]}),
+                         hide_index=True, width="stretch")
+
+
+def weather_and_history(day,hour,today):
+    st.subheader("Weather available at forecast time")
+    path = PROJECT / "data" / "rolling" / "external.parquet"
+    if path.exists():
+        weather = read_weather(path, path.stat().st_mtime_ns)
+        snapshot = weather.loc[weather.date.eq(day) & weather.hour.eq(hour)]
+        if len(snapshot):
+            row = snapshot.iloc[0]
+            if pd.notna(row.latest_high):
+                st.metric("HRRR forecast high for the rest of the day", f"{row.latest_high:.1f} °F")
+                st.caption(f"Model run {local_stamp(row.cycle_run)} · Published {local_stamp(row.cycle_available)}")
+            else:
+                st.caption("No recent HRRR run was available at this time.")
+            if pd.notna(row.sat10):
+                st.caption(f"Cloud cover was {row.sat10:.0%} within 10 km of the airport · Published {local_stamp(row.goes_available)}")
+    st.markdown("**Forecasts available by this time**")
+    history = today.loc[today.hour.le(hour)]
+    best = history.loc[history.groupby("hour").p.idxmax()].sort_values("hour")
+    st.dataframe(pd.DataFrame({"New York time":best.hour.map(lambda h:f"{h:02}:00"),"Top bracket":best.bracket,
+                               "Probability":best.p.map(percent)}),hide_index=True,width="stretch")
+
+
+def legacy_metrics():
+    with st.expander("How did the earlier models perform at each forecast time?"):
         stats = csv("market_metrics.csv")
         stats = stats.loc[stats.period.eq("all") & stats.model.eq("selected")].sort_values("hour")
-        st.dataframe(pd.DataFrame({"时点":stats.hour.map(lambda h:f"{h:02}:00"),"交易日":stats.days,
-                                   "命中天数":stats.correct,"命中率":stats.accuracy.map(percent),
+        st.dataframe(pd.DataFrame({"Forecast time":stats.hour.map(lambda h:f"{h:02}:00"),"Market days":stats.days,
+                                   "Correct picks":stats.correct,"Accuracy":stats.accuracy.map(percent),
                                    "Log loss":stats.log_loss.round(3)}),hide_index=True,width="stretch")

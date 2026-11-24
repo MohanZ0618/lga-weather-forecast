@@ -1,0 +1,9 @@
+{
+  "data\\bracket_nbm.parquet": "0e796fb9390a7d1bfe04aba4134695e3bc440091e81c8f09a8c0e3604ea39419",
+  "data\\bracket_delay_floors.parquet": "d49165511a843d32ae9d8cd0e4bb93276994d374b71ae3f00055dc9384739f9f",
+  "data\\rolling\\stations.parquet": "a32620937eb2a5b4b723c3a683058be2b0b320963e62c3cc1b6cd05ac23168e9",
+  "data\\rolling\\external.parquet": "5f68b7b355cb8d07c14caaf38d5794a64e9ef8276f44ca7c739c4b72419c05d0",
+  "results\\rolling\\polymarket\\integer_labels.csv": "d6a8310055227f53f4a27b5ad16bffd1fa4c367888945ed019a9fc1d00c25c0b",
+  "results\\rolling\\polymarket\\contracts.parquet": "7c8e249c73714afdab80499b1311ce5a0383eecb0b9d79d5b53d298e259df206",
+  "results\\rolling\\polymarket\\market_predictions.csv.gz": "984e440c983e540dd1bb6297e11a96fb7256ebdb2e72681f15f564779a3b877a"
+}

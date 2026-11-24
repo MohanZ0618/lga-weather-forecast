@@ -1,0 +1,12 @@
+{
+  "setting": {
+    "threshold_weight": 0.75,
+    "bias_f": 0.0,
+    "digit_power": 0.0,
+    "early_floor": true
+  },
+  "locked_before": "2026-03-01",
+  "days": 169,
+  "latest_settlement_used": "2026-02-26T08:19:44+00:00",
+  "bundle_sha256": "47e5abd1bca97819bf227c185ff81827387a6da9e93cb9a34228ce0e195a1814"
+}

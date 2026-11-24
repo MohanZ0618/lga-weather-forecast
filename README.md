@@ -1,8 +1,27 @@
 # Same Day Weather Forecasting at LaGuardia
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 CS4260 project by Mohan Zhang, Mingyeung Wu, and Maxwell Liss.
 
-The default **Polymarket 历史回放** page replays the archived same-day probabilities at 09:00, 12:00 and 15:00 New York time. Choose a date and cutoff, inspect the probability of each listed bracket, and reveal the official settlement. The **Forecast comparison** page in the sidebar plots the previous-noon forecast, same-day updates, measured temperatures, and forecast errors for a common target date. It offers both 5°F ranges and the original five categories. The [forecast guide](nowcast/README.md) explains the two horizons and their held-out scores.
+The default **Polymarket replay** page answers one question at three points in a New York day: which listed bracket will contain LaGuardia Airport's final high temperature? Choose a market date and forecast time, inspect the probability of each bracket, and reveal the official settlement. The replay uses archived observations and forecasts available by the selected time.
+
+## How often did the top bracket win?
+
+Across 413 market dates from September 3, 2025 through November 6, 2026 with all three forecasts available, each forecast counted as correct when its highest-probability bracket won.
+
+| Forecast time in New York | Correct / forecasts | Accuracy |
+| --- | ---: | ---: |
+| 09:00 | 202 / 413 | 48.9% |
+| 12:00 | 241 / 413 | 58.4% |
+| 15:00 | 303 / 413 | 73.4% |
+| All three, equally weighted | 746 / 1,239 | 60.2% |
+
+Use 48.9% for a decision made once each morning. The 60.2% figure includes two later updates that can use new observations. The selected 09:00 model gives equal weight to threshold logistic regression and a two-stage warming model. Noon and 15:00 each use a separately trained monotonic XGBoost model. Training used weather labels through August 31, 2025. These scores come from historical replay. [Model selection, hyperparameters and comparisons](final_project/results/bracket_study/old09/REPORT.md) · [Reproduce the bracket study](final_project/bracket_study/README.md)
+
+## Other forecasting views
+
+The **Forecast comparison** page plots the previous-noon forecast, same-day updates, measured temperatures, and forecast errors for a common target date. It offers both 5°F ranges and the original five categories. The [forecast guide](nowcast/README.md) explains the two horizons and their held-out scores.
 
 The **Latest observations** page uses a quarter-hour model from 06:00 through
 20:00 New York time with airport METAR, HRRR cycles, and GOES-East cloud masks.
@@ -22,17 +41,14 @@ Use Python 3.13. Start in this project folder and run:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python weather.py
-python reporting.py
-python -m unittest discover -s tests -v
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 On macOS or Linux, activate with `source .venv/bin/activate`. If PowerShell blocks activation, use `.\.venv\Scripts\python.exe` in place of `python` and launch the app with `.\.venv\Scripts\python.exe -m streamlit run app.py`.
 
-The first training run downloads 12 official NOAA files. Later runs reuse the original CSVs. Run `python weather.py --refresh` to replace them with the current S3 copies. Run `python reporting.py` again after retraining. `data/raw/manifest.json` identifies the exact inputs used for each run.
+The replay opens using the data bundled in this repository. To retrain the original five-band experiment, run `python weather.py`, then `python reporting.py`. The first training run downloads 12 official NOAA files. Later runs reuse the original CSVs. Run `python weather.py --refresh` to replace them with the current S3 copies. Run `python -m unittest discover -s tests -v` to check the application. `data/raw/manifest.json` identifies the exact inputs used for each run.
 
-## Data and experiment
+## Original five-band experiment
 
 - The archive contains NOAA Global Hourly CSVs for LGA, JFK, EWR, and TEB. The pipeline checks required columns, keeps FM-15 and FM-16, applies quality codes, and retains the last report per UTC hour for the exported observations and daily labels. [NOAA Global Hourly](https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database) · [ISD format specification](https://www.ncei.noaa.gov/pub/data/noaa/isd-format-document.pdf)
 - LGA target dates need at least 20 valid hourly temperatures and coverage in all four local six-hour blocks. Every experiment uses the same eligible dates. The split is 2023 for training, 2024 for validation, and available eligible 2025 dates for testing.
@@ -45,7 +61,8 @@ The first training run downloads 12 official NOAA files. Later runs reuse the or
 | --- | --- |
 | `weather.py` | Download, cleaning, labels, features, training, and evaluation |
 | `reporting.py` | Figures, Markdown report, Word report, and the noon results table |
-| `app.py` | Historical replay and manual live prediction |
+| `app.py` and `market_replay.py` | Streamlit navigation, replay and settlement display |
+| `final_project/bracket_study/` and `final_project/results/bracket_study/` | Market model training, fitted models, real contract probabilities, scores and reports |
 | `tests/test_weather.py` | Cutoff leakage, daylight saving, label coverage, staleness, probabilities, and NOAA parsing |
 | `data/raw/` | Original station-year CSVs and the SHA-256 manifest |
 | `data/processed/` | Hourly tables, data quality statistics, eligible labels, and a sample table for each cutoff |
