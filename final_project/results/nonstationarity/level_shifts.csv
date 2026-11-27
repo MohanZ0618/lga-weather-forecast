@@ -1,0 +1,35 @@
+series,statistic,data,break_month,shift,t,p,months,first_month,last_month
+GFS MOS daytime max,mean,2010-2026 (descriptive),2015-01,-1.3151,-6.7377,0.0005,200,2010-01,2026-08
+GFS MOS daytime max,log SD,2010-2026 (descriptive),2013-02,-0.0975,-2.7281,0.2019,200,2010-01,2026-08
+NAM MOS daytime max,mean,2010-2026 (descriptive),2016-08,-2.0903,-14.8966,0.0005,200,2010-01,2026-08
+NAM MOS daytime max,log SD,2010-2026 (descriptive),2019-12,-0.0617,-2.0646,0.5412,200,2010-01,2026-08
+NBM daytime max,mean,2010-2026 (descriptive),2025-12,-0.1736,-0.9439,0.9945,71,2020-10,2026-08
+NBM daytime max,log SD,2010-2026 (descriptive),2025-02,0.0931,2.1113,0.4353,71,2020-10,2026-08
+LAMP remaining max,mean,2010-2026 (descriptive),2023-06,1.6594,13.3696,0.0005,74,2020-07,2026-08
+LAMP remaining max,log SD,2010-2026 (descriptive),2023-03,-0.2373,-5.2730,0.0010,74,2020-07,2026-08
+HRRR remaining max,mean,2010-2026 (descriptive),2022-03,0.8114,4.0903,0.0070,66,2021-01,2026-08
+HRRR remaining max,log SD,2010-2026 (descriptive),2026-01,0.1618,2.2499,0.4138,66,2021-01,2026-08
+"LGA minus mean of JFK, EWR, TEB, cutoff temperature",mean,2010-2026 (descriptive),2016-01,0.6259,6.3700,0.0040,200,2010-01,2026-08
+"LGA minus mean of JFK, EWR, TEB, cutoff temperature",log SD,2010-2026 (descriptive),2010-07,-0.1241,-2.1174,0.3373,200,2010-01,2026-08
+"LGA minus JFK, cutoff temperature",mean,2010-2026 (descriptive),2016-02,0.7805,6.5289,0.0010,200,2010-01,2026-08
+"LGA minus JFK, cutoff temperature",log SD,2010-2026 (descriptive),2015-04,0.0452,1.8355,0.6172,200,2010-01,2026-08
+"LGA minus JFK, previous-day max",mean,2010-2026 (descriptive),2016-02,0.7760,5.8490,0.0015,200,2010-01,2026-08
+"LGA minus JFK, previous-day max",log SD,2010-2026 (descriptive),2015-10,0.0397,1.2406,0.9850,200,2010-01,2026-08
+"LGA minus EWR, cutoff temperature",mean,2010-2026 (descriptive),2021-05,-0.8918,-7.3294,0.0005,200,2010-01,2026-08
+"LGA minus EWR, cutoff temperature",log SD,2010-2026 (descriptive),2010-08,-0.1177,-2.1779,0.3543,200,2010-01,2026-08
+"LGA minus EWR, previous-day max",mean,2010-2026 (descriptive),2021-05,-0.9491,-7.3432,0.0005,200,2010-01,2026-08
+"LGA minus EWR, previous-day max",log SD,2010-2026 (descriptive),2021-02,0.0376,1.2252,0.9525,200,2010-01,2026-08
+"LGA minus TEB, cutoff temperature",mean,2010-2026 (descriptive),2020-03,0.8746,7.3949,0.0010,200,2010-01,2026-08
+"LGA minus TEB, cutoff temperature",log SD,2010-2026 (descriptive),2024-11,-0.0575,-1.5601,0.7156,200,2010-01,2026-08
+"LGA minus TEB, previous-day max",mean,2010-2026 (descriptive),2020-03,0.8873,6.5886,0.0030,200,2010-01,2026-08
+"LGA minus TEB, previous-day max",log SD,2010-2026 (descriptive),2020-02,-0.0619,-1.5395,0.8641,200,2010-01,2026-08
+GFS MOS daytime max,mean,"2010-2023 (training, long model eras)",2015-01,-1.5325,-7.5305,0.0005,168,2010-01,2023-12
+GFS MOS daytime max,log SD,"2010-2023 (training, long model eras)",2023-02,-0.1776,-2.8467,0.1664,168,2010-01,2023-12
+NAM MOS daytime max,mean,"2010-2023 (training, long model eras)",2016-08,-2.2088,-15.1700,0.0005,168,2010-01,2023-12
+NAM MOS daytime max,log SD,"2010-2023 (training, long model eras)",2019-12,-0.0675,-1.9573,0.6252,168,2010-01,2023-12
+NBM daytime max,mean,"2021-2023 (training, CURRENT eras)",2021-08,-0.3481,-2.0268,0.4008,36,2021-01,2023-12
+NBM daytime max,log SD,"2021-2023 (training, CURRENT eras)",2021-10,-0.0674,-1.5228,0.8001,36,2021-01,2023-12
+LAMP remaining max,mean,"2021-2023 (training, CURRENT eras)",2023-06,1.2352,5.6969,0.0080,36,2021-01,2023-12
+LAMP remaining max,log SD,"2021-2023 (training, CURRENT eras)",2023-02,-0.1629,-2.8693,0.1584,36,2021-01,2023-12
+HRRR remaining max,mean,"2021-2023 (training, CURRENT eras)",2022-04,0.6230,3.2989,0.2254,36,2021-01,2023-12
+HRRR remaining max,log SD,"2021-2023 (training, CURRENT eras)",2022-01,0.1415,2.2422,0.3943,36,2021-01,2023-12

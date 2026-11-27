@@ -1,0 +1,199 @@
+hour,cohort,model,setting,validation_log_loss
+9,Matched HRRR,Censored Gaussian,l2=0.1,0.22138549172369468
+9,Matched HRRR,Censored Gaussian,l2=1.0,0.2187892518546306
+9,Matched HRRR,Censored Gaussian,l2=10.0,0.22103300466939824
+9,Matched HRRR,Censored Gaussian,l2=30.0,0.23598968782687393
+9,Matched HRRR,Censored Gaussian,l2=100.0,0.31462232044775174
+9,Matched HRRR,Censored Gaussian,l2=300.0,0.429691471335193
+9,Matched HRRR,Quantile boosting,"depth=2, scale=0.8",0.27693860695726047
+9,Matched HRRR,Quantile boosting,"depth=2, scale=0.9",0.25756234976612297
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.0",0.24326509424235745
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.1",0.24091878090340316
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.2",0.24066490163546117
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.3",0.24306305748191626
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.4",0.24550378328113498
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.5",0.24790609733310648
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.6",0.25027008726268124
+9,Matched HRRR,Quantile boosting,"depth=3, scale=0.8",0.30502973908893094
+9,Matched HRRR,Quantile boosting,"depth=3, scale=0.9",0.26906064132046603
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.0",0.24446919859623736
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.1",0.24398746171641927
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.2",0.24606645600706342
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.3",0.24761516411692036
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.4",0.24553820636467052
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.5",0.24826650500329261
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.6",0.2526783968430008
+9,Matched HRRR,Quantile boosting,"depth=4, scale=0.8",0.28317756075666706
+9,Matched HRRR,Quantile boosting,"depth=4, scale=0.9",0.2613187873879115
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.0",0.24972079290199808
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.1",0.24496922703261229
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.2",0.2404584267661758
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.3",0.24191268109285818
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.4",0.24236299015031887
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.5",0.24377461579741155
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.6",0.24653162040752413
+9,Matched HRRR,Censored Gaussian,l2=0.1,0.21165320902959855
+9,Matched HRRR,Censored Gaussian,l2=1.0,0.21110477506956662
+9,Matched HRRR,Censored Gaussian,l2=10.0,0.21271501793753733
+9,Matched HRRR,Censored Gaussian,l2=30.0,0.21585758675824263
+9,Matched HRRR,Censored Gaussian,l2=100.0,0.24623338444033746
+9,Matched HRRR,Censored Gaussian,l2=300.0,0.3796263631150986
+9,Matched HRRR,Quantile boosting,"depth=2, scale=0.8",0.24313479903998886
+9,Matched HRRR,Quantile boosting,"depth=2, scale=0.9",0.2430629046412828
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.0",0.24155825104496315
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.1",0.23402192235122501
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.2",0.22966133317817805
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.3",0.23258056455407455
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.4",0.23644656254051954
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.5",0.24126688774851388
+9,Matched HRRR,Quantile boosting,"depth=2, scale=1.6",0.24637027062496536
+9,Matched HRRR,Quantile boosting,"depth=3, scale=0.8",0.24029307716644652
+9,Matched HRRR,Quantile boosting,"depth=3, scale=0.9",0.2349866597139384
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.0",0.23628112656407788
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.1",0.22775918054378827
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.2",0.22872936941675406
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.3",0.22729010093775934
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.4",0.22999690876675108
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.5",0.2324546581521371
+9,Matched HRRR,Quantile boosting,"depth=3, scale=1.6",0.23540351281154615
+9,Matched HRRR,Quantile boosting,"depth=4, scale=0.8",0.24459757765704118
+9,Matched HRRR,Quantile boosting,"depth=4, scale=0.9",0.23420639996668377
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.0",0.2356591721353703
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.1",0.22705604384154068
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.2",0.22576567011513818
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.3",0.22771044301180238
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.4",0.22917678788206705
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.5",0.23016284464550488
+9,Matched HRRR,Quantile boosting,"depth=4, scale=1.6",0.2349369090406928
+12,Matched HRRR,Censored Gaussian,l2=0.1,0.18224144195037126
+12,Matched HRRR,Censored Gaussian,l2=1.0,0.18304809151392804
+12,Matched HRRR,Censored Gaussian,l2=10.0,0.18790620700028515
+12,Matched HRRR,Censored Gaussian,l2=30.0,0.19748544467566678
+12,Matched HRRR,Censored Gaussian,l2=100.0,0.22134601454425973
+12,Matched HRRR,Censored Gaussian,l2=300.0,0.25286580606418135
+12,Matched HRRR,Quantile boosting,"depth=2, scale=0.8",0.21962463695583376
+12,Matched HRRR,Quantile boosting,"depth=2, scale=0.9",0.21406903862001164
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.0",0.21386927385338797
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.1",0.21512160177523548
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.2",0.2185053986327187
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.3",0.22190834028276657
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.4",0.22549737743817946
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.5",0.2295464285760534
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.6",0.23357058093285524
+12,Matched HRRR,Quantile boosting,"depth=3, scale=0.8",0.2340947610093303
+12,Matched HRRR,Quantile boosting,"depth=3, scale=0.9",0.22042472417760275
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.0",0.21947930444705865
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.1",0.21963241823283566
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.2",0.2211647475632347
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.3",0.22363570604753374
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.4",0.22682573405821344
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.5",0.230041590064965
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.6",0.23283822436158816
+12,Matched HRRR,Quantile boosting,"depth=4, scale=0.8",0.23050552425035775
+12,Matched HRRR,Quantile boosting,"depth=4, scale=0.9",0.21586394392367977
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.0",0.2113240115911584
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.1",0.21026914582343484
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.2",0.21018246620861814
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.3",0.2111789068972945
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.4",0.21196360846996887
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.5",0.21345939132622402
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.6",0.21511712049218118
+12,Matched HRRR,Censored Gaussian,l2=0.1,0.17125802383675057
+12,Matched HRRR,Censored Gaussian,l2=1.0,0.17181628426248322
+12,Matched HRRR,Censored Gaussian,l2=10.0,0.1748783715288688
+12,Matched HRRR,Censored Gaussian,l2=30.0,0.18009319585203912
+12,Matched HRRR,Censored Gaussian,l2=100.0,0.19487632273913916
+12,Matched HRRR,Censored Gaussian,l2=300.0,0.22679383239020864
+12,Matched HRRR,Quantile boosting,"depth=2, scale=0.8",0.22244001832007287
+12,Matched HRRR,Quantile boosting,"depth=2, scale=0.9",0.2104420083869068
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.0",0.20187176601386336
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.1",0.20426257314765653
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.2",0.2076802524537558
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.3",0.20474461992478366
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.4",0.20129858158293853
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.5",0.20201020368475048
+12,Matched HRRR,Quantile boosting,"depth=2, scale=1.6",0.20456726408712447
+12,Matched HRRR,Quantile boosting,"depth=3, scale=0.8",0.23260396397593225
+12,Matched HRRR,Quantile boosting,"depth=3, scale=0.9",0.21859776600463715
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.0",0.21023380760843102
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.1",0.2087184974159437
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.2",0.20872187619196256
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.3",0.21157642605889804
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.4",0.21372573494528538
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.5",0.216275515315601
+12,Matched HRRR,Quantile boosting,"depth=3, scale=1.6",0.21902729916433664
+12,Matched HRRR,Quantile boosting,"depth=4, scale=0.8",0.23345304380557602
+12,Matched HRRR,Quantile boosting,"depth=4, scale=0.9",0.2333596909228298
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.0",0.22478709519348078
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.1",0.21436985687794655
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.2",0.21211299914595858
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.3",0.21337911585472574
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.4",0.21399619540074608
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.5",0.2087597331351646
+12,Matched HRRR,Quantile boosting,"depth=4, scale=1.6",0.207925656839052
+15,Matched HRRR,Censored Gaussian,l2=0.1,0.11142994812950874
+15,Matched HRRR,Censored Gaussian,l2=1.0,0.10977987759676122
+15,Matched HRRR,Censored Gaussian,l2=10.0,0.11263662674104558
+15,Matched HRRR,Censored Gaussian,l2=30.0,0.11791896842081004
+15,Matched HRRR,Censored Gaussian,l2=100.0,0.1285257659567664
+15,Matched HRRR,Censored Gaussian,l2=300.0,0.1420972166855218
+15,Matched HRRR,Quantile boosting,"depth=2, scale=0.8",0.19350826421696965
+15,Matched HRRR,Quantile boosting,"depth=2, scale=0.9",0.17564553365191415
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.0",0.13444115825169184
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.1",0.11908928416746664
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.2",0.11973159761463804
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.3",0.12060064784207802
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.4",0.12169232476677529
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.5",0.1227441456417414
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.6",0.12401341822588034
+15,Matched HRRR,Quantile boosting,"depth=3, scale=0.8",0.17606426969199632
+15,Matched HRRR,Quantile boosting,"depth=3, scale=0.9",0.15845106802255723
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.0",0.12739424252823112
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.1",0.10683975948472545
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.2",0.10610648191855412
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.3",0.10697301058963325
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.4",0.10884555378761498
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.5",0.10977401845908713
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.6",0.11092435034058115
+15,Matched HRRR,Quantile boosting,"depth=4, scale=0.8",0.19477157790067215
+15,Matched HRRR,Quantile boosting,"depth=4, scale=0.9",0.1610952370615847
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.0",0.1302969303164924
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.1",0.12740899369133518
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.2",0.12749475521680495
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.3",0.13519561502634944
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.4",0.12310982723965419
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.5",0.12284949058684139
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.6",0.12433046181936884
+15,Matched HRRR,Censored Gaussian,l2=0.1,0.10177025102196081
+15,Matched HRRR,Censored Gaussian,l2=1.0,0.10001900510096012
+15,Matched HRRR,Censored Gaussian,l2=10.0,0.09812887746265928
+15,Matched HRRR,Censored Gaussian,l2=30.0,0.10090932711364453
+15,Matched HRRR,Censored Gaussian,l2=100.0,0.11375401792432933
+15,Matched HRRR,Censored Gaussian,l2=300.0,0.1350122903603755
+15,Matched HRRR,Quantile boosting,"depth=2, scale=0.8",0.16008779104643053
+15,Matched HRRR,Quantile boosting,"depth=2, scale=0.9",0.14481933580084744
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.0",0.10686883449352393
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.1",0.10537541619861791
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.2",0.1063145316634535
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.3",0.10725433295811422
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.4",0.10843783598872016
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.5",0.11019919951652069
+15,Matched HRRR,Quantile boosting,"depth=2, scale=1.6",0.11226097010312838
+15,Matched HRRR,Quantile boosting,"depth=3, scale=0.8",0.1603511355370402
+15,Matched HRRR,Quantile boosting,"depth=3, scale=0.9",0.1455025559104825
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.0",0.11214607709331954
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.1",0.11027537862288166
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.2",0.10851049651535657
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.3",0.10829500320224562
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.4",0.11015595244134847
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.5",0.11183267542290842
+15,Matched HRRR,Quantile boosting,"depth=3, scale=1.6",0.11350656353977491
+15,Matched HRRR,Quantile boosting,"depth=4, scale=0.8",0.19247999863421048
+15,Matched HRRR,Quantile boosting,"depth=4, scale=0.9",0.148867440549946
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.0",0.11651334462948776
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.1",0.11562753324697314
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.2",0.11366174151485758
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.3",0.11518501828128791
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.4",0.11629803639983348
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.5",0.11746257824784824
+15,Matched HRRR,Quantile boosting,"depth=4, scale=1.6",0.11853235337457463

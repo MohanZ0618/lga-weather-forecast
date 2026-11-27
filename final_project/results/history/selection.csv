@@ -1,0 +1,4 @@
+hour,selected,validation_log_loss
+9,"Censored Gaussian, 2021-2023",0.2111044592863981
+12,"Censored Gaussian, 2021-2023",0.1718127622472282
+15,"Censored SHASH, 2021-2023",0.0940052362310173

@@ -18,6 +18,26 @@ python -m unittest discover -s final_project -p test_final.py -v
 
 The second command retrains every candidate from the included sample files and writes `final_project/results/main_table.csv`, `paired_comparisons.csv`, and `reliability.png`. It also writes the validation grid, all model scores, individual predictions, and error summaries. Python package installation requires an internet connection. Training from the included data runs offline. The bundled tables have one row per eligible date at each cutoff.
 
+## Extension (paper Section 7)
+
+Run after `experiment.py`, from the extracted archive root. Each script runs offline from the bundled tables in under two minutes.
+
+```text
+python final_project/supplement.py
+python final_project/distribution.py
+python final_project/guidance_study.py
+python final_project/history_study.py
+python final_project/class_eval.py
+python final_project/class_models.py
+python final_project/mos_history.py
+python final_project/observed_weather.py
+python final_project/nonstationarity.py
+cd final_project && python -m unittest test_final test_guidance test_history test_class_eval test_class_models test_mos_history test_observed_weather test_nonstationarity
+python make_paper.py
+```
+
+The extension adds station guidance from the Iowa Environmental Mesonet archive: LAMP and the National Blend of Models text bulletin, using the newest run released by each cutoff (`guidance.py`). A censored Gaussian model of the warming still to come (`distribution.py`, `shash.py`) lowers test log loss from 0.258, 0.234 and 0.094 to 0.200, 0.159 and 0.072 on the same 359 days. The other scripts test longer history, course methods (learning curves, cross-validation, bagging, a neural network), observed weather and nearby stations, and model and sensor drift. None of them beats the selected model. Each script writes `results/<name>/`, and `results/<name>/README_SECTION.md` explains its result. `make_paper.py` builds Section 7 from those files through `paper_extension.py`. To download the public source files again, run `guidance.py fetch`, `mos.py fetch`, `asos.py fetch` and `history.py`; the matching `build` steps rebuild the bundled feature tables.
+
 ## Data provenance and rebuilding
 
 - `prepare.py` downloads 36 [NOAA LCD v2 files](https://www.ncei.noaa.gov/products/land-based-station/local-climatological-data) derived from GHCNh. `data/station_sources.csv` contains station IDs in the URLs, source coverage and SHA-256 hashes. It converts the fixed Eastern standard time in the CSV to actual New York time, retains FM-15 and FM-16 observations, and keeps the last report in each completed UTC hour for daily labels. `timestamp_overlap_2024.csv` and `archive_overlap_2024.csv` audit the switch from the Progress 1 Global Hourly source.

@@ -1,0 +1,391 @@
+hour,system,l2,validation_log_loss
+9,"CURRENT inputs 2021-2023, half-life 0.5 y",0.1,0.20947080939556867
+9,"CURRENT inputs 2021-2023, half-life 0.5 y",1.0,0.20835698911076178
+9,"CURRENT inputs 2021-2023, half-life 0.5 y",10.0,0.21056246186721733
+9,"CURRENT inputs 2021-2023, half-life 0.5 y",30.0,0.216088611432357
+9,"CURRENT inputs 2021-2023, half-life 0.5 y",100.0,0.2523682699038086
+9,"CURRENT inputs 2021-2023, half-life 0.5 y",300.0,0.37925873041320896
+9,"Long MOS model 2010-2023, half-life 0.5 y",0.1,0.2633379253343763
+9,"Long MOS model 2010-2023, half-life 0.5 y",1.0,0.26313719470827995
+9,"Long MOS model 2010-2023, half-life 0.5 y",10.0,0.26273273747566517
+9,"Long MOS model 2010-2023, half-life 0.5 y",30.0,0.26726964522661234
+9,"Long MOS model 2010-2023, half-life 0.5 y",100.0,0.27944044039906046
+9,"Long MOS model 2010-2023, half-life 0.5 y",300.0,0.3006958229657191
+9,"CURRENT inputs 2021-2023, half-life 1 y",0.1,0.21001421171272372
+9,"CURRENT inputs 2021-2023, half-life 1 y",1.0,0.20933697001032048
+9,"CURRENT inputs 2021-2023, half-life 1 y",10.0,0.21118824621880997
+9,"CURRENT inputs 2021-2023, half-life 1 y",30.0,0.2158424376929758
+9,"CURRENT inputs 2021-2023, half-life 1 y",100.0,0.24951579153202208
+9,"CURRENT inputs 2021-2023, half-life 1 y",300.0,0.37910798223935954
+9,"Long MOS model 2010-2023, half-life 1 y",0.1,0.26003657771688843
+9,"Long MOS model 2010-2023, half-life 1 y",1.0,0.25979144093946877
+9,"Long MOS model 2010-2023, half-life 1 y",10.0,0.2607766701685521
+9,"Long MOS model 2010-2023, half-life 1 y",30.0,0.26629396047371734
+9,"Long MOS model 2010-2023, half-life 1 y",100.0,0.2787274457125771
+9,"Long MOS model 2010-2023, half-life 1 y",300.0,0.29971352412988567
+9,"CURRENT inputs 2021-2023, half-life 2 y",0.1,0.21069639256075853
+9,"CURRENT inputs 2021-2023, half-life 2 y",1.0,0.21012181451785833
+9,"CURRENT inputs 2021-2023, half-life 2 y",10.0,0.21182902444208976
+9,"CURRENT inputs 2021-2023, half-life 2 y",30.0,0.21579494375500527
+9,"CURRENT inputs 2021-2023, half-life 2 y",100.0,0.24788552263578248
+9,"CURRENT inputs 2021-2023, half-life 2 y",300.0,0.3792700658860039
+9,"Long MOS model 2010-2023, half-life 2 y",0.1,0.25961224591659765
+9,"Long MOS model 2010-2023, half-life 2 y",1.0,0.2591373528800347
+9,"Long MOS model 2010-2023, half-life 2 y",10.0,0.26107277900019343
+9,"Long MOS model 2010-2023, half-life 2 y",30.0,0.26707354291435936
+9,"Long MOS model 2010-2023, half-life 2 y",100.0,0.27946788366932845
+9,"Long MOS model 2010-2023, half-life 2 y",300.0,0.30075309309207593
+9,"CURRENT inputs 2021-2023, half-life 4 y",0.1,0.21113498412164444
+9,"CURRENT inputs 2021-2023, half-life 4 y",1.0,0.21059326001942605
+9,"CURRENT inputs 2021-2023, half-life 4 y",10.0,0.2122410961009429
+9,"CURRENT inputs 2021-2023, half-life 4 y",30.0,0.21580781414973838
+9,"CURRENT inputs 2021-2023, half-life 4 y",100.0,0.24704890479642957
+9,"CURRENT inputs 2021-2023, half-life 4 y",300.0,0.37942176417820034
+9,"Long MOS model 2010-2023, half-life 4 y",0.1,0.2627899788594765
+9,"Long MOS model 2010-2023, half-life 4 y",1.0,0.2619682298926145
+9,"Long MOS model 2010-2023, half-life 4 y",10.0,0.2636756412639264
+9,"Long MOS model 2010-2023, half-life 4 y",30.0,0.2694393749088746
+9,"Long MOS model 2010-2023, half-life 4 y",100.0,0.281759689712385
+9,"Long MOS model 2010-2023, half-life 4 y",300.0,0.3044449864716935
+9,"CURRENT inputs 2021-2023, half-life 8 y",0.1,0.21138066651434756
+9,"CURRENT inputs 2021-2023, half-life 8 y",1.0,0.21084181891499698
+9,"CURRENT inputs 2021-2023, half-life 8 y",10.0,0.2124710700851879
+9,"CURRENT inputs 2021-2023, half-life 8 y",30.0,0.21582664685117753
+9,"CURRENT inputs 2021-2023, half-life 8 y",100.0,0.2466325580193113
+9,"CURRENT inputs 2021-2023, half-life 8 y",300.0,0.379512906425247
+9,"Long MOS model 2010-2023, half-life 8 y",0.1,0.2657471663192296
+9,"Long MOS model 2010-2023, half-life 8 y",1.0,0.2646159409023993
+9,"Long MOS model 2010-2023, half-life 8 y",10.0,0.26598968995764477
+9,"Long MOS model 2010-2023, half-life 8 y",30.0,0.2715742209517726
+9,"Long MOS model 2010-2023, half-life 8 y",100.0,0.2840382406411053
+9,"Long MOS model 2010-2023, half-life 8 y",300.0,0.3078422181606168
+9,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",0.1,0.21162985567747591
+9,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",1.0,0.21110284922665296
+9,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",10.0,0.21271473494144305
+9,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",30.0,0.21585757763755062
+9,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",100.0,0.24623335749539307
+9,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",300.0,0.3796263874902041
+9,"Long MOS model 2010-2023, no decay",0.1,0.26937667725955594
+9,"Long MOS model 2010-2023, no decay",1.0,0.26800476590811667
+9,"Long MOS model 2010-2023, no decay",10.0,0.26893444401671573
+9,"Long MOS model 2010-2023, no decay",30.0,0.27436476564487505
+9,"Long MOS model 2010-2023, no decay",100.0,0.28709272631080207
+9,"Long MOS model 2010-2023, no decay",300.0,0.31194565331593943
+9,"Two-stage, stage 1 long MOS model with no decay",0.1,0.21081052008809145
+9,"Two-stage, stage 1 long MOS model with no decay",1.0,0.21001046306693222
+9,"Two-stage, stage 1 long MOS model with no decay",10.0,0.21059553286147853
+9,"Two-stage, stage 1 long MOS model with no decay",30.0,0.2134148040245714
+9,"Two-stage, stage 1 long MOS model with no decay",100.0,0.23557966552702728
+9,"Two-stage, stage 1 long MOS model with no decay",300.0,0.3547219571629589
+9,"Two-stage, stage 1 long MOS model with half-life 2 y",0.1,0.20966908322642003
+9,"Two-stage, stage 1 long MOS model with half-life 2 y",1.0,0.20902103990409573
+9,"Two-stage, stage 1 long MOS model with half-life 2 y",10.0,0.2096975037268602
+9,"Two-stage, stage 1 long MOS model with half-life 2 y",30.0,0.21246480301522125
+9,"Two-stage, stage 1 long MOS model with half-life 2 y",100.0,0.2348330916521901
+9,"Two-stage, stage 1 long MOS model with half-life 2 y",300.0,0.3541833847815015
+9,Long MOS model 2010-2023 + data-detected eras (mean),0.1,0.2684662250096704
+9,Long MOS model 2010-2023 + data-detected eras (mean),1.0,0.26810032077697304
+9,Long MOS model 2010-2023 + data-detected eras (mean),10.0,0.2705776380856777
+9,Long MOS model 2010-2023 + data-detected eras (mean),30.0,0.27539065676989904
+9,Long MOS model 2010-2023 + data-detected eras (mean),100.0,0.2851307693546689
+9,Long MOS model 2010-2023 + data-detected eras (mean),300.0,0.3063411944609243
+9,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),0.1,0.2676647015832916
+9,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),1.0,0.2673118823907102
+9,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),10.0,0.26991698490479255
+9,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),30.0,0.2749132319323064
+9,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),100.0,0.2848492174004114
+9,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),300.0,0.30614532621710105
+9,Long MOS model 2010-2023 + 4-year periods (mean),0.1,0.2686094384524276
+9,Long MOS model 2010-2023 + 4-year periods (mean),1.0,0.26785230160486606
+9,Long MOS model 2010-2023 + 4-year periods (mean),10.0,0.269359284966988
+9,Long MOS model 2010-2023 + 4-year periods (mean),30.0,0.273815753229539
+9,Long MOS model 2010-2023 + 4-year periods (mean),100.0,0.2845657652969624
+9,Long MOS model 2010-2023 + 4-year periods (mean),300.0,0.3085820040280868
+9,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),0.1,0.2677405628420539
+9,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),1.0,0.26688669221887973
+9,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),10.0,0.26839462477901815
+9,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),30.0,0.27316413213372165
+9,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),100.0,0.28441174041757267
+9,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),300.0,0.30874973813463796
+9,CURRENT inputs 2021-2023 + data-detected eras (mean),0.1,0.21381414267415755
+9,CURRENT inputs 2021-2023 + data-detected eras (mean),1.0,0.21304745640512276
+9,CURRENT inputs 2021-2023 + data-detected eras (mean),10.0,0.2140494467513456
+9,CURRENT inputs 2021-2023 + data-detected eras (mean),30.0,0.21644204690378763
+9,CURRENT inputs 2021-2023 + data-detected eras (mean),100.0,0.24684329309378994
+9,CURRENT inputs 2021-2023 + data-detected eras (mean),300.0,0.37990329022522273
+9,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),0.1,0.21376661561477248
+9,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),1.0,0.213257049082779
+9,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),10.0,0.21437628150460014
+9,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),30.0,0.2166528651954738
+9,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),100.0,0.24701768064527407
+9,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),300.0,0.38071199035999986
+9,CURRENT inputs 2021-2023 + year indicators (mean),0.1,0.211518171215235
+9,CURRENT inputs 2021-2023 + year indicators (mean),1.0,0.21116432200941274
+9,CURRENT inputs 2021-2023 + year indicators (mean),10.0,0.21260374935302986
+9,CURRENT inputs 2021-2023 + year indicators (mean),30.0,0.21529510943770144
+9,CURRENT inputs 2021-2023 + year indicators (mean),100.0,0.24611973341931506
+9,CURRENT inputs 2021-2023 + year indicators (mean),300.0,0.379643838400912
+9,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),0.1,0.21140515372998508
+9,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),1.0,0.2109960683142401
+9,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),10.0,0.2124167465295639
+9,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),30.0,0.21508228231421384
+9,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),100.0,0.2460413664832358
+9,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),300.0,0.37961243691789875
+12,"CURRENT inputs 2021-2023, half-life 0.5 y",0.1,0.17054139547524577
+12,"CURRENT inputs 2021-2023, half-life 0.5 y",1.0,0.16932444277181924
+12,"CURRENT inputs 2021-2023, half-life 0.5 y",10.0,0.17100364638956528
+12,"CURRENT inputs 2021-2023, half-life 0.5 y",30.0,0.17583361588190685
+12,"CURRENT inputs 2021-2023, half-life 0.5 y",100.0,0.190572453158708
+12,"CURRENT inputs 2021-2023, half-life 0.5 y",300.0,0.22598159032195164
+12,"Long MOS model 2010-2023, half-life 0.5 y",0.1,0.18726588485928122
+12,"Long MOS model 2010-2023, half-life 0.5 y",1.0,0.1862339333758753
+12,"Long MOS model 2010-2023, half-life 0.5 y",10.0,0.1860469970783606
+12,"Long MOS model 2010-2023, half-life 0.5 y",30.0,0.19068240158062622
+12,"Long MOS model 2010-2023, half-life 0.5 y",100.0,0.20172682343621953
+12,"Long MOS model 2010-2023, half-life 0.5 y",300.0,0.2174243609100357
+12,"CURRENT inputs 2021-2023, half-life 1 y",0.1,0.16957036472443376
+12,"CURRENT inputs 2021-2023, half-life 1 y",1.0,0.16967820199336045
+12,"CURRENT inputs 2021-2023, half-life 1 y",10.0,0.17236854735194854
+12,"CURRENT inputs 2021-2023, half-life 1 y",30.0,0.17748236573643106
+12,"CURRENT inputs 2021-2023, half-life 1 y",100.0,0.19225445641025263
+12,"CURRENT inputs 2021-2023, half-life 1 y",300.0,0.22604789534155625
+12,"Long MOS model 2010-2023, half-life 1 y",0.1,0.1885201812524082
+12,"Long MOS model 2010-2023, half-life 1 y",1.0,0.18856876927771174
+12,"Long MOS model 2010-2023, half-life 1 y",10.0,0.1901747327372961
+12,"Long MOS model 2010-2023, half-life 1 y",30.0,0.19523675947836694
+12,"Long MOS model 2010-2023, half-life 1 y",100.0,0.2060164851985147
+12,"Long MOS model 2010-2023, half-life 1 y",300.0,0.2206158449410303
+12,"CURRENT inputs 2021-2023, half-life 2 y",0.1,0.17006805555505652
+12,"CURRENT inputs 2021-2023, half-life 2 y",1.0,0.1705512103444288
+12,"CURRENT inputs 2021-2023, half-life 2 y",10.0,0.17353071871384784
+12,"CURRENT inputs 2021-2023, half-life 2 y",30.0,0.17871158619336416
+12,"CURRENT inputs 2021-2023, half-life 2 y",100.0,0.19349987127850565
+12,"CURRENT inputs 2021-2023, half-life 2 y",300.0,0.22636462359784115
+12,"Long MOS model 2010-2023, half-life 2 y",0.1,0.19107650062907797
+12,"Long MOS model 2010-2023, half-life 2 y",1.0,0.19177954136438127
+12,"Long MOS model 2010-2023, half-life 2 y",10.0,0.19488066684025004
+12,"Long MOS model 2010-2023, half-life 2 y",30.0,0.20020636083695212
+12,"Long MOS model 2010-2023, half-life 2 y",100.0,0.21038076146171267
+12,"Long MOS model 2010-2023, half-life 2 y",300.0,0.22374178044143683
+12,"CURRENT inputs 2021-2023, half-life 4 y",0.1,0.17058787719112536
+12,"CURRENT inputs 2021-2023, half-life 4 y",1.0,0.17114179083706388
+12,"CURRENT inputs 2021-2023, half-life 4 y",10.0,0.17419217650473579
+12,"CURRENT inputs 2021-2023, half-life 4 y",30.0,0.1793938044088016
+12,"CURRENT inputs 2021-2023, half-life 4 y",100.0,0.19418126556590753
+12,"CURRENT inputs 2021-2023, half-life 4 y",300.0,0.22656858504860683
+12,"Long MOS model 2010-2023, half-life 4 y",0.1,0.19432333553685044
+12,"Long MOS model 2010-2023, half-life 4 y",1.0,0.19516879572844092
+12,"Long MOS model 2010-2023, half-life 4 y",10.0,0.19851896149962275
+12,"Long MOS model 2010-2023, half-life 4 y",30.0,0.20360430628170598
+12,"Long MOS model 2010-2023, half-life 4 y",100.0,0.21295723460377441
+12,"Long MOS model 2010-2023, half-life 4 y",300.0,0.2255188058920075
+12,"CURRENT inputs 2021-2023, half-life 8 y",0.1,0.17091819742648642
+12,"CURRENT inputs 2021-2023, half-life 8 y",1.0,0.171471755639824
+12,"CURRENT inputs 2021-2023, half-life 8 y",10.0,0.17453823362719914
+12,"CURRENT inputs 2021-2023, half-life 8 y",30.0,0.179744564317458
+12,"CURRENT inputs 2021-2023, half-life 8 y",100.0,0.1945286714602006
+12,"CURRENT inputs 2021-2023, half-life 8 y",300.0,0.22667887167829637
+12,"Long MOS model 2010-2023, half-life 8 y",0.1,0.19613637893489969
+12,"Long MOS model 2010-2023, half-life 8 y",1.0,0.1969577892327949
+12,"Long MOS model 2010-2023, half-life 8 y",10.0,0.20017133547068156
+12,"Long MOS model 2010-2023, half-life 8 y",30.0,0.20505285076102175
+12,"Long MOS model 2010-2023, half-life 8 y",100.0,0.21396099942695967
+12,"Long MOS model 2010-2023, half-life 8 y",300.0,0.22622269418347074
+12,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",0.1,0.17124489813557459
+12,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",1.0,0.17181103586144744
+12,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",10.0,0.17487843451977197
+12,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",30.0,0.18009309074240276
+12,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",100.0,0.19487631899138141
+12,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",300.0,0.22679383702329314
+12,"Long MOS model 2010-2023, no decay",0.1,0.19753483176899378
+12,"Long MOS model 2010-2023, no decay",1.0,0.1983300507999878
+12,"Long MOS model 2010-2023, no decay",10.0,0.20135784390861122
+12,"Long MOS model 2010-2023, no decay",30.0,0.2060152648665807
+12,"Long MOS model 2010-2023, no decay",100.0,0.21457118670165012
+12,"Long MOS model 2010-2023, no decay",300.0,0.22664332096455195
+12,"Two-stage, stage 1 long MOS model with no decay",0.1,0.1652347261130918
+12,"Two-stage, stage 1 long MOS model with no decay",1.0,0.16650716681218264
+12,"Two-stage, stage 1 long MOS model with no decay",10.0,0.17015901938860495
+12,"Two-stage, stage 1 long MOS model with no decay",30.0,0.17514885048215123
+12,"Two-stage, stage 1 long MOS model with no decay",100.0,0.18853767034336658
+12,"Two-stage, stage 1 long MOS model with no decay",300.0,0.21799568514269127
+12,"Two-stage, stage 1 long MOS model with half-life 0.5 y",0.1,0.1635483222803017
+12,"Two-stage, stage 1 long MOS model with half-life 0.5 y",1.0,0.16414826425954238
+12,"Two-stage, stage 1 long MOS model with half-life 0.5 y",10.0,0.16723711116932052
+12,"Two-stage, stage 1 long MOS model with half-life 0.5 y",30.0,0.17228069522509645
+12,"Two-stage, stage 1 long MOS model with half-life 0.5 y",100.0,0.1864987274241181
+12,"Two-stage, stage 1 long MOS model with half-life 0.5 y",300.0,0.2170735615480412
+12,Long MOS model 2010-2023 + data-detected eras (mean),0.1,0.19810965188883103
+12,Long MOS model 2010-2023 + data-detected eras (mean),1.0,0.19916838519638852
+12,Long MOS model 2010-2023 + data-detected eras (mean),10.0,0.202943346835901
+12,Long MOS model 2010-2023 + data-detected eras (mean),30.0,0.20773879642710366
+12,Long MOS model 2010-2023 + data-detected eras (mean),100.0,0.21609762806959038
+12,Long MOS model 2010-2023 + data-detected eras (mean),300.0,0.2272486477776372
+12,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),0.1,0.19806095476393012
+12,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),1.0,0.19914900501300653
+12,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),10.0,0.2030100362725684
+12,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),30.0,0.2078516494206559
+12,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),100.0,0.216208269624523
+12,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),300.0,0.22736943250473257
+12,Long MOS model 2010-2023 + 4-year periods (mean),0.1,0.1966845420899333
+12,Long MOS model 2010-2023 + 4-year periods (mean),1.0,0.1978899132222863
+12,Long MOS model 2010-2023 + 4-year periods (mean),10.0,0.20163508003069497
+12,Long MOS model 2010-2023 + 4-year periods (mean),30.0,0.20608662333698538
+12,Long MOS model 2010-2023 + 4-year periods (mean),100.0,0.21405055771875225
+12,Long MOS model 2010-2023 + 4-year periods (mean),300.0,0.22562200937716492
+12,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),0.1,0.19588210177164606
+12,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),1.0,0.1971133329217876
+12,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),10.0,0.20101716029093056
+12,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),30.0,0.2057100889460651
+12,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),100.0,0.21392990310447324
+12,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),300.0,0.22547867688020964
+12,CURRENT inputs 2021-2023 + data-detected eras (mean),0.1,0.17125791716559877
+12,CURRENT inputs 2021-2023 + data-detected eras (mean),1.0,0.17181524549395777
+12,CURRENT inputs 2021-2023 + data-detected eras (mean),10.0,0.1746909921306323
+12,CURRENT inputs 2021-2023 + data-detected eras (mean),30.0,0.1792646862182382
+12,CURRENT inputs 2021-2023 + data-detected eras (mean),100.0,0.1929118005532807
+12,CURRENT inputs 2021-2023 + data-detected eras (mean),300.0,0.22557759279868256
+12,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),0.1,0.17259315087555663
+12,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),1.0,0.17319089165732204
+12,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),10.0,0.17582300823779917
+12,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),30.0,0.18012109654757746
+12,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),100.0,0.19332204244331827
+12,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),300.0,0.22559348011114305
+12,CURRENT inputs 2021-2023 + year indicators (mean),0.1,0.17275040012452078
+12,CURRENT inputs 2021-2023 + year indicators (mean),1.0,0.17287201548998965
+12,CURRENT inputs 2021-2023 + year indicators (mean),10.0,0.1753650264240521
+12,CURRENT inputs 2021-2023 + year indicators (mean),30.0,0.18000361750428515
+12,CURRENT inputs 2021-2023 + year indicators (mean),100.0,0.1941532108103096
+12,CURRENT inputs 2021-2023 + year indicators (mean),300.0,0.22658121205686116
+12,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),0.1,0.17260148723732982
+12,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),1.0,0.17276090214735815
+12,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),10.0,0.17529313573879765
+12,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),30.0,0.17997483839687878
+12,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),100.0,0.19413501528057245
+12,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),300.0,0.2266925338451985
+15,"CURRENT inputs 2021-2023, half-life 0.5 y",0.1,0.10228291543315485
+15,"CURRENT inputs 2021-2023, half-life 0.5 y",1.0,0.09855995588793733
+15,"CURRENT inputs 2021-2023, half-life 0.5 y",10.0,0.09701001311199293
+15,"CURRENT inputs 2021-2023, half-life 0.5 y",30.0,0.10166738954554576
+15,"CURRENT inputs 2021-2023, half-life 0.5 y",100.0,0.11766863962214986
+15,"CURRENT inputs 2021-2023, half-life 0.5 y",300.0,0.13805635748070683
+15,"Long MOS model 2010-2023, half-life 0.5 y",0.1,0.11674978542316494
+15,"Long MOS model 2010-2023, half-life 0.5 y",1.0,0.11385421484021176
+15,"Long MOS model 2010-2023, half-life 0.5 y",10.0,0.11450659281440853
+15,"Long MOS model 2010-2023, half-life 0.5 y",30.0,0.12080274437512656
+15,"Long MOS model 2010-2023, half-life 0.5 y",100.0,0.12804334321621663
+15,"Long MOS model 2010-2023, half-life 0.5 y",300.0,0.1344159751447814
+15,"CURRENT inputs 2021-2023, half-life 1 y",0.1,0.1017242026619895
+15,"CURRENT inputs 2021-2023, half-life 1 y",1.0,0.0990638567256071
+15,"CURRENT inputs 2021-2023, half-life 1 y",10.0,0.09736292196209435
+15,"CURRENT inputs 2021-2023, half-life 1 y",30.0,0.10078246492417645
+15,"CURRENT inputs 2021-2023, half-life 1 y",100.0,0.11478428925707973
+15,"CURRENT inputs 2021-2023, half-life 1 y",300.0,0.13622151564696774
+15,"Long MOS model 2010-2023, half-life 1 y",0.1,0.1143220980916745
+15,"Long MOS model 2010-2023, half-life 1 y",1.0,0.1124008329238194
+15,"Long MOS model 2010-2023, half-life 1 y",10.0,0.11321157647530795
+15,"Long MOS model 2010-2023, half-life 1 y",30.0,0.11900825544588729
+15,"Long MOS model 2010-2023, half-life 1 y",100.0,0.1260554589966582
+15,"Long MOS model 2010-2023, half-life 1 y",300.0,0.13229833213765618
+15,"CURRENT inputs 2021-2023, half-life 2 y",0.1,0.1015652800373778
+15,"CURRENT inputs 2021-2023, half-life 2 y",1.0,0.09941038644347804
+15,"CURRENT inputs 2021-2023, half-life 2 y",10.0,0.09765288924350744
+15,"CURRENT inputs 2021-2023, half-life 2 y",30.0,0.1006788691926507
+15,"CURRENT inputs 2021-2023, half-life 2 y",100.0,0.11394182659070344
+15,"CURRENT inputs 2021-2023, half-life 2 y",300.0,0.1354805029523251
+15,"Long MOS model 2010-2023, half-life 2 y",0.1,0.11264039696655341
+15,"Long MOS model 2010-2023, half-life 2 y",1.0,0.11154254961989239
+15,"Long MOS model 2010-2023, half-life 2 y",10.0,0.1131837473650027
+15,"Long MOS model 2010-2023, half-life 2 y",30.0,0.11893883456985938
+15,"Long MOS model 2010-2023, half-life 2 y",100.0,0.12567934538819237
+15,"Long MOS model 2010-2023, half-life 2 y",300.0,0.13118855754195782
+15,"CURRENT inputs 2021-2023, half-life 4 y",0.1,0.1016223565802744
+15,"CURRENT inputs 2021-2023, half-life 4 y",1.0,0.09967064976164863
+15,"CURRENT inputs 2021-2023, half-life 4 y",10.0,0.09786298751005594
+15,"CURRENT inputs 2021-2023, half-life 4 y",30.0,0.10074513424763092
+15,"CURRENT inputs 2021-2023, half-life 4 y",100.0,0.11375548919646086
+15,"CURRENT inputs 2021-2023, half-life 4 y",300.0,0.13520895752923492
+15,"Long MOS model 2010-2023, half-life 4 y",0.1,0.11194533004543382
+15,"Long MOS model 2010-2023, half-life 4 y",1.0,0.11120316214235774
+15,"Long MOS model 2010-2023, half-life 4 y",10.0,0.11322420934305392
+15,"Long MOS model 2010-2023, half-life 4 y",30.0,0.11911679834725344
+15,"Long MOS model 2010-2023, half-life 4 y",100.0,0.1259337541660295
+15,"Long MOS model 2010-2023, half-life 4 y",300.0,0.13106266549905168
+15,"CURRENT inputs 2021-2023, half-life 8 y",0.1,0.10169068033170965
+15,"CURRENT inputs 2021-2023, half-life 8 y",1.0,0.09983191059509669
+15,"CURRENT inputs 2021-2023, half-life 8 y",10.0,0.0979876956540218
+15,"CURRENT inputs 2021-2023, half-life 8 y",30.0,0.10081407656278084
+15,"CURRENT inputs 2021-2023, half-life 8 y",100.0,0.11373133423226063
+15,"CURRENT inputs 2021-2023, half-life 8 y",300.0,0.13510103393616132
+15,"Long MOS model 2010-2023, half-life 8 y",0.1,0.11147065598669081
+15,"Long MOS model 2010-2023, half-life 8 y",1.0,0.1108950081688302
+15,"Long MOS model 2010-2023, half-life 8 y",10.0,0.11299126039993983
+15,"Long MOS model 2010-2023, half-life 8 y",30.0,0.11903269019498283
+15,"Long MOS model 2010-2023, half-life 8 y",100.0,0.12607352451280632
+15,"Long MOS model 2010-2023, half-life 8 y",300.0,0.13112318530197772
+15,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",0.1,0.10177408101594211
+15,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",1.0,0.10002090906289864
+15,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",10.0,0.09812895295429765
+15,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",30.0,0.10090933209508006
+15,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",100.0,0.11375401907442502
+15,"CURRENT inputs 2021-2023, no decay (CURRENT refit)",300.0,0.13501229065879441
+15,"Long MOS model 2010-2023, no decay",0.1,0.11098095187114683
+15,"Long MOS model 2010-2023, no decay",1.0,0.11051967405017421
+15,"Long MOS model 2010-2023, no decay",10.0,0.11262870398504007
+15,"Long MOS model 2010-2023, no decay",30.0,0.11889461550641328
+15,"Long MOS model 2010-2023, no decay",100.0,0.12620501604527862
+15,"Long MOS model 2010-2023, no decay",300.0,0.13122444940036893
+15,"Two-stage, stage 1 long MOS model with no decay",0.1,0.09933831440263903
+15,"Two-stage, stage 1 long MOS model with no decay",1.0,0.09854463365787479
+15,"Two-stage, stage 1 long MOS model with no decay",10.0,0.09640557988064952
+15,"Two-stage, stage 1 long MOS model with no decay",30.0,0.0976789448997392
+15,"Two-stage, stage 1 long MOS model with no decay",100.0,0.10852471014708927
+15,"Two-stage, stage 1 long MOS model with no decay",300.0,0.13088454465140012
+15,Long MOS model 2010-2023 + data-detected eras (mean),0.1,0.11162142357300305
+15,Long MOS model 2010-2023 + data-detected eras (mean),1.0,0.11147397409811467
+15,Long MOS model 2010-2023 + data-detected eras (mean),10.0,0.11424502103762511
+15,Long MOS model 2010-2023 + data-detected eras (mean),30.0,0.12042553655866044
+15,Long MOS model 2010-2023 + data-detected eras (mean),100.0,0.12768889376994916
+15,Long MOS model 2010-2023 + data-detected eras (mean),300.0,0.13219231503805418
+15,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),0.1,0.11169599895165598
+15,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),1.0,0.1115689807648798
+15,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),10.0,0.11436897851224877
+15,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),30.0,0.12059327210460688
+15,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),100.0,0.12768862148728813
+15,Long MOS model 2010-2023 + data-detected eras (mean and log sigma),300.0,0.13205678423359773
+15,Long MOS model 2010-2023 + 4-year periods (mean),0.1,0.11088107353818055
+15,Long MOS model 2010-2023 + 4-year periods (mean),1.0,0.11079723711004796
+15,Long MOS model 2010-2023 + 4-year periods (mean),10.0,0.11352354431609524
+15,Long MOS model 2010-2023 + 4-year periods (mean),30.0,0.11971299905380496
+15,Long MOS model 2010-2023 + 4-year periods (mean),100.0,0.1268135126415544
+15,Long MOS model 2010-2023 + 4-year periods (mean),300.0,0.13140887113965685
+15,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),0.1,0.11079560337953245
+15,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),1.0,0.11069484980262964
+15,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),10.0,0.11336524290673426
+15,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),30.0,0.11941864972579326
+15,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),100.0,0.12683028132484273
+15,Long MOS model 2010-2023 + 4-year periods (mean and log sigma),300.0,0.13166734630409468
+15,CURRENT inputs 2021-2023 + data-detected eras (mean),0.1,0.1017391513273303
+15,CURRENT inputs 2021-2023 + data-detected eras (mean),1.0,0.10002390340463041
+15,CURRENT inputs 2021-2023 + data-detected eras (mean),10.0,0.09825660359018172
+15,CURRENT inputs 2021-2023 + data-detected eras (mean),30.0,0.10101678084482014
+15,CURRENT inputs 2021-2023 + data-detected eras (mean),100.0,0.11380369357929493
+15,CURRENT inputs 2021-2023 + data-detected eras (mean),300.0,0.13501842279373288
+15,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),0.1,0.1018107366512257
+15,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),1.0,0.09989490710486501
+15,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),10.0,0.09785438602885657
+15,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),30.0,0.10069885336520913
+15,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),100.0,0.11388123932032583
+15,CURRENT inputs 2021-2023 + data-detected eras (mean and log sigma),300.0,0.1349628650671288
+15,CURRENT inputs 2021-2023 + year indicators (mean),0.1,0.10323561302208333
+15,CURRENT inputs 2021-2023 + year indicators (mean),1.0,0.10082579557155848
+15,CURRENT inputs 2021-2023 + year indicators (mean),10.0,0.09835233051547643
+15,CURRENT inputs 2021-2023 + year indicators (mean),30.0,0.10091171483265735
+15,CURRENT inputs 2021-2023 + year indicators (mean),100.0,0.11370252105041391
+15,CURRENT inputs 2021-2023 + year indicators (mean),300.0,0.13505902289391364
+15,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),0.1,0.10320618091021065
+15,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),1.0,0.10065586680806345
+15,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),10.0,0.09817588180667951
+15,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),30.0,0.10100082375976772
+15,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),100.0,0.11396330326892687
+15,CURRENT inputs 2021-2023 + year indicators (mean and log sigma),300.0,0.13549779491411465

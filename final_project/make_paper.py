@@ -12,6 +12,8 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Image, PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 from xml.sax.saxutils import escape
 
+from paper_extension import extension_limitations, extension_references, extension_section, numbers as extension_numbers
+
 ROOT = Path(__file__).resolve().parent
 RESULTS = ROOT / "results"
 DATA = ROOT / "data"
@@ -108,6 +110,7 @@ def main():
     same_band_errors = sum(abs(int(row["predicted"]) - int(row["target_category"])) == 1 for row in errors)
     contributions_path = ROOT / "contributions.json"
     contributions = json.loads(contributions_path.read_text(encoding="utf-8")) if contributions_path.exists() else {}
+    extension = extension_numbers()
 
     content = [
         Paragraph("Predicting LaGuardia’s daily maximum temperature band", TITLE),
@@ -119,7 +122,10 @@ def main():
              f"(HRRR) forecasts. The observation experiment covers {full_n} held-out days and the matched "
              f"forecast experiment covers {matched_n}. Adding HRRR lowered log loss at {hrrr_improves} of "
              f"the 3 cutoffs. The validation-selected HRRR systems attained test log losses of "
-             f"{', '.join(f'{metric(row, 'log_loss'):.3f}' for row in matched)} in time order."),
+             f"{', '.join(f'{metric(row, 'log_loss'):.3f}' for row in matched)} in time order. "
+             f"In an extension, we add National Weather Service station forecasts (LAMP and the National Blend "
+             f"of Models) and predict how much warmer the day will still get, which lowers these to "
+             f"{', '.join(row[2] for row in extension['table'][:-1])}, and {extension['table'][-1][2]}."),
         heading("1. Problem and supervised formulation"),
         body("A morning temperature reading leaves several hours for the day to warm further. By afternoon, "
              "the observed maximum can already settle the relevant temperature band. We ask how much additional "
@@ -259,7 +265,8 @@ def main():
         body("<b>Figure 1.</b> Top-class reliability for the selected HRRR systems on the final test. "
              "Each point groups predicted confidence in a tenth-wide interval. Larger points represent "
              "more dates. The diagonal marks agreement between average confidence and observed accuracy."),
-        heading("7. Limitations and next steps"),
+        *extension_section(body, heading, table, Image, Spacer),
+        heading("8. Limitations and next steps"),
         body(f"The final test contains {full_n} observation dates across 12 months, with "
              f"{min(test_days)}–{max(test_days)} eligible days per month. The matched tests "
              "describe dates with verifiable forecast tiles. Archive availability can differ from operational "
@@ -268,10 +275,14 @@ def main():
              "describe this airport and test year. With another month we would run rolling seasonal tests and "
              "compare a calibrated continuous forecast with the five-class models. We would also test hourly "
              "cloud cover and verify station inputs against an arrival-time feed."),
+        *extension_limitations(body),
         heading("AI-use acknowledgment"),
         body("OpenAI Codex assisted with searching for data and published methods, implementing and debugging "
              "the pipeline, running checks, and drafting the paper and presentation. Evaluation results "
-             "come from the executable experiment and are included with the submission."),
+             "come from the executable experiment and are included with the submission. Anthropic's Claude "
+             "(Claude Code) assisted with the Section 7 extension: data retrieval scripts, the censored-likelihood "
+             "and comparison models, evaluation scripts and tests, drafting that section, and the LaTeX version of "
+             "the paper. Every number in Section 7 is produced by the included scripts."),
         PageBreak(),
         heading("References"),
         body("[1] NOAA National Centers for Environmental Information. Local Climatological Data Version 2. "
@@ -290,6 +301,7 @@ def main():
         body("[7] Raftery, A. E., Gneiting, T., and Berrocal, V. (2006). Combining spatial statistical "
              "and ensemble information in probabilistic weather forecasts. "
              "<link href='https://stat.uw.edu/research/tech-reports/combining-spatial-statistical-and-ensemble-information-probabilistic-weather-forecasts'>University of Washington technical report.</link>"),
+        *extension_references(body),
     ]
     document = SimpleDocTemplate(str(DELIVERY / "CS4260_Final_Paper.pdf"), pagesize=letter,
                                  title="Predicting LaGuardia’s daily maximum temperature band",
