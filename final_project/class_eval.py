@@ -54,7 +54,16 @@ GUIDANCE_N = (100, 200, 400, 700, None)          # None = every training day
 LONG_N = (100, 200, 400, 700, 1040, 2000, 3500, None)
 CLASSIFIERS = {"Logistic regression": "Logistic regression", "KNN": "KNN", "Gaussian naive Bayes": "Gaussian naive Bayes",
                "Random forest": "Random forest", "XGBoost": "XGBoost classifier"}
-REFERENCE = {9: 0.1995, 12: 0.1585, 15: 0.0724}  # CURRENT test log loss quoted in the brief
+def _reference():
+    """CURRENT's test log loss as saved by history_study.py (same censored-Gaussian code path)."""
+    import csv
+    path = Path(__file__).resolve().parent / "results" / "history" / "test_scores.csv"
+    with path.open(newline="", encoding="utf-8") as source:
+        rows = [row for row in csv.DictReader(source) if row["system"] == "Censored Gaussian, 2021-2023"]
+    return {int(row["hour"]): float(row["log_loss"]) for row in rows}
+
+
+REFERENCE = _reference()
 TOLERANCE = 0.003
 BLUE, ORANGE, AQUA, GRAY, INK, MUTED = "#257de0", "#f47230", "#00b894", "#7d8994", "#191919", "#666666"
 

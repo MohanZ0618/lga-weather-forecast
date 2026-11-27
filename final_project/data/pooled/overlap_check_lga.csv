@@ -1,0 +1,4 @@
+hour,dates,same_dates,same_columns,columns_compared,cells_equal,klga_text_identical,klga_columns,klga_cells_equal
+9,2059,True,True,37,1.0,True,8,1.0
+12,2059,True,True,37,1.0,True,8,1.0
+15,2059,True,True,37,1.0,True,8,1.0

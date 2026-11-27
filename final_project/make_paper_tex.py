@@ -62,7 +62,7 @@ P(a \le Y < b) = F(b - M) - F(a - M), \qquad
 F(r) = \begin{cases} \Phi\!\left(\frac{r-\mu}{\sigma}\right) & r > 0,\\ 0 & r \le 0. \end{cases}
 \end{gather*}
 """
-EXTRA_AFTER = {"<b>Objective and band probabilities.</b>": EQUATIONS}
+EXTRA_AFTER = {"The weights maximize the likelihood": EQUATIONS}
 
 SPECIAL = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$", "#": r"\#", "_": r"\_",
            "{": r"\{", "}": r"\}", "~": r"\textasciitilde{}", "^": r"\textasciicircum{}"}

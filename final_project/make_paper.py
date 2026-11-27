@@ -104,6 +104,16 @@ def main():
     hrrr_improves = sum(row["candidate"] == HRRR and metric(row, "delta_log_loss") < 0 for row in changes)
     stations_improve = sum(row["candidate"] == "Four stations" and metric(row, "delta_log_loss") < 0 for row in changes)
     worst = errors[0]
+    hrrr_late_change = next(metric(row, "delta_log_loss") for row in changes
+                            if row["candidate"] == HRRR and row["hour"] == "15")
+    warming_late = next(metric(row, "log_loss") for row in rows if row["cohort"] == "Matched HRRR"
+                        and row["scope"] == "Remaining warming" and row["hour"] == "15")
+    trend_worse = [{"9": "in the morning", "12": "at noon", "15": "at 15:00"}[row["hour"]] for row in changes
+                   if row["baseline"] == "Four stations" and row["candidate"] == TRENDS
+                   and metric(row, "delta_log_loss") > 0]
+    trend_text = ("The holdout also showed that the added temperature trends raised loss "
+                  + " and ".join(trend_worse) + "." if trend_worse else
+                  "The added temperature trends did not raise loss at any cutoff.")
     late = [row for row in valid if row["scope"] == HRRR and row["hour"] == "15" and row["split"] == "test"]
     xgb_late = next(row for row in late if row["model"] == "XGBoost")
     test_days = [int(row["n"]) for row in coverage if row["scope"] == "LGA" and row["hour"] == "9"]
@@ -120,12 +130,14 @@ def main():
              f"09:00, 12:00, and 15:00 New York time. We extend our Progress 1 study with a full-year "
              f"holdout, a historical remaining-warming baseline, and archived High-Resolution Rapid Refresh "
              f"(HRRR) forecasts. The observation experiment covers {full_n} held-out days and the matched "
-             f"forecast experiment covers {matched_n}. Adding HRRR lowered log loss at {hrrr_improves} of "
-             f"the 3 cutoffs. The validation-selected HRRR systems attained test log losses of "
-             f"{', '.join(f'{metric(row, 'log_loss'):.3f}' for row in matched)} in time order. "
+             f"forecast experiment covers {matched_n}. Adding HRRR lowered log loss at "
+             f"{'all three' if hrrr_improves == 3 else f'{hrrr_improves} of the 3'} cutoffs. The "
+             f"validation-selected HRRR systems attained test log losses of "
+             f"{', '.join(f'{metric(row, 'log_loss'):.3f}' for row in matched[:-1])}, and "
+             f"{metric(matched[-1], 'log_loss'):.3f} at 09:00, 12:00, and 15:00. "
              f"In an extension, we add National Weather Service station forecasts (LAMP and the National Blend "
              f"of Models) and predict how much warmer the day will still get, which lowers these to "
-             f"{', '.join(row[2] for row in extension['table'][:-1])}, and {extension['table'][-1][2]}."),
+             f"{', '.join(row[3] for row in extension['table'][:-1])}, and {extension['table'][-1][3]}."),
         heading("1. Problem and supervised formulation"),
         body("A morning temperature reading leaves several hours for the day to warm further. By afternoon, "
              "the observed maximum can already settle the relevant temperature band. We ask how much additional "
@@ -141,9 +153,10 @@ def main():
         heading("2. Data and label construction"),
         body("We use the NOAA Local Climatological Data version 2 station files [1] for LGA, JFK, EWR, and "
              "TEB from 2018 through August 2026. These records derive from GHCNh, the replacement for the "
-             "ISD/Global Hourly archive used in Progress 1. We keep METAR and SPECI observations, convert "
-             "Celsius to Fahrenheit, and use the last timestamped row in each UTC hour, then require "
-             "20 hours with valid temperature and coverage of all four six-hour New York time blocks. "
+             "ISD/Global Hourly archive used in Progress 1. We keep METAR and SPECI observations and convert "
+             "Celsius to Fahrenheit, rounding to the whole degree that the airport sensor measures (the archive "
+             "stores 40°F as 4.4°C). We use the last timestamped row in each UTC hour. A day is kept if it "
+             "has at least 20 hours with valid temperature and covers all four six-hour New York time blocks. "
              "The label represents the hourly observation series. Official daily and market settlement highs "
              "can use different observations and reporting rules."),
         body(f"The source timestamps are fixed Eastern standard time. We convert them before computing New "
@@ -193,7 +206,7 @@ def main():
              "validation. Forecast postprocessing and distribution mixtures have precedent in weather "
              "forecasting [7]. Here, both blend weights are fixed at one half."),
         heading("4. Experimental protocol"),
-        body(f"Ground observations train on 2018–2023 ({data_counts['train']:,} dates). The matched HRRR "
+        body(f"Observation-only models train on 2018–2023 ({data_counts['train']:,} dates). The matched HRRR "
              f"experiment uses available 2021–2023 dates for both sides. We tune and select on 2024 "
              f"({data_counts['validation']} observation dates). January–August 2025 is an overlap period "
              f"reported separately because Progress 1 examined most of it. The final test is September "
@@ -236,30 +249,34 @@ def main():
               paired, [60, 113, 102, 126, 107]),
         Spacer(1, 8),
         body(f"<b>Table 2.</b> Differences in mean test log loss on paired dates. Negative values favor the "
-             f"added inputs or the trends model in the third comparison. The nearby stations improved "
-             f"{stations_improve} of the 3 cutoffs. The blend was selected on validation in {blend_count} "
+             f"added inputs or the trends model in the third comparison. Adding nearby stations lowered mean "
+             f"loss at {'all three' if stations_improve == 3 else f'{stations_improve} of the 3'} cutoffs. The "
+             f"blend was selected on validation in {blend_count} "
              f"of 15 model comparisons across input sets and cohorts."),
         PageBreak(),
         heading("6. Where the forecasts fail"),
         body(f"HRRR's largest gain came at 09:00, when more of the daytime heating was still ahead. "
-             f"At 15:00 the reduction was only 0.0002. The validation-selected 15:00 HRRR blend "
+             f"At 15:00 HRRR {'lowered' if hrrr_late_change < 0 else 'raised'} log loss by only "
+             f"{abs(hrrr_late_change):.4f}. The validation-selected 15:00 HRRR blend "
              f"scored {metric(matched[-1], 'log_loss'):.3f}, while the corresponding XGBoost candidate "
-             f"scored {metric(xgb_late, 'log_loss'):.3f} on the same test dates. The holdout also showed "
-             f"that the added temperature trends raised loss in the morning and at noon. At 15:00 the "
-             f"remaining-warming baseline reached 0.093 log loss on the matched dates."),
+             f"scored {metric(xgb_late, 'log_loss'):.3f} on the same test dates. {trend_text} At 15:00 the "
+             f"remaining-warming baseline reached {warming_late:.3f} log loss on the matched dates."),
     ]
-    for hour in (9, 12, 15):
-        close, far = sorted((row for row in boundaries if row["scope"] == HRRR and int(row["hour"]) == hour),
-                            key=lambda row: row["near_boundary"], reverse=True)
-        content.append(body(
-            f"<b>{hour:02}:00.</b> Within 2°F of a band boundary, the HRRR model classified "
-            f"{metric(close, 'accuracy'):.1%} correctly on {close['n']} days. Farther away, accuracy "
-            f"was {metric(far, 'accuracy'):.1%} on {far['n']} days."))
+    near = [sorted((row for row in boundaries if row["scope"] == HRRR and int(row["hour"]) == hour),
+                   key=lambda row: row["near_boundary"], reverse=True) for hour in (9, 12, 15)]
+    rates = lambda side: ", ".join(f"{metric(pair[side], 'accuracy'):.1%}" for pair in near[:2]) + (
+        f", and {metric(near[2][side], 'accuracy'):.1%}")
+    content.append(body(
+        f"Within 2°F of a band boundary, the HRRR model was correct on {rates(0)} of days at 09:00, 12:00, "
+        f"and 15:00 ({near[0][0]['n']} days at each cutoff). Farther from a boundary it was correct on "
+        f"{rates(1)} ({near[0][1]['n']} days)."))
     content += [
-        body(f"Across the three times, {same_band_errors} of {len(errors)} mistakes were one band away. "
+        body(f"Across the three times, "
+             f"{f'all {len(errors)}' if same_band_errors == len(errors) else f'{same_band_errors} of {len(errors)}'} "
+             f"mistakes were one band away. "
              f"The most confident miss occurred on {worst['date'][:10]} at {int(worst['hour']):02}:00. "
              f"The model gave {metric(worst, 'confidence'):.1%} to the {escape(BANDS[int(worst['predicted'])])}°F "
-             f"band. The observed high was {metric(worst, 'target_max'):.2f}°F. Confidence can stay high "
+             f"band. The observed high was {metric(worst, 'target_max'):.0f}°F. Confidence can stay high "
              "when a small error in the temperature trajectory changes the label."),
         Image(str(RESULTS / "reliability.png"), width=500, height=159.6),
         body("<b>Figure 1.</b> Top-class reliability for the selected HRRR systems on the final test. "

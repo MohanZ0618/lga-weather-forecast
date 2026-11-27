@@ -1,0 +1,4 @@
+hour,selected_without_hrrr,selected_overall,"val_CURRENT (Censored Gaussian, HRRR + LAMP/NBM)",val_LGA only,val_Pooled,val_Pooled + airport shifts,val_Pooled + airport shifts + LGA weight
+9,Pooled + airport shifts + LGA weight,"CURRENT (Censored Gaussian, HRRR + LAMP/NBM)",0.1869466522704356,0.20093399064293277,0.20023306143724828,0.19878732693667625,0.19856254456401143
+12,Pooled + airport shifts,"CURRENT (Censored Gaussian, HRRR + LAMP/NBM)",0.1690025039244105,0.18637487227138091,0.18612585141538351,0.18232409254188311,0.18234743141481727
+15,Pooled + airport shifts + LGA weight,"CURRENT (Censored Gaussian, HRRR + LAMP/NBM)",0.0821861003772169,0.09310313718241751,0.0920835351653171,0.09084989788981082,0.0908471422849617

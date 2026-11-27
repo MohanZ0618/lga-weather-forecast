@@ -1,13 +1,13 @@
 ## Station guidance: LAMP and NBM
 
-`python final_project/guidance_study.py` (about 40 seconds, offline) adds station guidance from the Iowa Environmental Mesonet MOS archive: LAMP (four runs a day, from July 2020) and the NBM text bulletin (four runs a day, from November 2018). `guidance.py fetch` downloads the 16 yearly KLGA files (URLs and SHA-256 in `data/guidance_sources.csv`); `guidance.py build` writes the bundled `data/guidance_features.csv.gz`. At each cutoff it uses the newest run issued by then, assuming release 55 min (LAMP) and 66 min (NBM) after initialization. Seven features: LAMP's highest temperature for the rest of the day, LAMP's error at the current hour, LAMP's afternoon cloud cover and wind (east and north components), and NBM's daytime maximum and its standard deviation.
+`guidance_study.py` adds station guidance from the Iowa Environmental Mesonet MOS archive: LAMP (four runs a day from July 2020) and the NBM text bulletin (four runs a day from November 2018). `guidance.py fetch` downloads the yearly KLGA files (URLs and SHA-256 in `data/guidance_sources.csv`) and `guidance.py build` writes `data/guidance_features.csv.gz`. Each cutoff uses the newest run released by then, assuming release 55 minutes (LAMP) and 66 minutes (NBM) after initialization. The seven features are LAMP's highest temperature for the rest of the day, its error at the current hour, its afternoon cloud cover and two wind components, and NBM's daytime maximum and standard deviation.
 
-The system is chosen per cutoff on 2024 validation log loss among six candidates (paper classifier families, censored Gaussian and quantile boosting, each with and without HRRR). The censored Gaussian with HRRR plus LAMP/NBM wins at all three cutoffs. On the same 359 test days as the paper's selected HRRR system:
+Six candidates were compared on 2024 validation log loss (the paper's classifier families, the censored Gaussian and quantile boosting, each with and without HRRR). On the paper's 359 matched test days:
 
-| Cutoff | Paper log loss | With LAMP/NBM | Difference [95% block interval] | Accuracy |
-| --- | ---: | ---: | --- | --- |
-| 09:00 | 0.258 | 0.200 | −0.058 [−0.095, −0.023] | 88.9% → 90.8% |
-| 12:00 | 0.234 | 0.159 | −0.075 [−0.112, −0.040] | 89.4% → 93.6% |
-| 15:00 | 0.094 | 0.072 | −0.022 [−0.045, +0.0003] | 97.2% → 97.8% |
+| Cutoff | Chosen on 2024 | Paper log loss | New log loss | Difference [95% interval] | Accuracy |
+| --- | --- | ---: | ---: | --- | --- |
+| 09:00 | Censored Gaussian | 0.265 | 0.182 | -0.083 [-0.117, -0.050] | 89.7% to 92.5% |
+| 12:00 | Censored Gaussian | 0.205 | 0.137 | -0.068 [-0.118, -0.027] | 93.3% to 94.7% |
+| 15:00 | Quantile boosting | 0.084 | 0.061 | -0.023 [-0.046, -0.001] | 96.1% to 97.2% |
 
-Checks: no feature uses a run before its assumed release (`test_guidance.py`); the gain survives adding one hour to every release delay (−0.056, −0.075, −0.024, all intervals below zero); the downloaded full-year files match an independent earlier download byte for byte. The archive has no receipt times, so release delays are assumptions, not measurements. LAMP alone, without HRRR, does about as well (`results/guidance/test_scores.csv`).
+No feature uses a run before its assumed release (`test_guidance.py`), and the full-year downloads match an independent earlier download byte for byte. The archive has no receipt times, so the release delays are assumptions.

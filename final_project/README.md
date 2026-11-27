@@ -32,11 +32,14 @@ python final_project/class_models.py
 python final_project/mos_history.py
 python final_project/observed_weather.py
 python final_project/nonstationarity.py
-cd final_project && python -m unittest test_final test_guidance test_history test_class_eval test_class_models test_mos_history test_observed_weather test_nonstationarity
+python final_project/hrrr_fresh_study.py
+python final_project/pooled_airports.py run
+cd final_project && python -m unittest test_final test_guidance test_history test_class_eval test_class_models test_mos_history test_observed_weather test_nonstationarity test_hrrr_fresh test_pooled_airports
 python make_paper.py
+python make_paper_tex.py
 ```
 
-The extension adds station guidance from the Iowa Environmental Mesonet archive: LAMP and the National Blend of Models text bulletin, using the newest run released by each cutoff (`guidance.py`). A censored Gaussian model of the warming still to come (`distribution.py`, `shash.py`) lowers test log loss from 0.258, 0.234 and 0.094 to 0.200, 0.159 and 0.072 on the same 359 days. The other scripts test longer history, course methods (learning curves, cross-validation, bagging, a neural network), observed weather and nearby stations, and model and sensor drift. None of them beats the selected model. Each script writes `results/<name>/`, and `results/<name>/README_SECTION.md` explains its result. `make_paper.py` builds Section 7 from those files through `paper_extension.py`. To download the public source files again, run `guidance.py fetch`, `mos.py fetch`, `asos.py fetch` and `history.py`; the matching `build` steps rebuild the bundled feature tables.
+Temperatures are rounded to whole degrees Fahrenheit in `prepare.py`, because the airport sensors measure whole degrees and the archive stores them in tenths of a degree Celsius (40°F is stored as 4.4°C, which converts to 39.92°F and used to fall into the colder band on 182 of 3,154 days). The extension adds station guidance from the Iowa Environmental Mesonet archive, LAMP and the National Blend of Models text bulletin, using the newest run released by each cutoff (`guidance.py`). It predicts the warming still to come with a censored Gaussian (`distribution.py`, `shash.py`). The system chosen on 2024 validation (the censored Gaussian at 09:00 and 12:00, quantile boosting at 15:00) lowers test log loss from 0.265, 0.205 and 0.084 to 0.182, 0.137 and 0.061 on the same 359 days. The other scripts test longer history, course methods (learning curves, cross-validation, bagging, a neural network), observed weather and nearby stations, newer HRRR runs, pooling nearby airports, and model and sensor drift. None was clearly better on the test year. Each script writes `results/<name>/`, and `results/<name>/README_SECTION.md` explains its result. `make_paper.py` builds Section 7 from those files through `paper_extension.py`, and `make_paper_tex.py` renders the same paper in LaTeX. To download the public source files again, run `prepare.py`, `history.py`, `guidance.py fetch`, `mos.py fetch`, `asos.py fetch`, `hrrr_fresh.py fetch` and `pooled_airports.py build`.
 
 ## Data provenance and rebuilding
 

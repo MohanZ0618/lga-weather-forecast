@@ -1,0 +1,4 @@
+hour,test_dates,same_test_dates_as_current,current_targets_match,lga_train_dates,lga_train_dates_guidance_study,refit_vs_saved_no_hrrr_max_abs_prob,weighted_fit_at_weight_1_vs_c_val_gap
+9,359,True,True,1040,1040,0.00012129105605865331,-1.1045862931852168e-05
+12,359,True,True,1040,1040,0.0002227849623102074,2.3338872934153265e-05
+15,359,True,True,1038,1038,0.0003154224045830434,-2.755604849122295e-06

@@ -1,208 +1,208 @@
 hour,split,candidate,baseline,metric,delta,ci95_low,ci95_high,excludes_zero
-9,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-2.129771211029799e-05,-4.6402317346366525e-05,8.358273022625126e-07,False
-9,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-3.788796894934738e-06,-1.1319887873909387e-05,3.2543277134003755e-06,False
+9,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,2.8406576580112686e-06,-2.062736293056161e-06,7.91020512195994e-06,False
+9,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,7.621708520783067e-08,-1.555412330770752e-06,1.6978856560457871e-06,False
 9,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-9,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.0012577553642992643,-0.0036580990799172704,0.0010727121283269465,False
-9,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0001747147759708371,-0.0009229612130842675,0.0005547913957000172,False
-9,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,0.0,0.008450704225352112,False
-9,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",log_loss,0.00021642413382975836,-0.00147603953343624,0.0019741107125494546,False
-9,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",rps,0.00018934780460498488,-0.0004502798168053017,0.0008518042250381224,False
-9,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.011363636363636364,0.0,False
-9,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.004597333627244983,-0.02062988507163604,0.01346062763943308,False
-9,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0025208987021841374,-0.00611814931407494,0.000999986469779802,False
-9,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.011142061281337047,0.011111111111111112,False
-9,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",log_loss,0.009783051705652605,-0.005180965391339959,0.02645958336018592,False
-9,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",rps,0.0028709288773014637,-0.0017749317118130816,0.007601648214791797,False
-9,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,-0.010638297872340425,0.025089605734767026,False
-9,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.027699147703419247,0.004347830402677906,0.051475667538420714,True
-9,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.000986701081003036,-0.007297286823355114,0.009456056524475426,False
-9,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,-0.019444444444444445,0.024861878453038673,False
-9,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",log_loss,0.042287161276484644,0.014720420089224298,0.07074340617940425,True
-9,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",rps,0.005867924183263495,-0.0048561232683021465,0.016812690229583142,False
-9,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,-0.024475524475524476,0.03076923076923077,False
-9,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.05217725072950906,0.026119321242504653,0.07857644105884268,True
-9,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.008113533509646111,-0.0016981077657403675,0.017820024274445206,False
-9,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,-0.019390581717451522,0.0227806378704161,False
-9,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.05314257357090766,0.021958080509077597,0.08546690265260931,True
-9,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.009089909372285732,-0.002360288840351825,0.020923218519840765,False
-9,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.029093563370935632,0.027588251328880983,False
-9,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.01793937501759221,-0.009847618534049748,0.046791023080704805,False
-9,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0005988358406720939,-0.009364436866949906,0.008961038451460731,False
-9,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.027777777777777776,0.01662049861495845,False
-9,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.048945456146076975,0.01590631991890535,0.08370326163554825,True
-9,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.008505836716396847,-0.004160523011845554,0.02203418825099658,False
-9,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,-0.02564102564102564,0.03833087644063249,False
-9,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.006112660687348569,-0.00571544523568845,0.017433751439800506,False
-9,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.003082992272808783,-0.007312643840608235,0.0010242821583553022,False
-9,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,-0.0111731843575419,0.01675977653631285,False
-9,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.010341738792834534,-0.003628983040556385,0.024077042575050004,False
-9,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0023250983616755847,-0.007832785972636652,0.0031980986764117147,False
-9,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,-0.013987240829346092,0.02768406382160704,False
-9,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-2.129771211029799e-05,-4.6402317346366525e-05,8.358273022625126e-07,False
-9,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-3.788796894934738e-06,-1.1319887873909387e-05,3.2543277134003755e-06,False
+9,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.00115013343165748,-0.0032495878231618763,0.0007693051688227156,False
+9,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,1.646338036254958e-05,-0.0006038034066676432,0.0006112626555371504,False
+9,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008356545961002786,False
+9,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",log_loss,-0.00012590471052137698,-0.002231914739579475,0.0018389476135896,False
+9,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",rps,5.7894504011939306e-05,-0.0007398132664236756,0.0008250414610592599,False
+9,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.010752688172043012,0.010714285714285714,False
+9,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.00692090986995863,-0.025621814199446123,0.011870742285362335,False
+9,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0024975963008105587,-0.007186676227544827,0.0015492399359415764,False
+9,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.014044943820224719,0.008379888268156424,False
+9,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",log_loss,0.0064918489282190005,-0.006633246643451448,0.020895899415327268,False
+9,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",rps,0.0021082199288379676,-0.00276804680620693,0.007021146035277005,False
+9,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",correct,-0.007220216606498195,-0.02491103202846975,0.010714285714285714,False
+9,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.05087220190927975,0.020329965679606696,0.08394182062797273,True
+9,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.00659674675031504,-0.0032187262014564556,0.017059926122094827,False
+9,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.025,0.016853932584269662,False
+9,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",log_loss,0.04228073750839844,0.013692879021768313,0.07310038585369534,True
+9,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",rps,0.006734658735399548,-0.004209312675763811,0.01843293697775141,False
+9,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,-0.021354219623792577,0.03571428571428571,False
+9,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.07588127350436744,0.04531931911202938,0.10618507469322983,True
+9,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.01434000412168686,0.0037246850867787506,0.025369205600288883,True
+9,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.008356545961002786,-0.03324330563250231,0.014044943820224719,False
+9,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.06765965072541236,0.033180222195096316,0.10525345151683671,True
+9,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.014012689159441687,0.00046822347006840855,0.028525287324198696,True
+9,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.007220216606498195,-0.04642857142857143,0.028985507246376812,False
+9,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0511838525807326,0.006677977144429112,0.10491961866038269,True
+9,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.005395662985685202,-0.0056687623137996095,0.01705079339053011,False
+9,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,-0.016713091922005572,0.022222222222222223,False
+9,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.042573627698263526,0.008262155808414735,0.07869085607257313,True
+9,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.00711214127349388,-0.004065877834487854,0.01937650378327331,False
+9,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.033460370082672136,0.025179856115107913,False
+9,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.015266720502123242,0.0013240173121127623,0.029244276128821405,True
+9,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.00032001185497143375,-0.005269802142231255,0.004737959014613785,False
+9,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,-0.014084507042253521,0.019498607242339833,False
+9,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.010654773009692376,-0.0030500308186666345,0.02455709184337646,False
+9,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.002275934070982846,-0.007702137466017834,0.0029992533235680915,False
+9,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.032490974729241874,0.007246376811594203,0.05925925925925926,True
+9,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,2.8406576580112686e-06,-2.062736293056161e-06,7.91020512195994e-06,False
+9,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,7.621708520783067e-08,-1.555412330770752e-06,1.6978856560457871e-06,False
 9,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
 9,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0,0.0,0.0,False
 9,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",rps,0.0,0.0,0.0,False
 9,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-9,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.005154953663176963,-0.013337703068337562,0.003073221858374844,False
-9,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0017240671784153935,-0.003494140124634595,-5.326828941199709e-06,True
-9,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008310249307479225,False
-9,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.00205872305214878,-0.004799505624666949,0.008597157555386325,False
-9,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,0.0008675320324177246,-0.001443553317707795,0.003152293371782265,False
-9,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,-0.007168458781362007,0.022058823529411766,False
-9,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-2.129771211029799e-05,-4.6402317346366525e-05,8.358273022625126e-07,False
-9,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-3.788796894934738e-06,-1.1319887873909387e-05,3.2543277134003755e-06,False
+9,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.006865383586694978,-0.016485343355918135,0.0015893436073877753,False
+9,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.001873304284580994,-0.004354752756659945,0.00017415939594663527,False
+9,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.008403361344537815,0.0,False
+9,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0009074503193920268,-0.005004663356920711,0.006950900104111074,False
+9,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,0.00018994419922677632,-0.0022113062947292173,0.002510708778953776,False
+9,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.010752688172043012,0.010714285714285714,False
+9,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.0028046089628723085,-0.006023724758251528,-3.188560194875941e-05,True
+9,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0006930922243854975,-0.001465809062231793,-6.076050571466872e-05,True
 9,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-9,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0,0.0,0.0,False
-9,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,0.0,0.0,0.0,False
-9,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-9,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.00018785568331643448,-0.011245728675260804,0.010296696361894644,False
-9,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.003851870463455155,-0.007171320648966575,-0.000679851918744925,True
-9,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.013774104683195593,0.0056022408963585435,False
-9,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.006317031097046439,-0.004670262438055403,0.01708448016770932,False
-9,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.002037136704330584,-0.006103209148613552,0.002000615689396103,False
-9,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,-0.01107011070110701,0.019011406844106463,False
-9,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-2.129771211029799e-05,-4.6402317346366525e-05,8.358273022625126e-07,False
-9,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-3.788796894934738e-06,-1.1319887873909387e-05,3.2543277134003755e-06,False
+9,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.00010501988040167607,-0.0018280052223825036,0.0016245939201839734,False
+9,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0001244915509223298,-0.0008365490484423562,0.0005481569063721423,False
+9,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.011152416356877323,0.0,False
+9,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0033606754855464624,-0.007595523349067411,0.01387230597083469,False
+9,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.002356704679796956,-0.006190942529842667,0.001155853681674844,False
+9,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,-0.008426966292134831,0.014044943820224719,False
+9,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.00483945645054938,-0.005956568575935509,0.015647861202017374,False
+9,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0028997102752296986,-0.007027414340609597,0.0009865383452727025,False
+9,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,0.0,0.024650064699148926,False
+9,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.0028046089628723085,-0.006023724758251528,-3.188560194875941e-05,True
+9,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0006930922243854975,-0.001465809062231793,-6.076050571466872e-05,True
 9,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-9,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0,0.0,0.0,False
-9,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,0.0,0.0,0.0,False
-9,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-12,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.00012541320506597375,-0.00036903267261109864,1.7366103376424275e-05,False
-12,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-5.608545497952174e-05,-0.00016394690892897014,5.313765765327801e-06,False
+9,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.00010501988040167607,-0.0018280052223825036,0.0016245939201839734,False
+9,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0001244915509223298,-0.0008365490484423562,0.0005481569063721423,False
+9,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.011152416356877323,0.0,False
+12,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-2.1388845605608117e-05,-6.011855289912688e-05,1.6481836378213825e-05,False
+12,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-1.085968614775278e-05,-2.422120199401724e-05,2.0828212145477837e-06,False
 12,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-12,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.001526412128883402,-0.004769021337668791,0.0015702834329021182,False
-12,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0005579255217852036,-0.0015730722300890845,0.0003554153865652927,False
+12,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.001405737172307511,-0.003992773607430463,0.0008096735056768256,False
+12,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0004840062797370868,-0.0014016334911988429,0.0003051707424920878,False
 12,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.008403361344537815,0.0,False
-12,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",log_loss,-0.0002791574994449941,-0.0019274924845132037,0.0013720739822099183,False
-12,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",rps,7.305877275936667e-05,-0.0006106443686730862,0.0007561050498063758,False
-12,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-12,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.009730565455192818,-0.009809972292295297,0.02948073294458195,False
-12,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.00021993603979293485,-0.005141284564294768,0.005452699269397971,False
-12,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.011142061281337047,-0.027777777777777776,0.002793296089385475,False
-12,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",log_loss,0.002549875730133303,-0.016827503440410084,0.02111096248620446,False
-12,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",rps,-7.88860297375949e-06,-0.0064278436171423484,0.0063002099225136264,False
-12,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.0036231884057971015,0.027588251328880983,False
-12,test,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.05791326067529159,0.025482567629583806,0.09129504191563427,True
-12,test,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.016055180498292153,0.003985952629516956,0.028536819436971502,True
-12,test,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.03899721448467967,-0.06629834254143646,-0.013966480446927373,True
-12,validation,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian (CURRENT, refit)",log_loss,0.048273998024128434,0.01515152725620268,0.0869341019156159,True
-12,validation,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian (CURRENT, refit)",rps,0.009618434242857932,-0.001307253131464537,0.021503621504196855,False
-12,validation,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian (CURRENT, refit)",correct,-0.010830324909747292,-0.03859649122807018,0.017361111111111112,False
-12,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.05848451568454944,0.028865130589821347,0.0891963249501495,True
-12,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.015038442135077336,0.004079371410736787,0.02640078590123607,True
-12,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.033426183844011144,-0.061452513966480445,-0.005571030640668524,True
-12,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.05173632835039589,0.022140281425769678,0.0830297338555543,True
-12,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.011076557530876096,0.0010252209878659144,0.021588003013148203,True
-12,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.010830324909747292,-0.03690036900369004,0.011320754716981131,False
-12,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.07504218508436766,0.03326417572821245,0.11807641820111839,True
-12,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.021654312508087095,0.007688903587653088,0.0362383724539139,True
-12,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.036211699164345405,-0.06111111111111111,-0.013850415512465374,True
-12,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.05922774995436769,0.014052301268884433,0.11457105116645613,True
-12,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.01219113525042604,-0.000867636789153474,0.02678119378363511,False
-12,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.021660649819494584,-0.053003533568904596,0.010564313442492396,False
-12,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.016168859623730606,0.002291717048872104,0.030264827103308953,True
-12,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0019397744931291673,-0.0036509301745775067,0.0075851069476842725,False
-12,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.013927576601671309,-0.03089887640449438,0.0028011204481792717,False
-12,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.014474330904890882,0.0007122119184532824,0.02875599672463261,True
-12,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",rps,0.0008285400676849074,-0.004309948438664954,0.006198070020190231,False
-12,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.014441741223251191,0.035717485919098776,False
-12,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.00012541320506597375,-0.00036903267261109864,1.7366103376424275e-05,False
-12,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-5.608545497952174e-05,-0.00016394690892897014,5.313765765327801e-06,False
-12,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-12,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0,0.0,0.0,False
-12,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",rps,0.0,0.0,0.0,False
-12,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-12,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0008524778146512999,-0.008641210719739839,0.009681963732230126,False
-12,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.000714345421787751,-0.0035285266744966735,0.0019777577787123968,False
-12,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.013966480446927373,0.0,False
-12,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0013983591395110725,-0.011459385940152294,0.007349404928367645,False
-12,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0007701812298425069,-0.0039978643596652675,0.0023293911557159684,False
+12,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",log_loss,-0.0012588607902684846,-0.00386900608638682,0.0011608505384548126,False
+12,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",rps,-0.00035292484669680247,-0.001295966639677355,0.0005325531275030369,False
+12,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",correct,-0.007220216606498195,-0.01818181818181818,0.0,False
+12,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.006886476815489948,-0.006971115312460944,0.02174802796264871,False
+12,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0007813016408225221,-0.0031473790039449226,0.0048613581187201965,False
+12,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.011142061281337047,-0.027624309392265192,0.002793296089385475,False
+12,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",log_loss,-0.00960011608074899,-0.02435282333232547,0.00461308662897383,False
+12,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",rps,-0.00424714358644037,-0.009188041179876172,-2.2974101728003114e-05,True
+12,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.0036363636363636364,0.027874564459930314,False
+12,test,"Paper classifiers, guidance inputs (XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.07214770678672963,0.013686889748007844,0.14375194092275587,True
+12,test,"Paper classifiers, guidance inputs (XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.01283129049533798,-0.0032070121439935766,0.03113699642310357,False
+12,test,"Paper classifiers, guidance inputs (XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.013927576601671309,-0.03888888888888889,0.008356545961002786,False
+12,validation,"Paper classifiers, guidance inputs (XGBoost)","Censored Gaussian (CURRENT, refit)",log_loss,0.04020215809965685,-0.0011845914471196799,0.08301755510548177,False
+12,validation,"Paper classifiers, guidance inputs (XGBoost)","Censored Gaussian (CURRENT, refit)",rps,0.007818850322865868,-0.008006023303990617,0.024051083104933688,False
+12,validation,"Paper classifiers, guidance inputs (XGBoost)","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.04,0.03125,False
+12,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.07296498128517599,0.03285040354459831,0.11651357573042417,True
+12,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.016902732736397932,0.0034055121527494362,0.031562102951027,True
+12,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.027855153203342618,-0.05307262569832402,-0.002777777777777778,True
+12,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.05873364054779396,0.02419726423836745,0.09353685028152899,True
+12,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.0148393530702264,0.0006967010699118015,0.029275223725535218,True
+12,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.02527075812274368,-0.06007067137809187,0.007042875628328265,False
+12,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.07214770678672963,0.013686889748007844,0.14375194092275587,True
+12,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.01283129049533798,-0.0032070121439935766,0.03113699642310357,False
+12,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.013927576601671309,-0.03888888888888889,0.008356545961002786,False
+12,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.04020215809965685,-0.0011845914471196799,0.08301755510548177,False
+12,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.007818850322865868,-0.008006023303990617,0.024051083104933688,False
+12,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.04,0.03125,False
+12,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.008739376331705954,-0.010923039857946864,0.030389420689680192,False
+12,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,1.4352741358603929e-05,-0.007805690547315785,0.008078101405367842,False
+12,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.008356545961002786,-0.030555555555555555,0.013812154696132596,False
+12,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.004127206785048255,-0.016519196510332897,0.02399847527355251,False
+12,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0038291124516663362,-0.011792247961462861,0.0037404584502348953,False
+12,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.014285714285714285,0.03704394693200653,False
+12,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.000582875064742687,-0.0072541541681952855,0.005901775827092409,False
+12,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0013464271171755133,-0.0037311930879197204,0.0009077371805826927,False
+12,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.013812154696132596,0.0056022408963585435,False
+12,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0018336408472598366,-0.008964106575114964,0.00468230404094138,False
+12,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.002773826634250748,-0.0052582807972173075,-0.00047950643857268483,True
+12,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,0.0,0.018315018315018316,False
+12,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0014505975376608833,-0.0051968001957068445,0.008099896091383663,False
+12,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.00026900459163410205,-0.0022987771325785537,0.0017597117635202448,False
+12,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.008403361344537815,0.0,False
+12,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0067924236461380716,-0.014749261224289142,0.0005008054443975978,False
+12,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.00280501780473935,-0.005451227624553811,-0.000573072940168257,True
 12,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.010752688172043012,0.010638297872340425,False
-12,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.00010415860364963984,-0.00763633270936275,0.0072010015639476345,False
-12,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0007100967426972174,-0.0029893226789251765,0.0014379347346726524,False
-12,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.013966480446927373,0.0,False
-12,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.001525802047438804,-0.00979301212595071,0.00552476091194524,False
-12,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0007387428924109053,-0.003334051281418971,0.0017343262129297802,False
-12,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.010752688172043012,0.010638297872340425,False
-12,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.008854838640920907,-0.0024220660308999086,0.019878494347761577,False
-12,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0004248089285454051,-0.004444500271976172,0.003432653647911118,False
-12,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.019498607242339833,0.008356545961002786,False
-12,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.007194281501769879,-0.0050404861638383095,0.017961634159565847,False
-12,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0007885474744687744,-0.005204564720239812,0.003251789606236041,False
-12,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.006873444720938499,0.03169014084507042,False
-12,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.00010415860364963984,-0.00763633270936275,0.0072010015639476345,False
-12,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0007100967426972174,-0.0029893226789251765,0.0014379347346726524,False
-12,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.013966480446927373,0.0,False
-12,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.001525802047438804,-0.00979301212595071,0.00552476091194524,False
-12,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0007387428924109053,-0.003334051281418971,0.0017343262129297802,False
-12,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.010752688172043012,0.010638297872340425,False
-15,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-3.0411807742776855e-06,-5.622176341705466e-06,-8.332813520705218e-07,True
-15,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-6.957369513638007e-07,-1.4319136128695372e-06,6.6954675111974164e-09,False
+12,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.006886476815489948,-0.006971115312460944,0.02174802796264871,False
+12,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0007813016408225221,-0.0031473790039449226,0.0048613581187201965,False
+12,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.011142061281337047,-0.027624309392265192,0.002793296089385475,False
+12,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.00960011608074899,-0.02435282333232547,0.00461308662897383,False
+12,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.00424714358644037,-0.009188041179876172,-2.2974101728003114e-05,True
+12,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.0036363636363636364,0.027874564459930314,False
+12,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0027710647201882447,-0.009983154458327901,0.015105339631223982,False
+12,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0016918720996688846,-0.0065832346958794585,0.0029843715844205306,False
+12,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.022222222222222223,0.008379888268156424,False
+12,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.00389413110977234,-0.02098801085493957,0.011586483611150106,False
+12,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0056387339812816175,-0.012192506743845364,0.00019905056500696926,False
+12,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.010830324909747292,-0.007220216606498195,0.02952578224666997,False
+12,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.005126964385196149,-0.007164583337473017,0.018114492200701528,False
+12,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,6.179565093255033e-05,-0.0034695173535805564,0.0035303532487376064,False
+12,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.011142061281337047,-0.02535211267605634,0.002793296089385475,False
+12,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.009669405557215453,-0.024904880418963354,0.004994734397762573,False
+12,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.004963573989236083,-0.0102018382701981,-0.00044842845681986753,True
+12,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.01444043321299639,-0.0035971223021582736,0.03597122302158273,False
+15,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-6.528371895913512e-06,-1.2138116235431116e-05,-6.342584289804891e-07,True
+15,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-1.6194521025016767e-06,-3.6981405230107806e-06,3.293998011874745e-07,False
 15,test,"Censored Gaussian (CURRENT, refit)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-15,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.0009423525569956699,-0.0019262016898453384,-6.277955387329245e-05,True
-15,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.00029066895413552976,-0.0006213916683525733,2.9615346350335297e-06,False
-15,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-15,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",log_loss,-6.921532738269313e-05,-0.0007601114910411852,0.0006527913059023671,False
-15,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",rps,2.853370237966389e-06,-0.0002486118880706742,0.00026786789188114877,False
+15,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-0.00045490230720307936,-0.001652265174110553,0.0006971654042725544,False
+15,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0001187680665316404,-0.0005121998953071052,0.00026192806836075654,False
+15,test,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,0.0,0.008426966292134831,False
+15,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",log_loss,-0.0007097140711443672,-0.0017167479113133488,0.00028479614557600245,False
+15,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",rps,-0.000323770425534134,-0.0007048194924636753,4.1359525211715544e-05,False
 15,validation,"Bagged censored Gaussian (B=50, weekly blocks)","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-15,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0026299379796965046,-0.003715051278850738,0.009029731710946702,False
-15,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0007107056752714308,-0.0011817505740715454,0.0026641660494329472,False
-15,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.011235955056179775,0.0056022408963585435,False
-15,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",log_loss,-0.0064303748968839,-0.015553366051266823,0.002568974077713557,False
-15,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",rps,-0.0022966079682722206,-0.005667657780677574,0.0011333749439479714,False
-15,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.01492677064117614,0.007407407407407408,False
-15,test,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.017872698828236097,-0.0007232309676181644,0.03701118502028133,False
-15,test,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.005536489985227434,-0.001488599180782263,0.013206541803817048,False
-15,test,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.019498607242339833,-0.03899993775384759,0.0,False
-15,validation,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian (CURRENT, refit)",log_loss,0.03162204191026243,0.01210435875585202,0.053912937223475774,True
-15,validation,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian (CURRENT, refit)",rps,0.005784796473631739,-0.0010742429247640097,0.013429580273839847,False
-15,validation,"Paper classifiers, guidance inputs (average of Random forest + XGBoost)","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.019459067673762112,0.011030429238115896,False
-15,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.03197128613851514,0.010628918317738547,0.05184885476832004,True
-15,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.009194230838448997,0.0016939248318297722,0.016663880030633377,True
-15,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.011142061281337047,-0.031073446327683617,0.008333333333333333,False
-15,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.034799013410904994,0.017943304272729013,0.052604776121117774,True
-15,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.006273289136373494,-0.0005749821439972286,0.013519067180381717,False
-15,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,-0.011764705882352941,0.01838404873019316,False
-15,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.013977319164456733,-0.008347818257834483,0.0439591955088461,False
-15,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.005326057845417181,-0.0028604887129485223,0.01546471642470187,False
-15,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.013927576601671309,-0.033426183844011144,0.002793296089385475,False
-15,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.05555696012264926,0.013494425875959289,0.10780609163133364,True
-15,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.009399522151955393,0.00012835085800199896,0.020241493922307622,True
-15,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,-0.010830324909747292,-0.0299625468164794,0.0071174377224199285,False
-15,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.005340455869860014,-0.004117051076046259,0.014160113435003535,False
-15,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0009006957595662327,-0.0023594065420898826,0.004282728499018571,False
-15,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.005571030640668524,-0.016713091922005572,0.005555555555555556,False
-15,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.011805529167022181,0.0035156332572619134,0.020535317481012224,True
-15,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",rps,0.0014802567738848502,-0.0019603029248477437,0.005189523204225265,False
-15,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.0,-0.0149812734082397,0.014184397163120567,False
-15,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,-3.0411807742776855e-06,-5.622176341705466e-06,-8.332813520705218e-07,True
-15,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-6.957369513638007e-07,-1.4319136128695372e-06,6.6954675111974164e-09,False
-15,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,0.0,0.0,False
-15,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0,0.0,0.0,False
-15,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",rps,0.0,0.0,0.0,False
+15,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0023338613470991997,-0.004914126938624179,0.011053243079377504,False
+15,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0003007194994952459,-0.002424029932061634,0.0016044182597868117,False
+15,test,"MLP (one tanh layer, 5 seeds)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008356545961002786,False
+15,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",log_loss,-0.010750276941739438,-0.019924002398125498,-0.002232989323585572,True
+15,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",rps,-0.0035904288553242924,-0.007263424048397086,-5.893819652820685e-05,True
+15,validation,"MLP (one tanh layer, 5 seeds)","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,-0.0074356377961493645,0.01509720926895756,False
+15,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.024967009732358478,0.003381991674688083,0.048480164921204154,True
+15,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.007190821113815945,-0.0007329894721432849,0.016213910221654356,False
+15,test,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.013927576601671309,-0.033426183844011144,0.002785515320334262,False
+15,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",log_loss,0.015153879681399791,-0.005224884298614078,0.03481874983122559,False
+15,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",rps,-0.0012671521118155081,-0.009159906892062785,0.006613297603719393,False
+15,validation,"Paper classifiers, guidance inputs (average of XGBoost + Random forest)","Censored Gaussian (CURRENT, refit)",correct,0.018050541516245487,0.0,0.039568345323741004,False
+15,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.036527288481527205,0.009817483483176214,0.06349975663679346,True
+15,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.009790889703307045,-5.9113375829248624e-05,0.02005383198378378,False
+15,test,"Random forest, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.016713091922005572,-0.04201680672268908,0.00558659217877095,False
+15,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.0363044712635487,0.014769568588448108,0.057564638117819686,True
+15,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,0.0049016504229431835,-0.003619928541282189,0.013284432499790753,False
+15,validation,"Random forest, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,0.021660649819494584,0.0,0.042704626334519574,False
+15,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.029176001645759935,0.005621963697541779,0.05642744173512279,True
+15,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.009271312609415062,0.0007939822147607163,0.019273534740015294,True
+15,test,"XGBoost, guidance inputs","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.013927576601671309,-0.033426183844011144,0.002785515320334262,False
+15,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",log_loss,0.020367506656389523,-0.015036627218511102,0.06401978214355174,False
+15,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",rps,-0.0010161819299715244,-0.010875641363021351,0.009840180536851538,False
+15,validation,"XGBoost, guidance inputs","Censored Gaussian (CURRENT, refit)",correct,0.018050541516245487,0.0,0.039568345323741004,False
+15,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.007671340101816627,-0.0030544211174244377,0.01832359689991849,False
+15,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.001010430247375135,-0.002565079394866839,0.004781087968494452,False
+15,test,"CURRENT + classifiers, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.011299435028248588,0.005586983396710634,False
+15,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.0030116681823252433,-0.008515925347383383,0.013605879512679879,False
+15,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.002839186309043522,-0.007148642235686184,0.0011873292973369042,False
+15,validation,"CURRENT + classifiers, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,0.0,0.01818181818181818,False
+15,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0007237375346253635,-0.0017008310277772593,0.00298510246397557,False
+15,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0002126768055640291,-0.000897162522985204,0.0004626918192209068,False
+15,test,"CURRENT + classifiers, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.002785515320334262,0.0,0.008426966292134831,False
+15,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0004003057647679905,-0.0033879589564041472,0.0021595628970394925,False
+15,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.000920734902310427,-0.0018694337698350752,-6.115450524696e-05,True
 15,validation,"CURRENT + classifiers, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0,0.0,0.0,False
-15,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.000833928156343353,-0.0023148844022937674,0.0039002454512614766,False
-15,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,8.572471991871571e-05,-0.0009432415503079783,0.0010840728588568489,False
-15,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008333333333333333,False
-15,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.003995557746489319,-0.008722161335848416,0.00048645516653379717,False
-15,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.001432969314811509,-0.0031495288575293066,0.00028476710976758,False
-15,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.011111111111111112,0.0,False
-15,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0026299379796965046,-0.003715051278850738,0.009029731710946702,False
-15,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0007107056752714308,-0.0011817505740715454,0.0026641660494329472,False
-15,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.011235955056179775,0.0056022408963585435,False
-15,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0064303748968839,-0.015553366051266823,0.002568974077713557,False
-15,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0022966079682722206,-0.005667657780677574,0.0011333749439479714,False
-15,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.01492677064117614,0.007407407407407408,False
-15,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0028478423185891617,-0.0034477046408165723,0.008459579692637251,False
-15,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-3.1230438342204505e-05,-0.0020692769208760435,0.0018326278915399242,False
-15,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.011111111111111112,0.0111731843575419,False
-15,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,0.00417263546232262,-0.001145084803809286,0.00996282805066505,False
-15,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0003538148219160208,-0.0026770636754356353,0.002141965472931498,False
-15,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,0.0,0.01818181818181818,False
-15,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0026299379796965046,-0.003715051278850738,0.009029731710946702,False
-15,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,0.0007107056752714308,-0.0011817505740715454,0.0026641660494329472,False
-15,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.011235955056179775,0.0056022408963585435,False
-15,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0064303748968839,-0.015553366051266823,0.002568974077713557,False
-15,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0022966079682722206,-0.005667657780677574,0.0011333749439479714,False
-15,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,-0.0036101083032490976,-0.01492677064117614,0.007407407407407408,False
+15,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0003800428700864116,-0.0029586341187091275,0.003954425096656402,False
+15,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0003420179858586899,-0.001475848423809113,0.0006416418200555274,False
+15,test,"CURRENT + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008356545961002786,False
+15,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.006433301171086951,-0.011939887766106046,-0.0016923271603581167,True
+15,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.00217603383130447,-0.004282468434432469,-0.0002954727035241319,True
+15,validation,"CURRENT + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,0.0,0.011235955056179775,False
+15,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0023338613470991997,-0.004914126938624179,0.011053243079377504,False
+15,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0003007194994952459,-0.002424029932061634,0.0016044182597868117,False
+15,test,"CURRENT + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008356545961002786,False
+15,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.010750276941739438,-0.019924002398125498,-0.002232989323585572,True
+15,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0035904288553242924,-0.007263424048397086,-5.893819652820685e-05,True
+15,validation,"CURRENT + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,-0.0074356377961493645,0.01509720926895756,False
+15,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.003978725151535719,-0.0036390409889569533,0.011476714578389197,False
+15,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-5.2264808566141565e-05,-0.0026352585687894232,0.002584182713307604,False
+15,test,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,-0.002785515320334262,-0.011299435028248588,0.005586983396710634,False
+15,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.0026246722387807966,-0.01285502794698019,0.006615246762300915,False
+15,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",rps,-0.0037789592861079678,-0.0077088151894835885,-0.00018061969077168426,True
+15,validation,"CURRENT + classifiers + MLP, equal weights","Censored Gaussian (CURRENT, refit)",correct,0.007220216606498195,0.0,0.02247191011235955,False
+15,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",log_loss,0.0023338613470991997,-0.004914126938624179,0.011053243079377504,False
+15,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",rps,-0.0003007194994952459,-0.002424029932061634,0.0016044182597868117,False
+15,test,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian, HRRR + LAMP/NBM (saved)",correct,0.0,-0.008333333333333333,0.008356545961002786,False
+15,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",log_loss,-0.010750276941739438,-0.019924002398125498,-0.002232989323585572,True
+15,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",rps,-0.0035904288553242924,-0.007263424048397086,-5.893819652820685e-05,True
+15,validation,"CURRENT + classifiers + MLP, validation weights","Censored Gaussian (CURRENT, refit)",correct,0.0036101083032490976,-0.0074356377961493645,0.01509720926895756,False

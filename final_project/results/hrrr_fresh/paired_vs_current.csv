@@ -1,0 +1,109 @@
+hour,cohort,baseline,candidate,metric,n,delta,ci95_low,ci95_high,excludes_zero
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,log_loss,359,-0.0013626424542045833,-0.016974396531230874,0.011319990122390338,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,rps,359,-0.0014720676864486114,-0.007576548260021072,0.00339597085056392,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,correct,359,0.002785515320334262,-0.0111731843575419,0.0167609501901319,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,log_loss,359,0.0008715540942125973,-0.010480081512815285,0.010405113154212412,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,rps,359,-0.0009688256698860766,-0.005364717407405385,0.0024972605007868667,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,correct,359,0.002785515320334262,-0.011204481792717087,0.01675977653631285,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",log_loss,359,0.0,0.0,0.0,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",rps,359,0.0,0.0,0.0,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",correct,359,0.0,0.0,0.0,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,log_loss,359,0.0008715540942125973,-0.010480081512815285,0.010405113154212412,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,rps,359,-0.0009688256698860766,-0.005364717407405385,0.0024972605007868667,False
+9,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,correct,359,0.002785515320334262,-0.011204481792717087,0.01675977653631285,False
+9,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,log_loss,359,-0.0013626424542045833,-0.016974396531230874,0.011319990122390338,False
+9,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,rps,359,-0.0014720676864486114,-0.007576548260021072,0.00339597085056392,False
+9,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,correct,359,0.002785515320334262,-0.0111731843575419,0.0167609501901319,False
+9,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,log_loss,359,0.0008715540942125973,-0.010480081512815285,0.010405113154212412,False
+9,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,rps,359,-0.0009688256698860766,-0.005364717407405385,0.0024972605007868667,False
+9,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,correct,359,0.002785515320334262,-0.011204481792717087,0.01675977653631285,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,log_loss,359,-0.0013626424542045833,-0.016974396531230874,0.011319990122390338,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,rps,359,-0.0014720676864486114,-0.007576548260021072,0.00339597085056392,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,correct,359,0.002785515320334262,-0.0111731843575419,0.0167609501901319,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,log_loss,359,0.0008715540942125973,-0.010480081512815285,0.010405113154212412,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,rps,359,-0.0009688256698860766,-0.005364717407405385,0.0024972605007868667,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,correct,359,0.002785515320334262,-0.011204481792717087,0.01675977653631285,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",log_loss,359,0.0,0.0,0.0,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",rps,359,0.0,0.0,0.0,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",correct,359,0.0,0.0,0.0,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,log_loss,359,0.0008715540942125973,-0.010480081512815285,0.010405113154212412,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,rps,359,-0.0009688256698860766,-0.005364717407405385,0.0024972605007868667,False
+9,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,correct,359,0.002785515320334262,-0.011204481792717087,0.01675977653631285,False
+9,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,log_loss,359,-0.0013626424542045833,-0.016974396531230874,0.011319990122390338,False
+9,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,rps,359,-0.0014720676864486114,-0.007576548260021072,0.00339597085056392,False
+9,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,correct,359,0.002785515320334262,-0.0111731843575419,0.0167609501901319,False
+9,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,log_loss,359,0.0008715540942125973,-0.010480081512815285,0.010405113154212412,False
+9,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,rps,359,-0.0009688256698860766,-0.005364717407405385,0.0024972605007868667,False
+9,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,correct,359,0.002785515320334262,-0.011204481792717087,0.01675977653631285,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,log_loss,359,0.005883581689075026,-0.00746145541793708,0.01908548392116916,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,rps,359,0.0009172114946746327,-0.004601482948882805,0.006336797039023082,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,correct,359,-0.002785515320334262,-0.019444444444444445,0.013888888888888888,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,log_loss,359,0.0020598066633509843,-0.009965940182378388,0.013645129428072238,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,rps,359,-0.0006503605880466169,-0.005464189303013267,0.003922927708701565,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,correct,359,-0.005571030640668524,-0.025069637883008356,0.011205268624303643,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",log_loss,359,-2.036187906136299e-05,-0.000286381211747761,0.0002367108610051708,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",rps,359,-1.557304034210498e-05,-0.00010973122708718778,7.48886278915445e-05,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",correct,359,0.0,0.0,0.0,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,log_loss,359,0.0,0.0,0.0,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,rps,359,0.0,0.0,0.0,False
+12,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,correct,359,0.0,0.0,0.0,False
+12,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,log_loss,359,0.005903943568136392,-0.00730327591608065,0.01899143424894419,False
+12,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,rps,359,0.0009327845350167373,-0.004571610877027098,0.00631678898520055,False
+12,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,correct,359,-0.002785515320334262,-0.019444444444444445,0.013888888888888888,False
+12,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,log_loss,359,0.0020801685424123454,-0.00980014498950948,0.013492967420517648,False
+12,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,rps,359,-0.0006347875477045125,-0.005408165680857184,0.003904193764371281,False
+12,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,correct,359,-0.005571030640668524,-0.025069637883008356,0.011205268624303643,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,log_loss,359,0.005883581689075026,-0.00746145541793708,0.01908548392116916,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,rps,359,0.0009172114946746327,-0.004601482948882805,0.006336797039023082,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,correct,359,-0.002785515320334262,-0.019444444444444445,0.013888888888888888,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,log_loss,359,0.0020598066633509843,-0.009965940182378388,0.013645129428072238,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,rps,359,-0.0006503605880466169,-0.005464189303013267,0.003922927708701565,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,correct,359,-0.005571030640668524,-0.025069637883008356,0.011205268624303643,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",log_loss,359,-2.036187906136299e-05,-0.000286381211747761,0.0002367108610051708,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",rps,359,-1.557304034210498e-05,-0.00010973122708718778,7.48886278915445e-05,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",correct,359,0.0,0.0,0.0,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,log_loss,359,0.0,0.0,0.0,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,rps,359,0.0,0.0,0.0,False
+12,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,correct,359,0.0,0.0,0.0,False
+12,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,log_loss,359,0.005903943568136392,-0.00730327591608065,0.01899143424894419,False
+12,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,rps,359,0.0009327845350167373,-0.004571610877027098,0.00631678898520055,False
+12,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,correct,359,-0.002785515320334262,-0.019444444444444445,0.013888888888888888,False
+12,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,log_loss,359,0.0020801685424123454,-0.00980014498950948,0.013492967420517648,False
+12,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,rps,359,-0.0006347875477045125,-0.005408165680857184,0.003904193764371281,False
+12,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,correct,359,-0.005571030640668524,-0.025069637883008356,0.011205268624303643,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,log_loss,359,0.004695841536656755,-0.011495688491039177,0.03041675550936271,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,rps,359,-0.0005639910877939685,-0.0037325520880422246,0.002887183519694847,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,correct,359,0.0,0.0,0.0,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,log_loss,359,-0.00476427226353702,-0.012811567184846922,0.00400161700757386,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,rps,359,-0.0014252062923189607,-0.004277445225744919,0.0014707144336893272,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),(b) fresh HRRR added,correct,359,0.002785515320334262,0.0,0.008426966292134831,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",log_loss,359,-0.00029392692782967064,-0.0006227752606193876,-3.201699034187345e-05,True
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",rps,359,-6.3458878368444e-05,-0.0001237702338286909,-9.624366110353139e-06,True
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",correct,359,0.0,0.0,0.0,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,log_loss,359,0.0,0.0,0.0,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,rps,359,0.0,0.0,0.0,False
+15,"all 359, 10 UTC fallback",CURRENT (10 UTC HRRR),Validation-selected,correct,359,0.0,0.0,0.0,False
+15,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,log_loss,359,0.004989768464486427,-0.011212929520760632,0.030599306841999064,False
+15,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,rps,359,-0.0005005322094255239,-0.0036760130466410245,0.002929105224625367,False
+15,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,correct,359,0.0,0.0,0.0,False
+15,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,log_loss,359,-0.00447034533570735,-0.012447087971816023,0.004305983590653478,False
+15,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,rps,359,-0.001361747413950517,-0.004186217592818593,0.001523607534655356,False
+15,"all 359, 10 UTC fallback","Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,correct,359,0.002785515320334262,0.0,0.008426966292134831,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,log_loss,359,0.004695841536656755,-0.011495688491039177,0.03041675550936271,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,rps,359,-0.0005639910877939685,-0.0037325520880422246,0.002887183519694847,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),(a) fresh HRRR replaces 10 UTC,correct,359,0.0,0.0,0.0,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,log_loss,359,-0.00476427226353702,-0.012811567184846922,0.00400161700757386,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,rps,359,-0.0014252062923189607,-0.004277445225744919,0.0014707144336893272,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),(b) fresh HRRR added,correct,359,0.002785515320334262,0.0,0.008426966292134831,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",log_loss,359,-0.00029392692782967064,-0.0006227752606193876,-3.201699034187345e-05,True
+15,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",rps,359,-6.3458878368444e-05,-0.0001237702338286909,-9.624366110353139e-06,True
+15,fresh-run test days,CURRENT (10 UTC HRRR),"Control: CURRENT inputs, fresh-run rows",correct,359,0.0,0.0,0.0,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,log_loss,359,0.0,0.0,0.0,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,rps,359,0.0,0.0,0.0,False
+15,fresh-run test days,CURRENT (10 UTC HRRR),Validation-selected,correct,359,0.0,0.0,0.0,False
+15,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,log_loss,359,0.004989768464486427,-0.011212929520760632,0.030599306841999064,False
+15,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,rps,359,-0.0005005322094255239,-0.0036760130466410245,0.002929105224625367,False
+15,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(a) fresh HRRR replaces 10 UTC,correct,359,0.0,0.0,0.0,False
+15,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,log_loss,359,-0.00447034533570735,-0.012447087971816023,0.004305983590653478,False
+15,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,rps,359,-0.001361747413950517,-0.004186217592818593,0.001523607534655356,False
+15,fresh-run test days,"Control: CURRENT inputs, fresh-run rows",(b) fresh HRRR added,correct,359,0.002785515320334262,0.0,0.008426966292134831,False

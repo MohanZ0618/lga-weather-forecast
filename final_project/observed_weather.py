@@ -5,8 +5,8 @@ trained on 2021-2023 complete rows, L2 chosen from (1, 10, 30) on 2024. Candidat
 from asos.py (data/asos_features.csv.gz, 10-minute delivery allowance) joined on date and hour; missing
 values get the training median (distribution.design); a column present in under half the training rows is
 dropped. Candidates choose L2 on 2024 from (1, 3, 10, 30, 100, 300): CURRENT's floor of 1 plus heavier
-penalties for the added columns. CURRENT refit on that grid is reported as a control (it picks the same L2),
-so the grid is not confounded with the features. A development run that also allowed L2 = 0.1 and 0.3 moved
+penalties for the added columns. CURRENT refit on that grid is reported as a control, so the effect of the
+wider grid alone can be told apart from the effect of the features. A development run that also allowed L2 = 0.1 and 0.3 moved
 CURRENT itself at 12:00 on a 0.0006 validation margin, so the grid keeps CURRENT's floor.
   (a) CURRENT + LGA own weather (wind, pressure, dew point depression, clouds, precipitation)
   (b) (a) + nearby sites (temperature versus LGA, sky cover)

@@ -52,7 +52,11 @@ def fetch_station(key):
     frame = frame.rename(columns=FIELDS)[list(FIELDS.values())].apply(
         pd.to_numeric, errors="coerce"
     )
-    frame["temp"] = frame["temp"].where(frame["temp"].between(-75, 60)) * 1.8 + 32
+    # ASOS measures whole degrees Fahrenheit, and METAR and LCD store that reading in tenths of a degree
+    # Celsius (40 F is stored as 4.4 C). Rounding the conversion recovers the sensor's whole degree;
+    # without it 40 F would read 39.92 F and fall into the colder band. Special reports without a tenths
+    # group carry whole degrees Celsius, and rounding gives the nearest whole degree Fahrenheit.
+    frame["temp"] = (frame["temp"].where(frame["temp"].between(-75, 60)) * 1.8 + 32).round()
     frame["rh"] = frame["rh"].where(frame["rh"].between(0, 100))
     frame["wind"] = frame["wind"].where(frame["wind"].between(0, 120))
     meta = {
@@ -103,10 +107,14 @@ def main():
     pd.DataFrame(manifest).to_csv(DATA / "station_sources.csv", index=False)
     if args.legacy_labels.exists():
         legacy = pd.read_csv(args.legacy_labels, index_col="date", parse_dates=True)
+        # Global Hourly stores the same tenths-Celsius values, so round it the same way before comparing.
+        legacy["target_max"] = legacy["target_max"].round()
+        legacy["target_category"] = np.searchsorted([40, 55, 70, 85], legacy["target_max"], side="right")
         labels.loc["2024"].join(legacy.add_prefix("legacy_"), how="inner").to_csv(DATA / "archive_overlap_2024.csv")
         hourly_path = args.legacy_labels.with_name("LGA_2024_hourly.csv")
         if hourly_path.exists():
             hourly = pd.read_csv(hourly_path, usecols=["timestamp", "temp"])
+            hourly["temp"] = hourly["temp"].round()
             hourly.index = pd.to_datetime(hourly.pop("timestamp"), utc=True)
             overlap = stations["LGA"].loc["2024", ["temp"]].join(
                 hourly.rename(columns={"temp": "legacy_temp"}), how="inner"

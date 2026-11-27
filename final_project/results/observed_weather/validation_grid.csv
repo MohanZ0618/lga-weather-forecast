@@ -1,406 +1,406 @@
 hour,system,l2,validation_log_loss
-9,CURRENT,1.0,0.2111044592863981
-9,CURRENT,10.0,0.21271846271025985
-9,CURRENT,30.0,0.21585603356268007
-9,"CURRENT, candidate L2 grid",1.0,0.2111044592863981
-9,"CURRENT, candidate L2 grid",3.0,0.21130123123090686
-9,"CURRENT, candidate L2 grid",10.0,0.21271846271025985
-9,"CURRENT, candidate L2 grid",30.0,0.21585603356268007
-9,"CURRENT, candidate L2 grid",100.0,0.24622689179886875
-9,"CURRENT, candidate L2 grid",300.0,0.37962619811495574
-9,(a) + LGA own weather,1.0,0.2116659064549231
-9,(a) + LGA own weather,3.0,0.21211147943630396
-9,(a) + LGA own weather,10.0,0.21400114667610085
-9,(a) + LGA own weather,30.0,0.21742914415585612
-9,(a) + LGA own weather,100.0,0.24666823645152128
-9,(a) + LGA own weather,300.0,0.37699582730074244
-9,(b) + LGA own weather + nearby,1.0,0.2134473677158907
-9,(b) + LGA own weather + nearby,3.0,0.21355977791825465
-9,(b) + LGA own weather + nearby,10.0,0.21509303747437877
-9,(b) + LGA own weather + nearby,30.0,0.21811712651815698
-9,(b) + LGA own weather + nearby,100.0,0.24584871662641822
-9,(b) + LGA own weather + nearby,300.0,0.37504851687113716
-9,CURRENT + LGA wind,1.0,0.21164635829727654
-9,CURRENT + LGA wind,3.0,0.21186790603660555
-9,CURRENT + LGA wind,10.0,0.21334001579525724
-9,CURRENT + LGA wind,30.0,0.21659208863908735
-9,CURRENT + LGA wind,100.0,0.24663564925598314
-9,CURRENT + LGA wind,300.0,0.3785948670916818
-9,CURRENT + LGA pressure,1.0,0.21106190941814637
-9,CURRENT + LGA pressure,3.0,0.21141592150514948
-9,CURRENT + LGA pressure,10.0,0.21323185359617697
-9,CURRENT + LGA pressure,30.0,0.21682321288951842
-9,CURRENT + LGA pressure,100.0,0.24706066539109722
-9,CURRENT + LGA pressure,300.0,0.3791031322596922
-9,CURRENT + LGA dew point depression,1.0,0.2112244267421713
-9,CURRENT + LGA dew point depression,3.0,0.2115169760649758
-9,CURRENT + LGA dew point depression,10.0,0.21290226051178998
-9,CURRENT + LGA dew point depression,30.0,0.2157773216657958
-9,CURRENT + LGA dew point depression,100.0,0.24585098409684245
-9,CURRENT + LGA dew point depression,300.0,0.37944695873745565
-9,CURRENT + LGA clouds,1.0,0.21143878268765545
-9,CURRENT + LGA clouds,3.0,0.21165087009187633
-9,CURRENT + LGA clouds,10.0,0.21313536077802858
-9,CURRENT + LGA clouds,30.0,0.21615993486661306
-9,CURRENT + LGA clouds,100.0,0.24609102202695846
-9,CURRENT + LGA clouds,300.0,0.3787769872432911
-9,CURRENT + LGA precipitation,1.0,0.21047002614344662
-9,CURRENT + LGA precipitation,3.0,0.2106349324857637
-9,CURRENT + LGA precipitation,10.0,0.21207427089384523
-9,CURRENT + LGA precipitation,30.0,0.21532575627945613
-9,CURRENT + LGA precipitation,100.0,0.2459447015792056
-9,CURRENT + LGA precipitation,300.0,0.37962050848027756
-9,CURRENT + Nearby temperature vs LGA,1.0,0.2136392661299908
-9,CURRENT + Nearby temperature vs LGA,3.0,0.21377761134929646
-9,CURRENT + Nearby temperature vs LGA,10.0,0.2150583902471852
-9,CURRENT + Nearby temperature vs LGA,30.0,0.21777931064068476
-9,CURRENT + Nearby temperature vs LGA,100.0,0.24624975779966285
-9,CURRENT + Nearby temperature vs LGA,300.0,0.3791757350280254
-9,CURRENT + Nearby sky cover,1.0,0.21014072072923565
-9,CURRENT + Nearby sky cover,3.0,0.21023739108599
-9,CURRENT + Nearby sky cover,10.0,0.21165170010045523
-9,CURRENT + Nearby sky cover,30.0,0.214900399156841
-9,CURRENT + Nearby sky cover,100.0,0.24545036664756492
-9,CURRENT + Nearby sky cover,300.0,0.3782091678537192
-9,(b) without LGA wind,1.0,0.21300175061688484
-9,(b) without LGA wind,3.0,0.21305491394236423
-9,(b) without LGA wind,10.0,0.21448308402755867
-9,(b) without LGA wind,30.0,0.2174246431508648
-9,(b) without LGA wind,100.0,0.24576516769549406
-9,(b) without LGA wind,300.0,0.376178062510288
-9,(b) without LGA pressure,1.0,0.2134782441240841
-9,(b) without LGA pressure,3.0,0.2134380669191453
-9,(b) without LGA pressure,10.0,0.21457370493163094
-9,(b) without LGA pressure,30.0,0.21714061283735173
-9,(b) without LGA pressure,100.0,0.2449678043322889
-9,(b) without LGA pressure,300.0,0.375672178961252
-9,(b) without LGA dew point depression,1.0,0.2133726149009903
-9,(b) without LGA dew point depression,3.0,0.21344145595514058
-9,(b) without LGA dew point depression,10.0,0.21497674583435736
-9,(b) without LGA dew point depression,30.0,0.21811332796795405
-9,(b) without LGA dew point depression,100.0,0.24605523982380628
-9,(b) without LGA dew point depression,300.0,0.3753393832288193
-9,(b) without LGA clouds,1.0,0.21256928075488116
-9,(b) without LGA clouds,3.0,0.2127941760852002
-9,(b) without LGA clouds,10.0,0.21450180851355508
-9,(b) without LGA clouds,30.0,0.21771209431361194
-9,(b) without LGA clouds,100.0,0.24571552913252195
-9,(b) without LGA clouds,300.0,0.3753326104933991
-9,(b) without LGA precipitation,1.0,0.21414890346657536
-9,(b) without LGA precipitation,3.0,0.2143267279287196
-9,(b) without LGA precipitation,10.0,0.2158894349852845
-9,(b) without LGA precipitation,30.0,0.2187634396982943
-9,(b) without LGA precipitation,100.0,0.2460978326825688
-9,(b) without LGA precipitation,300.0,0.3750648378980977
-9,(b) without Nearby temperature vs LGA,1.0,0.21100820819054783
-9,(b) without Nearby temperature vs LGA,3.0,0.2112424836285332
-9,(b) without Nearby temperature vs LGA,10.0,0.2129090160774336
-9,(b) without Nearby temperature vs LGA,30.0,0.21642447512684054
-9,(b) without Nearby temperature vs LGA,100.0,0.2461657769484056
-9,(b) without Nearby temperature vs LGA,300.0,0.37603571464051805
-9,(b) without Nearby sky cover,1.0,0.21424214464624464
-9,(b) without Nearby sky cover,3.0,0.21456876461486724
-9,(b) without Nearby sky cover,10.0,0.21636195940691286
-9,(b) without Nearby sky cover,30.0,0.21934129779524938
-9,(b) without Nearby sky cover,100.0,0.24656261891458614
-9,(b) without Nearby sky cover,300.0,0.3763434551517184
-9,"(a), 5-min allowance (sensitivity)",1.0,0.210040071311311
-9,"(a), 5-min allowance (sensitivity)",3.0,0.21017483620112237
-9,"(a), 5-min allowance (sensitivity)",10.0,0.21200763527862945
-9,"(a), 5-min allowance (sensitivity)",30.0,0.21594387848840466
-9,"(a), 5-min allowance (sensitivity)",100.0,0.24654690877442412
-9,"(a), 5-min allowance (sensitivity)",300.0,0.377034835412568
-9,"(b), 5-min allowance (sensitivity)",1.0,0.21298065410871594
-9,"(b), 5-min allowance (sensitivity)",3.0,0.2129452648332624
-9,"(b), 5-min allowance (sensitivity)",10.0,0.21466606073679992
-9,"(b), 5-min allowance (sensitivity)",30.0,0.218408561342392
-9,"(b), 5-min allowance (sensitivity)",100.0,0.24769312282588063
-9,"(b), 5-min allowance (sensitivity)",300.0,0.3757409474705384
-9,Diagnostic: observations only,1.0,0.43399842256606236
-9,Diagnostic: observations only,3.0,0.4339926352744442
-9,Diagnostic: observations only,10.0,0.4394340148250484
-9,Diagnostic: observations only,30.0,0.4501058904926036
-9,Diagnostic: observations only,100.0,0.46675058613489956
-9,Diagnostic: observations only,300.0,0.4937506183832845
-9,Diagnostic: observations only + (a),1.0,0.4302642741960848
-9,Diagnostic: observations only + (a),3.0,0.4293152219336058
-9,Diagnostic: observations only + (a),10.0,0.43246679569154917
-9,Diagnostic: observations only + (a),30.0,0.44315938514233144
-9,Diagnostic: observations only + (a),100.0,0.46123206862373345
-9,Diagnostic: observations only + (a),300.0,0.48891215528390014
-9,Diagnostic: observations only + (b),1.0,0.4275807015689123
-9,Diagnostic: observations only + (b),3.0,0.42601780954404056
-9,Diagnostic: observations only + (b),10.0,0.4281163760085417
-9,Diagnostic: observations only + (b),30.0,0.43743932343003017
-9,Diagnostic: observations only + (b),100.0,0.45576060167832466
-9,Diagnostic: observations only + (b),300.0,0.483024999809535
-12,CURRENT,1.0,0.1718127622472282
-12,CURRENT,10.0,0.17488097274555225
-12,CURRENT,30.0,0.18009365034547506
-12,"CURRENT, candidate L2 grid",1.0,0.1718127622472282
-12,"CURRENT, candidate L2 grid",3.0,0.1726549535758932
-12,"CURRENT, candidate L2 grid",10.0,0.17488097274555225
-12,"CURRENT, candidate L2 grid",30.0,0.18009365034547506
-12,"CURRENT, candidate L2 grid",100.0,0.19487490343358688
-12,"CURRENT, candidate L2 grid",300.0,0.22679348984395273
-12,(a) + LGA own weather,1.0,0.1738778550462225
-12,(a) + LGA own weather,3.0,0.17451129105785074
-12,(a) + LGA own weather,10.0,0.17621393962385254
-12,(a) + LGA own weather,30.0,0.1809181040223177
-12,(a) + LGA own weather,100.0,0.1956401424977357
-12,(a) + LGA own weather,300.0,0.22739192102415512
-12,(b) + LGA own weather + nearby,1.0,0.17375308705160883
-12,(b) + LGA own weather + nearby,3.0,0.17454908457806448
-12,(b) + LGA own weather + nearby,10.0,0.17690318558839194
-12,(b) + LGA own weather + nearby,30.0,0.1827532938645792
-12,(b) + LGA own weather + nearby,100.0,0.19911115030570342
-12,(b) + LGA own weather + nearby,300.0,0.2303929968848404
-12,CURRENT + LGA wind,1.0,0.17007975967824027
-12,CURRENT + LGA wind,3.0,0.17103596797305592
-12,CURRENT + LGA wind,10.0,0.17357571096728636
-12,CURRENT + LGA wind,30.0,0.17922373312240203
-12,CURRENT + LGA wind,100.0,0.1944590676754799
-12,CURRENT + LGA wind,300.0,0.2267352898207512
-12,CURRENT + LGA pressure,1.0,0.17248668562695926
-12,CURRENT + LGA pressure,3.0,0.17332103066445353
-12,CURRENT + LGA pressure,10.0,0.175528784645165
-12,CURRENT + LGA pressure,30.0,0.18085304190164972
-12,CURRENT + LGA pressure,100.0,0.19576966906927157
-12,CURRENT + LGA pressure,300.0,0.2271060026327955
-12,CURRENT + LGA dew point depression,1.0,0.17178714851728244
-12,CURRENT + LGA dew point depression,3.0,0.1726175442606174
-12,CURRENT + LGA dew point depression,10.0,0.1748284411145184
-12,CURRENT + LGA dew point depression,30.0,0.18002382301703748
-12,CURRENT + LGA dew point depression,100.0,0.19483240540264873
-12,CURRENT + LGA dew point depression,300.0,0.22669363917925808
-12,CURRENT + LGA clouds,1.0,0.1740502014799987
-12,CURRENT + LGA clouds,3.0,0.1746404862581151
-12,CURRENT + LGA clouds,10.0,0.1761853087785364
-12,CURRENT + LGA clouds,30.0,0.18054093812282693
-12,CURRENT + LGA clouds,100.0,0.19476858823906446
-12,CURRENT + LGA clouds,300.0,0.2269708341828512
-12,CURRENT + LGA precipitation,1.0,0.17240119540687637
-12,CURRENT + LGA precipitation,3.0,0.17322303921530516
-12,CURRENT + LGA precipitation,10.0,0.1753876157431171
-12,CURRENT + LGA precipitation,30.0,0.18048312773686806
-12,CURRENT + LGA precipitation,100.0,0.19512822943328476
-12,CURRENT + LGA precipitation,300.0,0.22699203370872578
-12,CURRENT + Nearby temperature vs LGA,1.0,0.1722693493779111
-12,CURRENT + Nearby temperature vs LGA,3.0,0.1730074989776623
-12,CURRENT + Nearby temperature vs LGA,10.0,0.175350456723754
-12,CURRENT + Nearby temperature vs LGA,30.0,0.18130545176729096
-12,CURRENT + Nearby temperature vs LGA,100.0,0.1981526960404785
-12,CURRENT + Nearby temperature vs LGA,300.0,0.22970668598986355
-12,CURRENT + Nearby sky cover,1.0,0.16918992315258294
-12,CURRENT + Nearby sky cover,3.0,0.1703113554998428
-12,CURRENT + Nearby sky cover,10.0,0.17314065693972505
-12,CURRENT + Nearby sky cover,30.0,0.17909544240723163
-12,CURRENT + Nearby sky cover,100.0,0.19434549034528803
-12,CURRENT + Nearby sky cover,300.0,0.22702012137476354
-12,(b) without LGA wind,1.0,0.1759265438048417
-12,(b) without LGA wind,3.0,0.17658048016793537
-12,(b) without LGA wind,10.0,0.17852476182532814
-12,(b) without LGA wind,30.0,0.18380345077316143
-12,(b) without LGA wind,100.0,0.19973561731835382
-12,(b) without LGA wind,300.0,0.23067995214317738
-12,(b) without LGA pressure,1.0,0.17273103962066358
-12,(b) without LGA pressure,3.0,0.17350943486460224
-12,(b) without LGA pressure,10.0,0.1759094777792018
-12,(b) without LGA pressure,30.0,0.18172838851576317
-12,(b) without LGA pressure,100.0,0.1980060354660279
-12,(b) without LGA pressure,300.0,0.22995890283537163
-12,(b) without LGA dew point depression,1.0,0.17346010883992674
-12,(b) without LGA dew point depression,3.0,0.17431442320076213
-12,(b) without LGA dew point depression,10.0,0.1767902593920832
-12,(b) without LGA dew point depression,30.0,0.18276630037349686
-12,(b) without LGA dew point depression,100.0,0.19915678513346827
-12,(b) without LGA dew point depression,300.0,0.2304254688160406
-12,(b) without LGA clouds,1.0,0.16923366672280415
-12,(b) without LGA clouds,3.0,0.17029655943772729
-12,(b) without LGA clouds,10.0,0.17351734906058147
-12,(b) without LGA clouds,30.0,0.1807355232447162
-12,(b) without LGA clouds,100.0,0.1984858154677641
-12,(b) without LGA clouds,300.0,0.23021107710651378
-12,(b) without LGA precipitation,1.0,0.17289017052925756
-12,(b) without LGA precipitation,3.0,0.17371923970041817
-12,(b) without LGA precipitation,10.0,0.17619661357678273
-12,(b) without LGA precipitation,30.0,0.18222032349802214
-12,(b) without LGA precipitation,100.0,0.1987613489290613
-12,(b) without LGA precipitation,300.0,0.23016255553880477
-12,(b) without Nearby temperature vs LGA,1.0,0.17398988569942775
-12,(b) without Nearby temperature vs LGA,3.0,0.17474168416997185
-12,(b) without Nearby temperature vs LGA,10.0,0.17665966910701503
-12,(b) without Nearby temperature vs LGA,30.0,0.18140477642847247
-12,(b) without Nearby temperature vs LGA,100.0,0.19565507559770137
-12,(b) without Nearby temperature vs LGA,300.0,0.22758705956570116
-12,(b) without Nearby sky cover,1.0,0.17365493015308672
-12,(b) without Nearby sky cover,3.0,0.17429167513275456
-12,(b) without Nearby sky cover,10.0,0.17636559797049273
-12,(b) without Nearby sky cover,30.0,0.18211347161937405
-12,(b) without Nearby sky cover,100.0,0.19892718903086878
-12,(b) without Nearby sky cover,300.0,0.23022372231604477
-12,"(a), 5-min allowance (sensitivity)",1.0,0.17253408801634712
-12,"(a), 5-min allowance (sensitivity)",3.0,0.17332177207195984
-12,"(a), 5-min allowance (sensitivity)",10.0,0.17535120269276674
-12,"(a), 5-min allowance (sensitivity)",30.0,0.1804799111895947
-12,"(a), 5-min allowance (sensitivity)",100.0,0.19564708184558452
-12,"(a), 5-min allowance (sensitivity)",300.0,0.22768280513182554
-12,"(b), 5-min allowance (sensitivity)",1.0,0.1766226576169738
-12,"(b), 5-min allowance (sensitivity)",3.0,0.1772383332165751
-12,"(b), 5-min allowance (sensitivity)",10.0,0.1783996361737589
-12,"(b), 5-min allowance (sensitivity)",30.0,0.1824160627818482
-12,"(b), 5-min allowance (sensitivity)",100.0,0.19675580199983206
-12,"(b), 5-min allowance (sensitivity)",300.0,0.22658032235419717
-12,Diagnostic: observations only,1.0,0.2718163016569152
-12,Diagnostic: observations only,3.0,0.2709981676312936
-12,Diagnostic: observations only,10.0,0.2719596308773156
-12,Diagnostic: observations only,30.0,0.27494721785687354
-12,Diagnostic: observations only,100.0,0.28006860424087116
-12,Diagnostic: observations only,300.0,0.28641180283693046
-12,Diagnostic: observations only + (a),1.0,0.2723083044912804
-12,Diagnostic: observations only + (a),3.0,0.2721929823322352
-12,Diagnostic: observations only + (a),10.0,0.27341112928693445
-12,Diagnostic: observations only + (a),30.0,0.27620904768545895
-12,Diagnostic: observations only + (a),100.0,0.2808543522966913
-12,Diagnostic: observations only + (a),300.0,0.28660025114175336
-12,Diagnostic: observations only + (b),1.0,0.27468068407195156
-12,Diagnostic: observations only + (b),3.0,0.2738903426838509
-12,Diagnostic: observations only + (b),10.0,0.27517476829499476
-12,Diagnostic: observations only + (b),30.0,0.2791961753582135
-12,Diagnostic: observations only + (b),100.0,0.28390458234798066
-12,Diagnostic: observations only + (b),300.0,0.28766021994828866
-15,CURRENT,1.0,0.1000220456775619
-15,CURRENT,10.0,0.09813078041305318
-15,CURRENT,30.0,0.10091002559900161
-15,"CURRENT, candidate L2 grid",1.0,0.1000220456775619
-15,"CURRENT, candidate L2 grid",3.0,0.09858603767843437
-15,"CURRENT, candidate L2 grid",10.0,0.09813078041305318
-15,"CURRENT, candidate L2 grid",30.0,0.10091002559900161
-15,"CURRENT, candidate L2 grid",100.0,0.11375206792471979
-15,"CURRENT, candidate L2 grid",300.0,0.13501272197610056
-15,(a) + LGA own weather,1.0,0.1055225883396109
-15,(a) + LGA own weather,3.0,0.10329826849815003
-15,(a) + LGA own weather,10.0,0.1012678675365377
-15,(a) + LGA own weather,30.0,0.10222638304910865
-15,(a) + LGA own weather,100.0,0.1135488769154284
-15,(a) + LGA own weather,300.0,0.13478744782237306
-15,(b) + LGA own weather + nearby,1.0,0.10925411821134706
-15,(b) + LGA own weather + nearby,3.0,0.10791526511435831
-15,(b) + LGA own weather + nearby,10.0,0.10667062270117468
-15,(b) + LGA own weather + nearby,30.0,0.10774800126075981
-15,(b) + LGA own weather + nearby,100.0,0.1182316473810592
-15,(b) + LGA own weather + nearby,300.0,0.13575091428164146
-15,CURRENT + LGA wind,1.0,0.10017215560948689
-15,CURRENT + LGA wind,3.0,0.09858412498896055
-15,CURRENT + LGA wind,10.0,0.09806197082199027
-15,CURRENT + LGA wind,30.0,0.10109187003366087
-15,CURRENT + LGA wind,100.0,0.11448009622329275
-15,CURRENT + LGA wind,300.0,0.13566515608062607
-15,CURRENT + LGA pressure,1.0,0.10380098611117335
-15,CURRENT + LGA pressure,3.0,0.10172323385220204
-15,CURRENT + LGA pressure,10.0,0.10004784810211048
-15,CURRENT + LGA pressure,30.0,0.10130537346242854
-15,CURRENT + LGA pressure,100.0,0.1128012790856646
-15,CURRENT + LGA pressure,300.0,0.13462198609052176
-15,CURRENT + LGA dew point depression,1.0,0.10006158446673231
-15,CURRENT + LGA dew point depression,3.0,0.0986227052300977
-15,CURRENT + LGA dew point depression,10.0,0.09813949705423182
-15,CURRENT + LGA dew point depression,30.0,0.10089887725845248
-15,CURRENT + LGA dew point depression,100.0,0.11372775579125462
-15,CURRENT + LGA dew point depression,300.0,0.13479911315179682
-15,CURRENT + LGA clouds,1.0,0.10080380133884807
-15,CURRENT + LGA clouds,3.0,0.09937378502135928
-15,CURRENT + LGA clouds,10.0,0.09877686003126451
-15,CURRENT + LGA clouds,30.0,0.10127581583760573
-15,CURRENT + LGA clouds,100.0,0.11373412121613657
-15,CURRENT + LGA clouds,300.0,0.13469651885879153
-15,CURRENT + LGA precipitation,1.0,0.10041083449142979
-15,CURRENT + LGA precipitation,3.0,0.09889415692813784
-15,CURRENT + LGA precipitation,10.0,0.09836371452745776
-15,CURRENT + LGA precipitation,30.0,0.10110056657144885
-15,CURRENT + LGA precipitation,100.0,0.11385395559029239
-15,CURRENT + LGA precipitation,300.0,0.13502006713213482
-15,CURRENT + Nearby temperature vs LGA,1.0,0.10109933035694732
-15,CURRENT + Nearby temperature vs LGA,3.0,0.10070711994708882
-15,CURRENT + Nearby temperature vs LGA,10.0,0.10118436542752487
-15,CURRENT + Nearby temperature vs LGA,30.0,0.10466474708577042
-15,CURRENT + Nearby temperature vs LGA,100.0,0.11807155087385375
-15,CURRENT + Nearby temperature vs LGA,300.0,0.13653417172531543
-15,CURRENT + Nearby sky cover,1.0,0.10343338597914456
-15,CURRENT + Nearby sky cover,3.0,0.10180397656596805
-15,CURRENT + Nearby sky cover,10.0,0.10088848389149808
-15,CURRENT + Nearby sky cover,30.0,0.10284476574828438
-15,CURRENT + Nearby sky cover,100.0,0.11432511541505777
-15,CURRENT + Nearby sky cover,300.0,0.13418635468502144
-15,(b) without LGA wind,1.0,0.10973398697933372
-15,(b) without LGA wind,3.0,0.10830508749300473
-15,(b) without LGA wind,10.0,0.1067632138727666
-15,(b) without LGA wind,30.0,0.10756391003107757
-15,(b) without LGA wind,100.0,0.11779728051030201
-15,(b) without LGA wind,300.0,0.13521171027751494
-15,(b) without LGA pressure,1.0,0.1043368062564861
-15,(b) without LGA pressure,3.0,0.10362214253884386
-15,(b) without LGA pressure,10.0,0.10378100170195112
-15,(b) without LGA pressure,30.0,0.10671753185479359
-15,(b) without LGA pressure,100.0,0.11903300919414428
-15,(b) without LGA pressure,300.0,0.1360896802719954
-15,(b) without LGA dew point depression,1.0,0.10926019284893114
-15,(b) without LGA dew point depression,3.0,0.10794477852070328
-15,(b) without LGA dew point depression,10.0,0.10675504996826442
-15,(b) without LGA dew point depression,30.0,0.10781669802360806
-15,(b) without LGA dew point depression,100.0,0.11827879069870581
-15,(b) without LGA dew point depression,300.0,0.1358187289651704
-15,(b) without LGA clouds,1.0,0.10905799332746777
-15,(b) without LGA clouds,3.0,0.10780040371829448
-15,(b) without LGA clouds,10.0,0.10669885863117004
-15,(b) without LGA clouds,30.0,0.10781777150597703
-15,(b) without LGA clouds,100.0,0.11828233594052738
-15,(b) without LGA clouds,300.0,0.13581439712425167
-15,(b) without LGA precipitation,1.0,0.1084695276383074
-15,(b) without LGA precipitation,3.0,0.10723862129207874
-15,(b) without LGA precipitation,10.0,0.10614281159456926
-15,(b) without LGA precipitation,30.0,0.1073951240990414
-15,(b) without LGA precipitation,100.0,0.11808080027901711
-15,(b) without LGA precipitation,300.0,0.13572885468025633
-15,(b) without Nearby temperature vs LGA,1.0,0.10778718303449875
-15,(b) without Nearby temperature vs LGA,3.0,0.10540270486312564
-15,(b) without Nearby temperature vs LGA,10.0,0.10319159510817792
-15,(b) without Nearby temperature vs LGA,30.0,0.10373284510839312
-15,(b) without Nearby temperature vs LGA,100.0,0.11405664324430814
-15,(b) without Nearby temperature vs LGA,300.0,0.13425663481927416
-15,(b) without Nearby sky cover,1.0,0.10704141365078741
-15,(b) without Nearby sky cover,3.0,0.10588259240750844
-15,(b) without Nearby sky cover,10.0,0.10481397209151454
-15,(b) without Nearby sky cover,30.0,0.10629818151417071
-15,(b) without Nearby sky cover,100.0,0.11776887641598212
-15,(b) without Nearby sky cover,300.0,0.13632948595420244
-15,"(a), 5-min allowance (sensitivity)",1.0,0.10570390552083621
-15,"(a), 5-min allowance (sensitivity)",3.0,0.10368465364198129
-15,"(a), 5-min allowance (sensitivity)",10.0,0.10178991620100387
-15,"(a), 5-min allowance (sensitivity)",30.0,0.10260253282316197
-15,"(a), 5-min allowance (sensitivity)",100.0,0.1134915128145571
-15,"(a), 5-min allowance (sensitivity)",300.0,0.1345834159312284
-15,"(b), 5-min allowance (sensitivity)",1.0,0.10796041812445394
-15,"(b), 5-min allowance (sensitivity)",3.0,0.10682425018076683
-15,"(b), 5-min allowance (sensitivity)",10.0,0.10574145793332518
-15,"(b), 5-min allowance (sensitivity)",30.0,0.10713778094397913
-15,"(b), 5-min allowance (sensitivity)",100.0,0.11757692175743252
-15,"(b), 5-min allowance (sensitivity)",300.0,0.13454863042669246
-15,Diagnostic: observations only,1.0,0.13233499669495616
-15,Diagnostic: observations only,3.0,0.13199901939223735
-15,Diagnostic: observations only,10.0,0.13407577365124745
-15,Diagnostic: observations only,30.0,0.1389881940953237
-15,Diagnostic: observations only,100.0,0.1461064265212464
-15,Diagnostic: observations only,300.0,0.15162342602663234
-15,Diagnostic: observations only + (a),1.0,0.13719113198708896
-15,Diagnostic: observations only + (a),3.0,0.136693599108416
-15,Diagnostic: observations only + (a),10.0,0.13797191677630502
-15,Diagnostic: observations only + (a),30.0,0.14105225851402955
-15,Diagnostic: observations only + (a),100.0,0.14633334688958047
-15,Diagnostic: observations only + (a),300.0,0.15125361864737244
-15,Diagnostic: observations only + (b),1.0,0.1456324969668126
-15,Diagnostic: observations only + (b),3.0,0.145554983974783
-15,Diagnostic: observations only + (b),10.0,0.1453078912659039
-15,Diagnostic: observations only + (b),30.0,0.14516787504476264
-15,Diagnostic: observations only + (b),100.0,0.14666112688571412
-15,Diagnostic: observations only + (b),300.0,0.15007973924160714
+9,CURRENT,1.0,0.19185560631464277
+9,CURRENT,10.0,0.1869452792620455
+9,CURRENT,30.0,0.19033106851122975
+9,"CURRENT, candidate L2 grid",1.0,0.19185560631464277
+9,"CURRENT, candidate L2 grid",3.0,0.1890969991486998
+9,"CURRENT, candidate L2 grid",10.0,0.1869452792620455
+9,"CURRENT, candidate L2 grid",30.0,0.19033106851122975
+9,"CURRENT, candidate L2 grid",100.0,0.2331255003185863
+9,"CURRENT, candidate L2 grid",300.0,0.3888109455504823
+9,(a) + LGA own weather,1.0,0.1925816730551103
+9,(a) + LGA own weather,3.0,0.18983788559115736
+9,(a) + LGA own weather,10.0,0.18761135294833972
+9,(a) + LGA own weather,30.0,0.19080710331721432
+9,(a) + LGA own weather,100.0,0.2321874702143451
+9,(a) + LGA own weather,300.0,0.38514732000253177
+9,(b) + LGA own weather + nearby,1.0,0.19667133678414753
+9,(b) + LGA own weather + nearby,3.0,0.19248844183442274
+9,(b) + LGA own weather + nearby,10.0,0.1888043788534347
+9,(b) + LGA own weather + nearby,30.0,0.1909009386488722
+9,(b) + LGA own weather + nearby,100.0,0.230439538849186
+9,(b) + LGA own weather + nearby,300.0,0.38191521811153756
+9,CURRENT + LGA wind,1.0,0.19222898204329833
+9,CURRENT + LGA wind,3.0,0.1895043338877169
+9,CURRENT + LGA wind,10.0,0.18739429405571692
+9,CURRENT + LGA wind,30.0,0.19079850495395487
+9,CURRENT + LGA wind,100.0,0.23298036335811612
+9,CURRENT + LGA wind,300.0,0.38741993010780307
+9,CURRENT + LGA pressure,1.0,0.19158989637015045
+9,CURRENT + LGA pressure,3.0,0.18882765230440168
+9,CURRENT + LGA pressure,10.0,0.18676000712055085
+9,CURRENT + LGA pressure,30.0,0.19036436998935194
+9,CURRENT + LGA pressure,100.0,0.23317904870678624
+9,CURRENT + LGA pressure,300.0,0.3880654621211578
+9,CURRENT + LGA dew point depression,1.0,0.19195273186509956
+9,CURRENT + LGA dew point depression,3.0,0.1892664070797198
+9,CURRENT + LGA dew point depression,10.0,0.18706485506438586
+9,CURRENT + LGA dew point depression,30.0,0.1902915377069143
+9,CURRENT + LGA dew point depression,100.0,0.23298777367503035
+9,CURRENT + LGA dew point depression,300.0,0.38868979640145124
+9,CURRENT + LGA clouds,1.0,0.19246082592453326
+9,CURRENT + LGA clouds,3.0,0.18960978197442382
+9,CURRENT + LGA clouds,10.0,0.18726545862882338
+9,CURRENT + LGA clouds,30.0,0.19035111586501371
+9,CURRENT + LGA clouds,100.0,0.23256765520868
+9,CURRENT + LGA clouds,300.0,0.3874378746018168
+9,CURRENT + LGA precipitation,1.0,0.19144514157752804
+9,CURRENT + LGA precipitation,3.0,0.18874081146673596
+9,CURRENT + LGA precipitation,10.0,0.18670322867680972
+9,CURRENT + LGA precipitation,30.0,0.190231473671268
+9,CURRENT + LGA precipitation,100.0,0.2331010656305875
+9,CURRENT + LGA precipitation,300.0,0.38881315128441934
+9,CURRENT + Nearby temperature vs LGA,1.0,0.19382882859598138
+9,CURRENT + Nearby temperature vs LGA,3.0,0.19042092033148017
+9,CURRENT + Nearby temperature vs LGA,10.0,0.1878793101670587
+9,CURRENT + Nearby temperature vs LGA,30.0,0.190977029252989
+9,CURRENT + Nearby temperature vs LGA,100.0,0.23229170478197886
+9,CURRENT + Nearby temperature vs LGA,300.0,0.38816915941587304
+9,CURRENT + Nearby sky cover,1.0,0.19355880264930223
+9,CURRENT + Nearby sky cover,3.0,0.19031417953051502
+9,CURRENT + Nearby sky cover,10.0,0.18722454714325362
+9,CURRENT + Nearby sky cover,30.0,0.18977569777006967
+9,CURRENT + Nearby sky cover,100.0,0.23202915441530636
+9,CURRENT + Nearby sky cover,300.0,0.38594929286370266
+9,(b) without LGA wind,1.0,0.19637776029858128
+9,(b) without LGA wind,3.0,0.19213921973563
+9,(b) without LGA wind,10.0,0.18835731149892218
+9,(b) without LGA wind,30.0,0.19046063968727053
+9,(b) without LGA wind,100.0,0.23093369146025275
+9,(b) without LGA wind,300.0,0.38337040557456603
+9,(b) without LGA pressure,1.0,0.19701819469153117
+9,(b) without LGA pressure,3.0,0.19287054150603733
+9,(b) without LGA pressure,10.0,0.18918918441493565
+9,(b) without LGA pressure,30.0,0.1911541219365887
+9,(b) without LGA pressure,100.0,0.2306595607989582
+9,(b) without LGA pressure,300.0,0.3827974992698892
+9,(b) without LGA dew point depression,1.0,0.19655181482239312
+9,(b) without LGA dew point depression,3.0,0.19234403095256475
+9,(b) without LGA dew point depression,10.0,0.188711171454437
+9,(b) without LGA dew point depression,30.0,0.19089778388222609
+9,(b) without LGA dew point depression,100.0,0.23045933957811107
+9,(b) without LGA dew point depression,300.0,0.38212716887321513
+9,(b) without LGA clouds,1.0,0.1955335673698832
+9,(b) without LGA clouds,3.0,0.19154756173709095
+9,(b) without LGA clouds,10.0,0.1881080779497637
+9,(b) without LGA clouds,30.0,0.1904772041368564
+9,(b) without LGA clouds,100.0,0.23045622028799564
+9,(b) without LGA clouds,300.0,0.3824633178334831
+9,(b) without LGA precipitation,1.0,0.1971048897479691
+9,(b) without LGA precipitation,3.0,0.19290220351233506
+9,(b) without LGA precipitation,10.0,0.18914898836095148
+9,(b) without LGA precipitation,30.0,0.19108274344887866
+9,(b) without LGA precipitation,100.0,0.2304455699162705
+9,(b) without LGA precipitation,300.0,0.3819082348998978
+9,(b) without Nearby temperature vs LGA,1.0,0.19434477420751553
+9,(b) without Nearby temperature vs LGA,3.0,0.1910839253691022
+9,(b) without Nearby temperature vs LGA,10.0,0.18792536247828898
+9,(b) without Nearby temperature vs LGA,30.0,0.19041825978812432
+9,(b) without Nearby temperature vs LGA,100.0,0.2315931080906605
+9,(b) without Nearby temperature vs LGA,300.0,0.38306258946119254
+9,(b) without Nearby sky cover,1.0,0.19476657889087073
+9,(b) without Nearby sky cover,3.0,0.19121824646754151
+9,(b) without Nearby sky cover,10.0,0.18851046359922
+9,(b) without Nearby sky cover,30.0,0.19131974361285622
+9,(b) without Nearby sky cover,100.0,0.23107393312617663
+9,(b) without Nearby sky cover,300.0,0.3843037334251045
+9,"(a), 5-min allowance (sensitivity)",1.0,0.19023043887785065
+9,"(a), 5-min allowance (sensitivity)",3.0,0.18717972299418748
+9,"(a), 5-min allowance (sensitivity)",10.0,0.1846225562370744
+9,"(a), 5-min allowance (sensitivity)",30.0,0.1879036727280545
+9,"(a), 5-min allowance (sensitivity)",100.0,0.23057576669874533
+9,"(a), 5-min allowance (sensitivity)",300.0,0.38462271977611867
+9,"(b), 5-min allowance (sensitivity)",1.0,0.1972588799565632
+9,"(b), 5-min allowance (sensitivity)",3.0,0.1932237673165309
+9,"(b), 5-min allowance (sensitivity)",10.0,0.1891754257995237
+9,"(b), 5-min allowance (sensitivity)",30.0,0.190788342283431
+9,"(b), 5-min allowance (sensitivity)",100.0,0.23028821185523896
+9,"(b), 5-min allowance (sensitivity)",300.0,0.3816046499631348
+9,Diagnostic: observations only,1.0,0.44485294250868096
+9,Diagnostic: observations only,3.0,0.4466311919308961
+9,Diagnostic: observations only,10.0,0.45357843612106546
+9,Diagnostic: observations only,30.0,0.46467276718175166
+9,Diagnostic: observations only,100.0,0.4814160292104983
+9,Diagnostic: observations only,300.0,0.5079259603248875
+9,Diagnostic: observations only + (a),1.0,0.43281972579936007
+9,Diagnostic: observations only + (a),3.0,0.4343127221499003
+9,Diagnostic: observations only + (a),10.0,0.4410385648029961
+9,Diagnostic: observations only + (a),30.0,0.45451835956953845
+9,Diagnostic: observations only + (a),100.0,0.4742622929184633
+9,Diagnostic: observations only + (a),300.0,0.5022658005612138
+9,Diagnostic: observations only + (b),1.0,0.4323640672030087
+9,Diagnostic: observations only + (b),3.0,0.4316108477917533
+9,Diagnostic: observations only + (b),10.0,0.4355057750875201
+9,Diagnostic: observations only + (b),30.0,0.4469185188208712
+9,Diagnostic: observations only + (b),100.0,0.4669756706338639
+9,Diagnostic: observations only + (b),300.0,0.4946926056103806
+12,CURRENT,1.0,0.16927553585357571
+12,CURRENT,10.0,0.16981710518340723
+12,CURRENT,30.0,0.1724666045800214
+12,"CURRENT, candidate L2 grid",1.0,0.16927553585357571
+12,"CURRENT, candidate L2 grid",3.0,0.1694716898883506
+12,"CURRENT, candidate L2 grid",10.0,0.16981710518340723
+12,"CURRENT, candidate L2 grid",30.0,0.1724666045800214
+12,"CURRENT, candidate L2 grid",100.0,0.18709316623599279
+12,"CURRENT, candidate L2 grid",300.0,0.22798737304408123
+12,(a) + LGA own weather,1.0,0.17225356868418887
+12,(a) + LGA own weather,3.0,0.17207066557921877
+12,(a) + LGA own weather,10.0,0.17123139267962234
+12,(a) + LGA own weather,30.0,0.1724394898171813
+12,(a) + LGA own weather,100.0,0.18657027005451537
+12,(a) + LGA own weather,300.0,0.22775662989996617
+12,(b) + LGA own weather + nearby,1.0,0.168825682399318
+12,(b) + LGA own weather + nearby,3.0,0.1688037162367202
+12,(b) + LGA own weather + nearby,10.0,0.16854002525758285
+12,(b) + LGA own weather + nearby,30.0,0.170838312204451
+12,(b) + LGA own weather + nearby,100.0,0.1868084076732899
+12,(b) + LGA own weather + nearby,300.0,0.2274210249202348
+12,CURRENT + LGA wind,1.0,0.1684304587208084
+12,CURRENT + LGA wind,3.0,0.16868699341264407
+12,CURRENT + LGA wind,10.0,0.1691790846382315
+12,CURRENT + LGA wind,30.0,0.17201123665466755
+12,CURRENT + LGA wind,100.0,0.18681756485486853
+12,CURRENT + LGA wind,300.0,0.22796350185405928
+12,CURRENT + LGA pressure,1.0,0.1702629709086925
+12,CURRENT + LGA pressure,3.0,0.17039555244770807
+12,CURRENT + LGA pressure,10.0,0.17053332954646946
+12,CURRENT + LGA pressure,30.0,0.1729360736681473
+12,CURRENT + LGA pressure,100.0,0.18742627911130635
+12,CURRENT + LGA pressure,300.0,0.2279219065231375
+12,CURRENT + LGA dew point depression,1.0,0.16929250572486876
+12,CURRENT + LGA dew point depression,3.0,0.16948284512314715
+12,CURRENT + LGA dew point depression,10.0,0.16981554403861124
+12,CURRENT + LGA dew point depression,30.0,0.17244756793280758
+12,CURRENT + LGA dew point depression,100.0,0.18709680901440506
+12,CURRENT + LGA dew point depression,300.0,0.22792082598429111
+12,CURRENT + LGA clouds,1.0,0.17146843446985058
+12,CURRENT + LGA clouds,3.0,0.17131385869484614
+12,CURRENT + LGA clouds,10.0,0.17065054427736243
+12,CURRENT + LGA clouds,30.0,0.1720694459212467
+12,CURRENT + LGA clouds,100.0,0.18621560982839055
+12,CURRENT + LGA clouds,300.0,0.2276962956000603
+12,CURRENT + LGA precipitation,1.0,0.16979486564984408
+12,CURRENT + LGA precipitation,3.0,0.16999893658964577
+12,CURRENT + LGA precipitation,10.0,0.17029956525034712
+12,CURRENT + LGA precipitation,30.0,0.17284854544971337
+12,CURRENT + LGA precipitation,100.0,0.18735070634719841
+12,CURRENT + LGA precipitation,300.0,0.22819811025777254
+12,CURRENT + Nearby temperature vs LGA,1.0,0.16669403249704595
+12,CURRENT + Nearby temperature vs LGA,3.0,0.16681445855929744
+12,CURRENT + Nearby temperature vs LGA,10.0,0.1674887453089326
+12,CURRENT + Nearby temperature vs LGA,30.0,0.17125804671491174
+12,CURRENT + Nearby temperature vs LGA,100.0,0.18799415785709214
+12,CURRENT + Nearby temperature vs LGA,300.0,0.227790782278612
+12,CURRENT + Nearby sky cover,1.0,0.16825754348438782
+12,CURRENT + Nearby sky cover,3.0,0.1683765647149555
+12,CURRENT + Nearby sky cover,10.0,0.16836571264053163
+12,CURRENT + Nearby sky cover,30.0,0.17058861378691978
+12,CURRENT + Nearby sky cover,100.0,0.18546729717399668
+12,CURRENT + Nearby sky cover,300.0,0.22776299663715677
+12,(b) without LGA wind,1.0,0.17014263610345828
+12,(b) without LGA wind,3.0,0.17001156191075278
+12,(b) without LGA wind,10.0,0.16953248738595528
+12,(b) without LGA wind,30.0,0.17152116777837692
+12,(b) without LGA wind,100.0,0.18727082716699395
+12,(b) without LGA wind,300.0,0.22758159349407864
+12,(b) without LGA pressure,1.0,0.16795007578174492
+12,(b) without LGA pressure,3.0,0.16799316178004736
+12,(b) without LGA pressure,10.0,0.16796869514539053
+12,(b) without LGA pressure,30.0,0.17053629703542356
+12,(b) without LGA pressure,100.0,0.18657272024133492
+12,(b) without LGA pressure,300.0,0.22749302075799657
+12,(b) without LGA dew point depression,1.0,0.16875640247230428
+12,(b) without LGA dew point depression,3.0,0.16873073144840708
+12,(b) without LGA dew point depression,10.0,0.1684996954296857
+12,(b) without LGA dew point depression,30.0,0.17084133448654817
+12,(b) without LGA dew point depression,100.0,0.1868017421106426
+12,(b) without LGA dew point depression,300.0,0.22743344658167705
+12,(b) without LGA clouds,1.0,0.16569619958736176
+12,(b) without LGA clouds,3.0,0.16585716237008397
+12,(b) without LGA clouds,10.0,0.16624767311968291
+12,(b) without LGA clouds,30.0,0.1696262105552376
+12,(b) without LGA clouds,100.0,0.1867299873266033
+12,(b) without LGA clouds,300.0,0.2275749182736111
+12,(b) without LGA precipitation,1.0,0.16813704909040317
+12,(b) without LGA precipitation,3.0,0.16814141250691056
+12,(b) without LGA precipitation,10.0,0.16794875660795436
+12,(b) without LGA precipitation,30.0,0.17037749098670488
+12,(b) without LGA precipitation,100.0,0.18648821528893006
+12,(b) without LGA precipitation,300.0,0.22718581333877955
+12,(b) without Nearby temperature vs LGA,1.0,0.17236200245679034
+12,(b) without Nearby temperature vs LGA,3.0,0.17219985977597302
+12,(b) without Nearby temperature vs LGA,10.0,0.17122323316456606
+12,(b) without Nearby temperature vs LGA,30.0,0.17198534277695998
+12,(b) without Nearby temperature vs LGA,100.0,0.18567605131741274
+12,(b) without Nearby temperature vs LGA,300.0,0.22761737596516504
+12,(b) without Nearby sky cover,1.0,0.16879135690206118
+12,(b) without Nearby sky cover,3.0,0.16868019068000306
+12,(b) without Nearby sky cover,10.0,0.16849592580973205
+12,(b) without Nearby sky cover,30.0,0.1711935564292364
+12,(b) without Nearby sky cover,100.0,0.18754088549971817
+12,(b) without Nearby sky cover,300.0,0.2275575819892329
+12,"(a), 5-min allowance (sensitivity)",1.0,0.1699259260126287
+12,"(a), 5-min allowance (sensitivity)",3.0,0.16991483861507725
+12,"(a), 5-min allowance (sensitivity)",10.0,0.169460599196862
+12,"(a), 5-min allowance (sensitivity)",30.0,0.1712395462696272
+12,"(a), 5-min allowance (sensitivity)",100.0,0.1859948145611851
+12,"(a), 5-min allowance (sensitivity)",300.0,0.22744335909607472
+12,"(b), 5-min allowance (sensitivity)",1.0,0.17239822681264633
+12,"(b), 5-min allowance (sensitivity)",3.0,0.17173671507087587
+12,"(b), 5-min allowance (sensitivity)",10.0,0.1702545612214672
+12,"(b), 5-min allowance (sensitivity)",30.0,0.17105131590594908
+12,"(b), 5-min allowance (sensitivity)",100.0,0.18537637773897925
+12,"(b), 5-min allowance (sensitivity)",300.0,0.22420943939339993
+12,Diagnostic: observations only,1.0,0.27963192577963764
+12,Diagnostic: observations only,3.0,0.28326390857581774
+12,Diagnostic: observations only,10.0,0.2870851999467396
+12,Diagnostic: observations only,30.0,0.29018929297533547
+12,Diagnostic: observations only,100.0,0.2940165247733257
+12,Diagnostic: observations only,300.0,0.3004456655945406
+12,Diagnostic: observations only + (a),1.0,0.2739236917438357
+12,Diagnostic: observations only + (a),3.0,0.2782875598824524
+12,Diagnostic: observations only + (a),10.0,0.28292240000904506
+12,Diagnostic: observations only + (a),30.0,0.28762903641409976
+12,Diagnostic: observations only + (a),100.0,0.29320809109836893
+12,Diagnostic: observations only + (a),300.0,0.29992707224842863
+12,Diagnostic: observations only + (b),1.0,0.2695736594774751
+12,Diagnostic: observations only + (b),3.0,0.27174005835030074
+12,Diagnostic: observations only + (b),10.0,0.2761367671193078
+12,Diagnostic: observations only + (b),30.0,0.28256797134087674
+12,Diagnostic: observations only + (b),100.0,0.28974103054733497
+12,Diagnostic: observations only + (b),300.0,0.29671726568411094
+15,CURRENT,1.0,0.08218646645980436
+15,CURRENT,10.0,0.0823178933416986
+15,CURRENT,30.0,0.0853084688119455
+15,"CURRENT, candidate L2 grid",1.0,0.08218646645980436
+15,"CURRENT, candidate L2 grid",3.0,0.08182884803617567
+15,"CURRENT, candidate L2 grid",10.0,0.0823178933416986
+15,"CURRENT, candidate L2 grid",30.0,0.0853084688119455
+15,"CURRENT, candidate L2 grid",100.0,0.09671031558073728
+15,"CURRENT, candidate L2 grid",300.0,0.11563333606742275
+15,(a) + LGA own weather,1.0,0.08633486794641793
+15,(a) + LGA own weather,3.0,0.08522625681400695
+15,(a) + LGA own weather,10.0,0.08415294034913696
+15,(a) + LGA own weather,30.0,0.08538505846575477
+15,(a) + LGA own weather,100.0,0.0955440461878798
+15,(a) + LGA own weather,300.0,0.11499025952459073
+15,(b) + LGA own weather + nearby,1.0,0.08510975727517686
+15,(b) + LGA own weather + nearby,3.0,0.08522760577516064
+15,(b) + LGA own weather + nearby,10.0,0.08558720218835289
+15,(b) + LGA own weather + nearby,30.0,0.08782159473238253
+15,(b) + LGA own weather + nearby,100.0,0.09834006132724189
+15,(b) + LGA own weather + nearby,300.0,0.11532187436325554
+15,CURRENT + LGA wind,1.0,0.08306779940257296
+15,CURRENT + LGA wind,3.0,0.08240603299264841
+15,CURRENT + LGA wind,10.0,0.08253321945088038
+15,CURRENT + LGA wind,30.0,0.08546496886743979
+15,CURRENT + LGA wind,100.0,0.09713360782195647
+15,CURRENT + LGA wind,300.0,0.11594001030518897
+15,CURRENT + LGA pressure,1.0,0.08551575125769548
+15,CURRENT + LGA pressure,3.0,0.08449900041236648
+15,CURRENT + LGA pressure,10.0,0.08374643478939665
+15,CURRENT + LGA pressure,30.0,0.08522173537179521
+15,CURRENT + LGA pressure,100.0,0.09536979708788156
+15,CURRENT + LGA pressure,300.0,0.11503922603845801
+15,CURRENT + LGA dew point depression,1.0,0.08189007856854084
+15,CURRENT + LGA dew point depression,3.0,0.08168783583790967
+15,CURRENT + LGA dew point depression,10.0,0.08229762122989774
+15,CURRENT + LGA dew point depression,30.0,0.08533687534628043
+15,CURRENT + LGA dew point depression,100.0,0.09676278641187529
+15,CURRENT + LGA dew point depression,300.0,0.11553909615706262
+15,CURRENT + LGA clouds,1.0,0.08241075552075106
+15,CURRENT + LGA clouds,3.0,0.08205442959366563
+15,CURRENT + LGA clouds,10.0,0.08246637669447873
+15,CURRENT + LGA clouds,30.0,0.08532106443975447
+15,CURRENT + LGA clouds,100.0,0.09657907548243196
+15,CURRENT + LGA clouds,300.0,0.11543652141802477
+15,CURRENT + LGA precipitation,1.0,0.08220354257524261
+15,CURRENT + LGA precipitation,3.0,0.08183204191189349
+15,CURRENT + LGA precipitation,10.0,0.08232976630117599
+15,CURRENT + LGA precipitation,30.0,0.08533405807743795
+15,CURRENT + LGA precipitation,100.0,0.09671515172263018
+15,CURRENT + LGA precipitation,300.0,0.11560266887950386
+15,CURRENT + Nearby temperature vs LGA,1.0,0.08261990005112987
+15,CURRENT + Nearby temperature vs LGA,3.0,0.0831912037330095
+15,CURRENT + Nearby temperature vs LGA,10.0,0.08453008010732416
+15,CURRENT + Nearby temperature vs LGA,30.0,0.08816053286692722
+15,CURRENT + Nearby temperature vs LGA,100.0,0.10011157681240954
+15,CURRENT + Nearby temperature vs LGA,300.0,0.11652688960142653
+15,CURRENT + Nearby sky cover,1.0,0.08068248156455114
+15,CURRENT + Nearby sky cover,3.0,0.08054582998584224
+15,CURRENT + Nearby sky cover,10.0,0.0813732751365456
+15,CURRENT + Nearby sky cover,30.0,0.08465564813071275
+15,CURRENT + Nearby sky cover,100.0,0.09618063921367868
+15,CURRENT + Nearby sky cover,300.0,0.11494505807714091
+15,(b) without LGA wind,1.0,0.08520811705368482
+15,(b) without LGA wind,3.0,0.08533176209237711
+15,(b) without LGA wind,10.0,0.08559728876496814
+15,(b) without LGA wind,30.0,0.08774086719080598
+15,(b) without LGA wind,100.0,0.09815099533793953
+15,(b) without LGA wind,300.0,0.11507875744196397
+15,(b) without LGA pressure,1.0,0.08135959244992126
+15,(b) without LGA pressure,3.0,0.08212230128547332
+15,(b) without LGA pressure,10.0,0.08381348504469785
+15,(b) without LGA pressure,30.0,0.08774283411604915
+15,(b) without LGA pressure,100.0,0.09977827717595218
+15,(b) without LGA pressure,300.0,0.11594880604555732
+15,(b) without LGA dew point depression,1.0,0.08511187257025661
+15,(b) without LGA dew point depression,3.0,0.08518278718415
+15,(b) without LGA dew point depression,10.0,0.08558199597813347
+15,(b) without LGA dew point depression,30.0,0.08784048723090872
+15,(b) without LGA dew point depression,100.0,0.09835439438616343
+15,(b) without LGA dew point depression,300.0,0.11534850273225385
+15,(b) without LGA clouds,1.0,0.08476237912570553
+15,(b) without LGA clouds,3.0,0.0849669551412207
+15,(b) without LGA clouds,10.0,0.0854828475757902
+15,(b) without LGA clouds,30.0,0.08781516410816885
+15,(b) without LGA clouds,100.0,0.09840054902586992
+15,(b) without LGA clouds,300.0,0.11538142326392264
+15,(b) without LGA precipitation,1.0,0.08497666405386194
+15,(b) without LGA precipitation,3.0,0.08511596598820385
+15,(b) without LGA precipitation,10.0,0.08548815129551754
+15,(b) without LGA precipitation,30.0,0.08776921814546111
+15,(b) without LGA precipitation,100.0,0.09834459440653051
+15,(b) without LGA precipitation,300.0,0.11535231945821602
+15,(b) without Nearby temperature vs LGA,1.0,0.0840883338583601
+15,(b) without Nearby temperature vs LGA,3.0,0.08325217771900381
+15,(b) without Nearby temperature vs LGA,10.0,0.08273083858392868
+15,(b) without Nearby temperature vs LGA,30.0,0.08448716671373126
+15,(b) without Nearby temperature vs LGA,100.0,0.09491684594630549
+15,(b) without Nearby temperature vs LGA,300.0,0.1144150470536647
+15,(b) without Nearby sky cover,1.0,0.08721113251175608
+15,(b) without Nearby sky cover,3.0,0.08703366099316248
+15,(b) without Nearby sky cover,10.0,0.08686937167408079
+15,(b) without Nearby sky cover,30.0,0.0886136323872153
+15,(b) without Nearby sky cover,100.0,0.09893443303997936
+15,(b) without Nearby sky cover,300.0,0.11594306980091013
+15,"(a), 5-min allowance (sensitivity)",1.0,0.08670864467970645
+15,"(a), 5-min allowance (sensitivity)",3.0,0.08582482527618594
+15,"(a), 5-min allowance (sensitivity)",10.0,0.08490396967556953
+15,"(a), 5-min allowance (sensitivity)",30.0,0.0860566376912297
+15,"(a), 5-min allowance (sensitivity)",100.0,0.09576607778118701
+15,"(a), 5-min allowance (sensitivity)",300.0,0.11485459033354599
+15,"(b), 5-min allowance (sensitivity)",1.0,0.08977391737948584
+15,"(b), 5-min allowance (sensitivity)",3.0,0.08912784351719316
+15,"(b), 5-min allowance (sensitivity)",10.0,0.08850233299342702
+15,"(b), 5-min allowance (sensitivity)",30.0,0.09007745032713246
+15,"(b), 5-min allowance (sensitivity)",100.0,0.09976809498855783
+15,"(b), 5-min allowance (sensitivity)",300.0,0.11533455079566013
+15,Diagnostic: observations only,1.0,0.11403427249820443
+15,Diagnostic: observations only,3.0,0.11373459158343094
+15,Diagnostic: observations only,10.0,0.11511612405177944
+15,Diagnostic: observations only,30.0,0.11853173396370943
+15,Diagnostic: observations only,100.0,0.12436201833816705
+15,Diagnostic: observations only,300.0,0.1303309207795799
+15,Diagnostic: observations only + (a),1.0,0.11373353498667053
+15,Diagnostic: observations only + (a),3.0,0.11387594098859555
+15,Diagnostic: observations only + (a),10.0,0.11536376821192472
+15,Diagnostic: observations only + (a),30.0,0.11837553225362464
+15,Diagnostic: observations only + (a),100.0,0.1238354721725515
+15,Diagnostic: observations only + (a),300.0,0.12977095624587737
+15,Diagnostic: observations only + (b),1.0,0.12023703973020747
+15,Diagnostic: observations only + (b),3.0,0.12078794882816418
+15,Diagnostic: observations only + (b),10.0,0.12099438825496402
+15,Diagnostic: observations only + (b),30.0,0.12114858162900903
+15,Diagnostic: observations only + (b),100.0,0.1234353332636433
+15,Diagnostic: observations only + (b),300.0,0.12837869262310525

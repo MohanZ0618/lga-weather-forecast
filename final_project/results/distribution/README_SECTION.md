@@ -1,11 +1,5 @@
-## Supplementary checks
+## Supplementary checks and the censored model
 
-`python final_project/supplement.py` runs after `experiment.py` (a few seconds) and writes three tables to `final_project/results/`:
+`supplement.py` adds three checks to the paper's results. It reports the ranked probability score, which charges more for probability placed several bands from the outcome. It puts 95% intervals on the Table 2 differences by pairing dates and resampling seven-day blocks. And it scores a raw-HRRR baseline (the HRRR remaining maximum with a seasonal bias and Gaussian spread fit on 2021 to 2023). Adding nearby stations changes log loss by -0.022 [-0.048, +0.001], +0.003 [-0.027, +0.035], +0.021 [+0.000, +0.045] at 09:00, 12:00 and 15:00. Adding HRRR changes it by -0.119 [-0.177, -0.063], -0.023 [-0.044, +0.000], +0.007 [-0.005, +0.022]. The paper's HRRR system against raw HRRR: -0.051 [-0.101, -0.007], -0.087 [-0.147, -0.036], -0.142 [-0.250, -0.057].
 
-- `supplement_scores.csv` adds the ranked probability score (RPS) for every selected system. The five bands are ordered, so RPS charges more for probability placed several bands from the outcome; log loss and accuracy do not.
-- `supplement_paired.csv` gives 95% intervals for the Table 2 differences (log loss, RPS, accuracy), pairing by date and resampling 7-day blocks 5,000 times, because nearby days share weather.
-- `supplement_hrrr.csv` scores a raw-HRRR baseline: max(observed high so far, HRRR remaining max + bias) with a Gaussian error, bias and spread fit per season on 2021–2023 only. It asks whether the learned model adds anything over the forecast it consumes.
-
-- `python final_project/distribution.py` (about 40 seconds) tests the continuous forecast named under next steps. It predicts the remaining warming (final high minus the closed-hour high so far, zero on 12% of days at 09:00 and 63% at 15:00) and integrates it onto the five bands. A censored Gaussian regression with a linear mean and a seasonal spread ties the selected classifiers at every cell (log loss within the 95% block-bootstrap interval) and is better on RPS at 12:00 with HRRR. Quantile boosting gives no gain and its 80% intervals cover 74 to 86% of outcomes. The classifiers do not improve when given the same floor-relative features. Outputs are in `final_project/results/distribution/`.
-
-On the committed results, every nearby-station interval includes zero, and trends never help (at 09:00 they slightly worsen RPS). HRRR helps at 09:00 and 12:00 but not at 15:00. The learned HRRR blend beats the raw HRRR baseline at every cutoff.
+`distribution.py` predicts the remaining rise (final high minus the high so far) with a censored Gaussian and with quantile boosting, then integrates it onto the five bands. Against the paper's selected HRRR system, the censored Gaussian without the station guidance changes test log loss by -0.002, -0.029 and -0.011. Outputs are in `results/distribution/`.
